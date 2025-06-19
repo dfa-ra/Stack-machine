@@ -1,8 +1,8 @@
-name: hello_user_name
-limit: 2000
-memory_size: 400
+name: hello
+limit: 500
+memory_size: 200
 input_streams:
-  0x80: [82, 111, 109, 97, 110, 0]
+  0x80: []
   0x84: []
 reports:
   - name: binary
@@ -20,4 +20,5 @@ reports:
       numio[0x80]: {io:in:dec}
       numio[0x84]: {io:out:dec}
       tick_count = {cpu:tick}
-      {condition:[io:out:str]=[What is your name?Hello, Roman]}
+      {condition:[io:out:dec]=[72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]}
+      {condition:[io:out:str]=[Hello world]}

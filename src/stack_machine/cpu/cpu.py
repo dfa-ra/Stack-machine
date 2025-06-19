@@ -4,7 +4,7 @@ from typing import Dict, Callable
 from .mem import DataMem, InstructionMem
 from .stack import Stack
 from .units import ControlUnit, MemUnit, ControlAluUnit
-
+from ..inst_compiler.compiler import get_mnemonic_by_opcode
 
 
 @dataclass
@@ -89,15 +89,15 @@ class Cpu:
             "kill_cpu": SignalHandler("kill_cpu", lambda cpu, _: setattr(cpu, "running", False)),
         }
 
-    def tick(self):
+    def tick(self, tick_logs: Callable, command_log: Callable):
         pc = self.get_reg("PC")
         if pc < 0 or pc >= len(self.i_mem.inst) or self.running == False:
             self.running = False
             return
         # Получаем immediate и микрокоманды из декодера
-        imm, micro_commands = self.control_unit.handle()
+        imm, micro_commands, mc_addr = self.control_unit.handle()
         # Обрабатываем каждую микрокоманду как отдельный такт
-
+        command_log((get_mnemonic_by_opcode(mc_addr), imm))
         for micro_command in micro_commands:
             self.tick_count += 1
 
@@ -131,6 +131,7 @@ class Cpu:
                     if signal_name in self.fetch_signals_handlers.keys():
                         handler = self.fetch_signals_handlers[signal_name]
                         handler.action(self, imm)
+            tick_logs(micro_command)
 
         self.set_reg("PC", self.get_reg("PC") + 1)
 

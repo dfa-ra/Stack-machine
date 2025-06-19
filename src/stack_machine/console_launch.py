@@ -22,9 +22,9 @@ def console_launch(cfg_path, build_dir):
 
     limit = conf["limit"]
 
+    logger_.run_binary()
     while _cpu.running and _cpu.tick_count < limit:
-        logger_.each_tick_logs()
-        _cpu.tick()
+        _cpu.tick(logger_.each_tick_logs, logger_.command)
     logger_.run_assert()
 
 

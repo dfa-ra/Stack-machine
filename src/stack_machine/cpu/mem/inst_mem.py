@@ -39,3 +39,4 @@ class InstructionMem:
         if addr < 0 or addr >= len(self.inst):
             raise ValueError(f"Trying to access instruction out of bounds: {addr}")
         return self.inst[addr]
+

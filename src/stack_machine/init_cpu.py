@@ -13,5 +13,5 @@ def compile_code(input_file: str, memory_size) -> int | None | bool:
 
 def init_cpu(ep: int, mem) -> Cpu:
     i_mem = InstructionMem()
-    return Cpu(8, mem, i_mem, ep)
+    return Cpu(13, mem, i_mem, ep)
 

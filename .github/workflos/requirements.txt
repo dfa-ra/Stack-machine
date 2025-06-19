@@ -1,0 +1,5 @@
+ruff==0.4.4
+mypy==1.10.0
+pytest
+pytest-golden==0.2.2
+pyyaml

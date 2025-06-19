@@ -1,8 +1,8 @@
-name: hello_user_name
-limit: 2000
-memory_size: 400
+name: sort
+limit: 5000
+memory_size: 500
 input_streams:
-  0x80: [82, 111, 109, 97, 110, 0]
+  0x80: [100]
   0x84: []
 reports:
   - name: binary
@@ -18,6 +18,6 @@ reports:
     slice: last
     view: |
       numio[0x80]: {io:in:dec}
-      numio[0x84]: {io:out:dec}
+      numio[0x84]: {io:out:decbe}
       tick_count = {cpu:tick}
-      {condition:[io:out:str]=[What is your name?Hello, Roman]}
+      {condition:[io:out:decbe]=[25164150]}

@@ -1,0 +1,224 @@
+   .data
+var 0 word 0
+var 4 word 256
+var 8 word 0
+var 12 word 128
+var 16 word 132
+var 20 word 0
+var 24 word 0
+var 28 word 0
+var 32 word 0
+var 36 word 0
+var 40 word 0
+var 44 word 0
+var 48 word 0
+   .text
+sw_to_imm_addr 20
+push_imm 0
+sw_to_imm_addr 24
+push_imm 1
+sw_to_imm_addr 28
+push_imm 0
+push_imm 0
+over
+dup
+lw_from_imm_addr 28
+over
+-
+if 2
+push_imm 1
+jmp 1
+push_imm 0
+if 22
+over
+lw_from_imm_addr 12
+load_T_a_pop
+lw_from_a_addr
+dup
+sw_to_imm_addr 28
+lw_from_imm_addr 20
+load_T_a_pop
+sw_to_a_addr
+lw_from_imm_addr 20
+push_imm 4
++
+sw_to_imm_addr 20
+push_imm 1
+lw_from_imm_addr 24
++
+sw_to_imm_addr 24
+dup
+lw_from_imm_addr 28
++
+sw_to_imm_addr 28
+jmp -32
+pop
+pop
+push_imm 1
+lw_from_imm_addr 24
+-
+ret
+sw_to_imm_addr 32
+push_imm 1
+sw_to_imm_addr 36
+push_imm 0
+push_imm 0
+over
+dup
+lw_from_imm_addr 36
+over
+-
+if 2
+push_imm 1
+jmp 1
+push_imm 0
+if 27
+over
+lw_from_imm_addr 32
+load_T_a_pop
+lw_from_a_addr
+dup
+dup
+sw_to_imm_addr 36
+push_imm 0
+-
+if 2
+push_imm 0
+jmp 1
+push_imm 1
+if 1
+jmp 7
+lw_from_imm_addr 16
+load_T_a_pop
+sw_to_a_addr
+lw_from_imm_addr 32
+push_imm 4
++
+sw_to_imm_addr 32
+dup
+lw_from_imm_addr 36
++
+sw_to_imm_addr 36
+jmp -37
+pop
+pop
+ret
+push_imm 0
+sw_to_imm_addr 40
+push_imm 0
+sw_to_imm_addr 36
+push_imm 0
+sw_to_imm_addr 44
+lw_from_imm_addr 8
+push_imm 1
+over
+dup
+lw_from_imm_addr 44
+over
+-
+push_imm -1
++
+-if 2
+push_imm 0
+jmp 1
+push_imm 1
+if 88
+over
+push_imm 1
+lw_from_imm_addr 44
+lw_from_imm_addr 8
+-
+-
+sw_to_imm_addr 40
+push_imm 0
+sw_to_imm_addr 48
+lw_from_imm_addr 40
+push_imm 1
+over
+dup
+lw_from_imm_addr 48
+over
+-
+push_imm -1
++
+-if 2
+push_imm 0
+jmp 1
+push_imm 1
+if 58
+over
+lw_from_imm_addr 48
+push_imm 4
+*
+sw_to_imm_addr 36
+lw_from_imm_addr 4
+lw_from_imm_addr 36
++
+load_T_a_pop
+lw_from_a_addr
+lw_from_imm_addr 4
+lw_from_imm_addr 36
+push_imm 4
++
++
+load_T_a_pop
+lw_from_a_addr
+-
+not
+inc
+push_imm -1
++
+-if 2
+push_imm 0
+jmp 1
+push_imm 1
+if 26
+lw_from_imm_addr 4
+lw_from_imm_addr 36
++
+load_T_a_pop
+lw_from_a_addr
+lw_from_imm_addr 4
+lw_from_imm_addr 36
+push_imm 4
++
++
+load_T_a_pop
+lw_from_a_addr
+over
+lw_from_imm_addr 4
+lw_from_imm_addr 36
+push_imm 4
++
++
+load_T_a_pop
+sw_to_a_addr
+lw_from_imm_addr 4
+lw_from_imm_addr 36
++
+load_T_a_pop
+sw_to_a_addr
+jmp 0
+dup
+lw_from_imm_addr 48
++
+sw_to_imm_addr 48
+jmp -70
+pop
+pop
+dup
+lw_from_imm_addr 44
++
+sw_to_imm_addr 44
+jmp -100
+pop
+pop
+ret
+   _start
+lw_from_imm_addr 4
+call -203
+sw_to_imm_addr 8
+call -115
+lw_from_imm_addr 4
+call -162
+halt

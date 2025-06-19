@@ -22,8 +22,8 @@ def load_opcode_map_from_yaml(filepath: str) -> dict[str, int]:
 class Instruction:
     def __init__(self, val: tuple[int, int]):
         self.mc_addr = val[0]
-        self.imm = val[1] if val[1] is not None else 0
-        self.bits = (val[0] << 8) | self.imm
+        self.imm = val[1] if val[1] is not None else None
+        self.bits = (val[0] << 8) | (self.imm if self.imm is not None else 0)
 
     inst = load_opcode_map_from_yaml(instruction_file)
 

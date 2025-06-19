@@ -1,14 +1,18 @@
-_import_
-    "../lib/num.forth"
-
 _data_
 0 VAR n
 0 VAR sum_pow2
 0 VAR pow2_sum
 
+0x80 VAR input_addr
+0x84 VAR output_addr
 
 _func_
-: POW2
+: PRINT_NUM
+    output_addr a! !
+;
+: READ_NUM
+    input_addr a! @
+;
 : SUM
     LOOP
         1 !j n <= 1
@@ -16,7 +20,6 @@ _func_
             sum_pow2 j + !sum_pow2
         REPEAT
 ;
-
 : SUM_POW2
     LOOP
         1 !i n <= 1

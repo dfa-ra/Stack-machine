@@ -5,16 +5,19 @@ input_streams:
   0x80: [2, 1, 4, 3, 100, 8, 5, 0]
   0x84: []
 reports:
-#  - name: Step-by-step
-#    slice: all
-#    view: |
-#      T A S {regs:B:hex} {regs:A:hex}
+  - name: binary
+    slice: mem
+    view: |
+      {instruction}
+  - name: Step-by-step
+    slice: all
+    view: |
+      tick: {cpu:tick} || microcode - {microcode} || A: {cpu:A:hex} || B: {cpu:B:hex} 
+      data stack: {stack:data}
   - name: Result
     slice: last
     view: |
       numio[0x80]: {io:in:dec}
       numio[0x84]: {io:out:decbe}
-      A B {cpu:A:hex} {cpu:B:dec}
       tick_count = {cpu:tick}
-      {condition:[cpu:B:dec]=[1]}
       {condition:[io:out:decbe]=[1, 2, 3, 4, 5]}

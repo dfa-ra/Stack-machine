@@ -146,7 +146,7 @@ def convert_to_binary(input_file: str, memory_size: int) -> int | None:
                     raise ValueError(f"Invalid data memory address: {addr}")
                 if data_type == 'word':
                     for i, value in enumerate(values):
-                        struct.pack_into('<I', data_memory, addr + i*4, value)
+                        struct.pack_into('<I', data_memory, addr + i * 4, value)
                 else:
                     for i, value in enumerate(values):
                         data_memory[addr + i] = value
@@ -156,7 +156,14 @@ def convert_to_binary(input_file: str, memory_size: int) -> int | None:
     return start_address
 
 
-def get_decompiled_code(num_line: int = 0):
+def get_mnemonic_by_opcode(opcode: int) -> str:
+    with open(instruction_file, 'r') as f:
+        commands = yaml.safe_load(f)['commands']
+    opcode_to_mnemonic = {cmd['opcode']: cmd['desc'] for cmd in commands}
+    return opcode_to_mnemonic.get(opcode, f"UNKNOWN_{hex(opcode)}")
+
+
+def get_decompiled_code_debug(num_line: int = 0):
     with open(instruction_file, 'r') as f:
         data = yaml.safe_load(f)["commands"]
         opcode_to_mnemonic = {cmd["opcode"]: cmd["desc"] for cmd in data}
@@ -196,6 +203,41 @@ def get_decompiled_code(num_line: int = 0):
     return "\n".join(result)
 
 
+def get_decompiled_code():
+    with open(instruction_file, 'r') as f:
+        data = yaml.safe_load(f)["commands"]
+        opcode_to_mnemonic = {cmd["opcode"]: cmd["desc"] for cmd in data}
+        opcode_has_arg = {cmd["opcode"]: cmd.get("operand", False) for cmd in data}
+
+    with open(instruction_mem_path, 'rb') as f:
+        byte_data = f.read()
+
+    result = []
+    count = 0
+    index = 0
+
+    while index < len(byte_data):
+        opcode = byte_data[index]
+        index += 1
+
+        mnemonic = opcode_to_mnemonic.get(opcode, f"UNKNOWN_{hex(opcode)}")
+        has_arg = opcode_has_arg.get(opcode, False)
+
+        if has_arg:
+            if index + 4 > len(byte_data):
+                result.append(f"  ERROR: Incomplete argument for {mnemonic} at byte {index - 1}")
+                break
+            value = struct.unpack_from('<I', byte_data, index)[0]
+            command = ((opcode & 0xFF) << 32) | (ltbe(value) & 0xFFFFFFFF)
+            result.append(f"0x{(index - 1):03x} - 0x{command:010x} - {mnemonic} 0x{value:08X}")
+            index += 4
+        else:
+            command = (opcode & 0xFF)
+            result.append(f"0x{(index - 1):03x} - 0x{command:02x} - {mnemonic}")
+        count += 1
+
+    return "\n".join(result)
+
 def get_data_meminfo(start: int = 0, end: int = 0):
     mem_info: str = ""
     with open(instruction_mem_path, 'rb') as f:
@@ -229,5 +271,5 @@ def get_data_meminfo(start: int = 0, end: int = 0):
 
 if __name__ == "__main__":
     print(convert_to_binary("../../build/examples", 30))
-    print(get_decompiled_code())
+    print(get_decompiled_code_debug())
     print(get_data_meminfo())

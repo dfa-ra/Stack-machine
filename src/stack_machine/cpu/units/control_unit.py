@@ -22,4 +22,4 @@ class ControlUnit:
 
         micro_commands = MicroCommand.decode_microcode(mc_addr)
 
-        return imm, micro_commands
+        return imm, micro_commands, mc_addr
