@@ -54,7 +54,7 @@ fi
 
 # Запуск основной команды
 if [ -n "$LOG_FLAG" ]; then
-    python3 main.py -c "$YAML" "$FORTH" -l
+    python3 -m src.main -c "$YAML" "$FORTH" -l
 else
-    python3 main.py -c "$YAML" "$FORTH"
+    python3 -m src.main -c "$YAML" "$FORTH"
 fi

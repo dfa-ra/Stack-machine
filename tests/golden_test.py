@@ -9,7 +9,7 @@ if str(ROOT_PATH) not in sys.path:
     sys.path.insert(0, str(ROOT_PATH))
 
 TEST_DIR = Path(__file__).parent
-MAIN_EMULATOR_PATH = (TEST_DIR / "../main.py").resolve()
+MAIN_EMULATOR_PATH = (TEST_DIR / "../src/main.py").resolve()
 
 assert MAIN_EMULATOR_PATH.exists(), f"File {MAIN_EMULATOR_PATH} doesn't exist!"
 
@@ -30,7 +30,7 @@ def run_default(name: str) -> str:
     assert input_conf.exists(), f"Config file missing: {input_conf}"
 
     out_emulator = run_command(
-        ["python3", str(MAIN_EMULATOR_PATH), "-c", str(input_conf), str(input_forth)]
+        ["python3", "-m", "src.main", "-c", str(input_conf), str(input_forth)]
     )
 
     return out_emulator
