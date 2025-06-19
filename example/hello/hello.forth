@@ -2,10 +2,8 @@ _import_
     "../lib/str.forth"
 
 _data_
-"" VAR str
+"Hello world" VAR str
 
 _text_
-&str READ
 &str PRINT
-
 HALT

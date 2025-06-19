@@ -16,12 +16,12 @@ class CompilerData:
         else:
             self.data_address += size * 4
 
-    def compile(self, lines):
+    def compile(self, lines, data_address):
+        self.data_address = data_address
         for line in lines:
             tokens = line.split()
             if tokens[-1] in forbidden_var:
                 raise Exception("Forbidden variable")
-
             if tokens[0].startswith('['):
                 name = tokens[-1]
                 values = []
@@ -29,11 +29,13 @@ class CompilerData:
                     if value == ']':
                         break
                     values.append(value)
-                self.add_data(name, 'array', len(values), values)
+                self.add_data(name, 'array', int(tokens[-3]), values)
             elif tokens[0].startswith('"'):
                 start = line.find('"') + 1
                 end = line.find('"', start)
                 result = line[start:end]
+                if tokens[-2].isdigit():
+                    result += int(tokens[-2])
                 self.add_data(tokens[-1], 'str', len(result) + 1, [result])
             elif tokens[1] == 'VAR':
                 if is_hex_string(tokens[0]):
@@ -43,6 +45,7 @@ class CompilerData:
         self.compiler.symbols.append(self.symbols.copy())
         self.symbols.clear()
         return self.data_address
+
     def get_symbol(self, name):
         return self.compiler.symbols[name]
 

@@ -15,10 +15,12 @@ def debug_launch(cfg_path, build_dir):
     for i in conf["input_streams"]:
         io_ports.append(i)
 
-    start = compile_code(build_dir + "/examples", conf["memory_size"])
+    start = compile_code(build_dir + "/code", conf["memory_size"])
     mem = DataMem(io_ports, conf["input_streams"][io_ports[0]])
 
-    console = ConsoleLayout(start, mem)
+    limit = conf["limit"]
+
+    console = ConsoleLayout(start, mem, limit)
     console.run()
 
 

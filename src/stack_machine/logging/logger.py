@@ -1,19 +1,26 @@
 from src.stack_machine.cpu import Cpu
 import re
 
+from src.stack_machine.utils.bitwise_utils import btle, tsfb
+
+
+def ascii_to_string(num):
+    return ''.join(chr(num))
+
 class logger:
     def __init__(self, cpu_: Cpu, log_fmt: dict[any]):
         self.cpu_ = cpu_
         self.fmt = log_fmt
         self.token_map: dict[str, callable(any)] = {
-                        "regs": self.resolve_register_tokens,
+                        "cpu": self.resolve_register_tokens,
                         "stack": self.resolve_stack_tokens,
                         "io": self.resolve_io_tokens,
                         "condition": self.resolve_condition_token,
         }
         self.reg_resolve_list: dict[str, callable(any)] = {
             "A": lambda: self.cpu_.get_reg("A"),
-            "B": lambda: self.cpu_.get_reg("B")
+            "B": lambda: self.cpu_.get_reg("B"),
+            "tick": lambda: self.cpu_.tick_count
         }
         self.io_resolve_map: dict[str, callable(any)] = {
             "in": lambda: self.cpu_.mem.get_in(),
@@ -22,7 +29,9 @@ class logger:
         self.integer_convertion: dict[str, callable(any)] = {
             "hex": (lambda x: ", ".join([hex(_i) for _i in x])),
             "bin": (lambda x: ", ".join([bin(_i) for _i in x])),
-            "dec": (lambda x: ", ".join([str(_i) for _i in x])),
+            "dec": (lambda x: ", ".join([str(tsfb(_i)) for _i in x])),
+            "decbe": (lambda x: ", ".join([str(tsfb(btle(_i))) for _i in x])),
+            "str": (lambda x: "".join([ascii_to_string(_i) for _i in x])),
         }
 
     def resolve_stack_tokens(self):
@@ -32,6 +41,8 @@ class logger:
     def resolve_register_tokens(self, token_list: list[str]) -> str:
         if token_list[0] not in self.reg_resolve_list:
             raise ValueError(f"got unknown register: {token_list[0]}")
+        if len(token_list) == 1:
+            return str(self.reg_resolve_list[token_list[0]]())
         if token_list[1] not in self.integer_convertion:
             raise ValueError(f"got unknown integer format: {token_list[1]}")
         return self.integer_convertion[token_list[1]]([self.reg_resolve_list[token_list[0]]()])

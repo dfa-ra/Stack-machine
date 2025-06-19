@@ -61,6 +61,7 @@ class DataMem:
 
     def write(self, address: int, value: int) -> None:
         value = ltbe(value)
+        # print(address)
         if address <= self.size - 4:
             if address == self.output:
                 self.output_stream.append(value)
@@ -75,8 +76,10 @@ class DataMem:
         if address <= self.size - 4:
             if address == self.input:
                 ret = self.input_stream[0]
+                ret = ret & 0xFFFFFFFF
                 self.input_stream.pop(0)
-                return tsfb(btle(ret))
+
+                return tsfb(ret)
             # Читаем 32-битное слово в big-endian
             ret = 0
             for i in range(4):

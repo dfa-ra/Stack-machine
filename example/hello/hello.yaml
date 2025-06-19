@@ -1,8 +1,8 @@
-name: cat
-limit: 2000
-memory_size: 400
+name: hello
+limit: 500
+memory_size: 200
 input_streams:
-  0x80: [72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100, 0]
+  0x80: []
   0x84: []
 reports:
 #  - name: Step-by-step

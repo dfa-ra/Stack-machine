@@ -111,7 +111,8 @@ class CommandsInvoker:
 
 
 class ConsoleLayout:
-    def __init__(self, ep: int, mem):
+    def __init__(self, ep: int, mem, limit):
+        self.limit =limit
         self.ep = ep
         self.mem = mem
 
@@ -139,8 +140,10 @@ class ConsoleLayout:
         os.system('cls' if os.name == 'nt' else 'clear')
 
     def cpu_run(self):
-        while self.cpu.running and not self.cpu.stop_flag:
+        count = 0
+        while self.cpu.running and not self.cpu.stop_flag and count < self.limit:
             self.cpu.tick()
+            count += 1
             self.render_layout()
 
     def render_layout(self):

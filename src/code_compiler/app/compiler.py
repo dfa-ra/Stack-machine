@@ -4,8 +4,9 @@ from .compilers import CompilerText, CompilerData, CompilerFunc
 
 
 class Compiler:
-    def __init__(self):
+    def __init__(self, file_path):
         self.symbols = []
+        self.file_path = file_path
         self.address_space_count = 0
         self.data_address = 0
         self.functions = {}
@@ -17,10 +18,11 @@ class Compiler:
         self.compiler_func: CompilerFunc = CompilerFunc(self)
 
     def compile_import(self, lines):
+
         for line in lines:
             filename = line.strip('"')
             try:
-                with open(os.path.join("../examples/", filename), 'r') as f:
+                with open(os.path.join(os.path.dirname(self.file_path), filename), 'r') as f:
                     imported_code = f.read()
                     self.compile(imported_code)
             except FileNotFoundError:
@@ -28,15 +30,18 @@ class Compiler:
         self.address_space_count += 1
 
     def compile_data(self, lines):
-        self.data_address = self.compiler_data.compile(lines)
+        self.data_address = self.compiler_data.compile(lines, self.data_address)
 
     def compile_func(self, lines, address_space):
+
         self.data_address = self.compiler_func.compile(lines, address_space, self.data_address)
 
     def compile_text(self, lines, address_space):
+
         self.data_address = self.compiler_text.compile(lines, address_space, self.data_address)
 
     def compile(self, code):
+
         lines = code.strip().split('\n')
         current_section = None
         import_lines = []

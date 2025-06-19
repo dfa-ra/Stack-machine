@@ -10,7 +10,7 @@ def compile_code(file_path: str, build: str):
     if not os.path.exists(build):
         os.makedirs(build)
 
-    compiler = Compiler()
+    compiler = Compiler(file_path)
     compiler.compile(code)
     result = compiler.get_compiled_code()
 

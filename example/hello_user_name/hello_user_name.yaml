@@ -1,8 +1,8 @@
-name: cat
+name: hello_user_name
 limit: 2000
 memory_size: 400
 input_streams:
-  0x80: [72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100, 0]
+  0x80: [82, 111, 109, 97, 110, 0]
   0x84: []
 reports:
 #  - name: Step-by-step
@@ -14,6 +14,7 @@ reports:
     view: |
       numio[0x80]: {io:in:dec}
       numio[0x84]: {io:out:dec}
-      A B {regs:A:hex} {regs:B:dec}
-      {condition:[regs:B:dec]=[1]}
+      A B {cpu:A:hex} {cpu:B:dec}
+      tick_count = {cpu:tick}
+      {condition:[cpu:B:dec]=[1]}
       {condition:[io:out:str]=[1, 2, 3, 4, 5]}

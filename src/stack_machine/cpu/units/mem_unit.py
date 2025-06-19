@@ -14,16 +14,16 @@ class MemUnit:
                 addr = self.cpu.last_alu_output
                 val = self.cpu.vector_stack.pop()
                 self.cpu.mem.write(addr, val[0])
-                self.cpu.mem.write(addr + 1, val[1])
-                self.cpu.mem.write(addr + 2, val[2])
-                self.cpu.mem.write(addr + 3, val[3])
+                self.cpu.mem.write(addr + 4, val[1])
+                self.cpu.mem.write(addr + 8, val[2])
+                self.cpu.mem.write(addr + 12, val[3])
 
             elif "read" in signal:
                 addr = self.cpu.last_alu_output
                 val1 = self.cpu.mem.read(addr)
-                val2 = self.cpu.mem.read(addr + 1)
-                val3 = self.cpu.mem.read(addr + 2)
-                val4 = self.cpu.mem.read(addr + 3)
+                val2 = self.cpu.mem.read(addr + 4)
+                val3 = self.cpu.mem.read(addr + 8)
+                val4 = self.cpu.mem.read(addr + 12)
                 self.cpu.vector_stack.push([val1, val2, val3, val4])
 
         else:

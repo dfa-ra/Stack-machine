@@ -16,6 +16,7 @@ built_in_words = {
     "v+": "v+",
     "v-": "v-",
     "and": "and",
+    "over": "over",
     "dup": "dup",
     "drop": "pop",
     "HALT": "halt",

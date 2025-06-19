@@ -63,7 +63,6 @@ def ltbe(value: int) -> int:
 
 # to signed from bytes
 def tsfb(value: int) -> int:
-
     if value < 0 or value > 0xFFFFFFFF:
         raise ValueError("Value must be a 32-bit integer (0 to 0xFFFFFFFF)")
 
