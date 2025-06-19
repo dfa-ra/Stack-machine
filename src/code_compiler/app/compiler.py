@@ -20,11 +20,12 @@ class Compiler:
         self.compiler_func: CompilerFunc = CompilerFunc(self)
 
     def compile_import(self, lines: List[str]) -> None:
-
         for line in lines:
             filename = line.strip('"')
             try:
-                with open(os.path.join(os.path.dirname(self.file_path), filename), 'r') as f:
+                with open(
+                    os.path.join(os.path.dirname(self.file_path), filename), "r"
+                ) as f:
                     imported_code = f.read()
                     self.compile(imported_code)
             except FileNotFoundError:
@@ -35,16 +36,17 @@ class Compiler:
         self.data_address = self.compiler_data.compile(lines, self.data_address)
 
     def compile_func(self, lines: List[str], address_space: int) -> None:
-
-        self.data_address = self.compiler_func.compile(lines, address_space, self.data_address)
+        self.data_address = self.compiler_func.compile(
+            lines, address_space, self.data_address
+        )
 
     def compile_text(self, lines: List[str], address_space: int) -> None:
-
-        self.data_address = self.compiler_text.compile(lines, address_space, self.data_address)
+        self.data_address = self.compiler_text.compile(
+            lines, address_space, self.data_address
+        )
 
     def compile(self, code: str) -> None:
-
-        lines = code.strip().split('\n')
+        lines = code.strip().split("\n")
         current_section = None
         import_lines = []
         data_lines = []
@@ -52,20 +54,20 @@ class Compiler:
         text_lines = []
 
         for line in lines:
-            line = line.split('#')[0]
+            line = line.split("#")[0]
             line = line.strip()
             if not line:
                 continue
-            if line in ['_data_', '_func_', '_text_', '_import_']:
+            if line in ["_data_", "_func_", "_text_", "_import_"]:
                 current_section = line
                 continue
-            if current_section == '_import_':
+            if current_section == "_import_":
                 import_lines.append(line)
-            elif current_section == '_data_':
+            elif current_section == "_data_":
                 data_lines.append(line)
-            elif current_section == '_func_':
+            elif current_section == "_func_":
                 func_lines.append(line)
-            elif current_section == '_text_':
+            elif current_section == "_text_":
                 text_lines.append(line)
 
         if import_lines:
@@ -78,10 +80,15 @@ class Compiler:
             self.compile_text(text_lines, self.address_space_count)
 
     def get_text_section(self) -> List[str]:
-        return ['   .text'] + self.compiler_func.output_func + ['   _start'] + self.compiler_text.output_text
+        return (
+            ["   .text"]
+            + self.compiler_func.output_func
+            + ["   _start"]
+            + self.compiler_text.output_text
+        )
 
     def get_compiled_code(self) -> str:
-        text = '\n'.join(self.compiler_data.get_data_section())
+        text = "\n".join(self.compiler_data.get_data_section())
         text += "\n"
-        text += '\n'.join(self.get_text_section())
+        text += "\n".join(self.get_text_section())
         return text

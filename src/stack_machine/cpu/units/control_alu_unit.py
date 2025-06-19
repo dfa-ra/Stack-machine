@@ -12,7 +12,6 @@ def run_search(obj: ALU, signals, a: int, b: int, index: int, result_queue) -> N
 
 class ControlAluUnit:
     def __init__(self, cpu):  # type: ignore
-
         self.cpu = cpu
         self.alu1: ALU = ALU(cpu)
         self.alu2: ALU = ALU(cpu)
@@ -66,7 +65,7 @@ class ControlAluUnit:
             p = multiprocessing.Process(
                 target=run_search,
                 args=(obj, signals, a, b, i, results),  # type: ignore
-                name=f"Alu-{i + 1}"
+                name=f"Alu-{i + 1}",
             )
             processes.append(p)
             p.start()

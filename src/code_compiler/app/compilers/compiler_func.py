@@ -13,22 +13,28 @@ class CompilerFunc:
 
     def emit_func(self, command: str, operand: int = None) -> None:  # type: ignore
         if command in commands:
-            self.output_func.append(f"{command} {operand}" if commands[command] else command)
+            self.output_func.append(
+                f"{command} {operand}" if commands[command] else command
+            )
             self.compiler.pc += 1
 
-    def compile(self, lines: List[str], address_space: int, intermediate_var: int) -> int:
+    def compile(
+        self, lines: List[str], address_space: int, intermediate_var: int
+    ) -> int:
         func: List[str] = []
         for line in lines:
-            if line.startswith(':'):
+            if line.startswith(":"):
                 func_name = line[2:-1] + line[-1]
                 self.compiler.functions[func_name] = self.compiler.pc
                 continue
 
             line = line.strip()
-            if line == ';':
-                intermediate_var = self.compiler_text.compile(func, address_space, intermediate_var)
+            if line == ";":
+                intermediate_var = self.compiler_text.compile(
+                    func, address_space, intermediate_var
+                )
                 self.output_func += self.compiler_text.output_text
-                self.emit_func('ret')
+                self.emit_func("ret")
                 self.compiler_text.output_text = []
                 func = []
                 continue

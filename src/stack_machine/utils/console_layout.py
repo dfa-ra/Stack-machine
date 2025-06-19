@@ -5,22 +5,43 @@ from typing import List
 
 from src.stack_machine.console_launch import init_cpu  # type: ignore
 from src.stack_machine.cpu.mem.data_mem import DataMem
-from src.stack_machine.inst_compiler.compiler import get_decompiled_code_debug, get_data_meminfo
+from src.stack_machine.inst_compiler.compiler import (
+    get_decompiled_code_debug,
+    get_data_meminfo,
+)
 
 
 def gen_name(name: str, length: int) -> str:
-    name = "┌" + "─" * (length - 2) + "┐" + "\n" + "│" + name + (length - len(name) - 2) * " " + "│\n" + "└" + "─" * (
-            length - 2) + "┘" + "\n"
+    name = (
+        "┌"
+        + "─" * (length - 2)
+        + "┐"
+        + "\n"
+        + "│"
+        + name
+        + (length - len(name) - 2) * " "
+        + "│\n"
+        + "└"
+        + "─" * (length - 2)
+        + "┘"
+        + "\n"
+    )
     return name
 
 
-def render_block(text: str, x_start: int, y_start: int, width: int, height: int) -> None:
+def render_block(
+    text: str, x_start: int, y_start: int, width: int, height: int
+) -> None:
     # Разбиваем текст на строки и переносим длинные строки
     lines = []
-    for line in text.split('\n'):
+    for line in text.split("\n"):
         # Используем textwrap.wrap для переноса строк
-        wrapped_lines = textwrap.wrap(line, width, replace_whitespace=False, drop_whitespace=False)
-        lines.extend(wrapped_lines if wrapped_lines else [''])  # Добавляем пустую строку, если строка пустая
+        wrapped_lines = textwrap.wrap(
+            line, width, replace_whitespace=False, drop_whitespace=False
+        )
+        lines.extend(
+            wrapped_lines if wrapped_lines else [""]
+        )  # Добавляем пустую строку, если строка пустая
 
     # Ограничиваем количество строк по высоте блока
     for i, line in enumerate(lines):
@@ -28,18 +49,20 @@ def render_block(text: str, x_start: int, y_start: int, width: int, height: int)
             break
         # Убедимся, что строка не превышает ширину блока
         padded_line = line.ljust(width)[:width]
-        print(f"\033[{y_start + i + 1};{x_start + 1}H{padded_line}", end='')
+        print(f"\033[{y_start + i + 1};{x_start + 1}H{padded_line}", end="")
 
 
 def get_instruction() -> str:
-    msg = ("  tick(t) - выполнять программу по тикам\n"
-           "  dump_chunk(dc) - сделать дапм чанка в определённом диапазоне\n"
-           "  delay - установить задержку при работе процессора\n"
-           "  reinit_cpu(rc) - заново проинициализировть cpu\n"
-           "  go - запустить работу\n"
-           "  stop - остановить работу\n"
-           "  inst_mnem(im) - Показать мнемоники инструкций\n"
-           "  inst_byte(ib) - Показать бинарные инструкции\n")
+    msg = (
+        "  tick(t) - выполнять программу по тикам\n"
+        "  dump_chunk(dc) - сделать дапм чанка в определённом диапазоне\n"
+        "  delay - установить задержку при работе процессора\n"
+        "  reinit_cpu(rc) - заново проинициализировть cpu\n"
+        "  go - запустить работу\n"
+        "  stop - остановить работу\n"
+        "  inst_mnem(im) - Показать мнемоники инструкций\n"
+        "  inst_byte(ib) - Показать бинарные инструкции\n"
+    )
     return msg
 
 
@@ -51,59 +74,70 @@ class CommandsInvoker:
         self.commands = {
             "t": lambda args: [
                 console_layout.update_module_data(
-                    3,
-                    get_decompiled_code_debug(self.console_layout.cpu.get_reg("PC"))
+                    3, get_decompiled_code_debug(self.console_layout.cpu.get_reg("PC"))
                 ),
                 self.console_layout.cpu.tick(),
-                console_layout.update_module_data(5, self.console_layout.cpu._print_state()),
+                console_layout.update_module_data(
+                    5, self.console_layout.cpu._print_state()
+                ),
                 console_layout.update_module_data(
                     1,
-                    self.console_layout.cpu.mem.get_meminfo(self.left_chunk_border, self.right_chunk_border)
+                    self.console_layout.cpu.mem.get_meminfo(
+                        self.left_chunk_border, self.right_chunk_border
+                    ),
                 ),
             ],
             "dc": lambda args: [
                 console_layout.update_module_data(
                     1,
-                    self.console_layout.cpu.mem.get_meminfo(self.left_chunk_border, self.right_chunk_border)
+                    self.console_layout.cpu.mem.get_meminfo(
+                        self.left_chunk_border, self.right_chunk_border
+                    ),
                 )
             ],
             "rc": lambda args: [
                 console_layout.reinit_cpu(),
                 console_layout.update_module_data(
-                    3,
-                    get_decompiled_code_debug(self.console_layout.cpu.get_reg("PC"))
+                    3, get_decompiled_code_debug(self.console_layout.cpu.get_reg("PC"))
                 ),
-                console_layout.update_module_data(5, self.console_layout.cpu._print_state()),
+                console_layout.update_module_data(
+                    5, self.console_layout.cpu._print_state()
+                ),
                 console_layout.update_module_data(
                     1,
-                    self.console_layout.cpu.mem.get_meminfo(self.left_chunk_border, self.right_chunk_border)
+                    self.console_layout.cpu.mem.get_meminfo(
+                        self.left_chunk_border, self.right_chunk_border
+                    ),
                 ),
             ],
             "go": lambda args: [
                 console_layout.cpu_run(),
                 console_layout.update_module_data(
-                    3,
-                    get_decompiled_code_debug(self.console_layout.cpu.get_reg("PC"))
+                    3, get_decompiled_code_debug(self.console_layout.cpu.get_reg("PC"))
                 ),
-                console_layout.update_module_data(5, self.console_layout.cpu._print_state()),
+                console_layout.update_module_data(
+                    5, self.console_layout.cpu._print_state()
+                ),
                 console_layout.update_module_data(
                     1,
-                    self.console_layout.cpu.mem.get_meminfo(self.left_chunk_border, self.right_chunk_border)
+                    self.console_layout.cpu.mem.get_meminfo(
+                        self.left_chunk_border, self.right_chunk_border
+                    ),
                 ),
             ],
-            "stop": lambda args: setattr(self.console_layout.cpu, "stop_flag", int(args[1])),
+            "stop": lambda args: setattr(
+                self.console_layout.cpu, "stop_flag", int(args[1])
+            ),
             "im": lambda args: [
                 console_layout.update_module_data(
-                    3,
-                    get_decompiled_code_debug(self.console_layout.cpu.get_reg("PC"))
+                    3, get_decompiled_code_debug(self.console_layout.cpu.get_reg("PC"))
                 )
             ],
             "ib": lambda args: [
                 console_layout.update_module_data(
-                    3,
-                    get_data_meminfo(self.left_chunk_border, self.right_chunk_border)
+                    3, get_data_meminfo(self.left_chunk_border, self.right_chunk_border)
                 )
-            ]
+            ],
         }
 
     def execute(self, command: str, args: List[str]) -> None:
@@ -114,7 +148,7 @@ class CommandsInvoker:
 
 class ConsoleLayout:
     def __init__(self, ep: int, mem: DataMem, limit: int) -> None:
-        self.limit =limit
+        self.limit = limit
         self.ep = ep
         self.mem = mem
 
@@ -139,7 +173,7 @@ class ConsoleLayout:
         self.cpu = init_cpu(self.ep, self.mem)
 
     def clear_screen(self) -> None:
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system("cls" if os.name == "nt" else "clear")
 
     def cpu_run(self) -> None:
         count = 0
@@ -212,7 +246,11 @@ class ConsoleLayout:
                 self.render_layout()
 
             try:
-                print(f"\033[{self.height - (self.height // 6) + 1};17H", end='', flush=True)
+                print(
+                    f"\033[{self.height - (self.height // 6) + 1};17H",
+                    end="",
+                    flush=True,
+                )
                 command = input()
                 if command.lower() == "exit":
                     print("Exiting...")

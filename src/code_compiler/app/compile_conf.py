@@ -2,7 +2,7 @@ from ..config.config import instruction_file
 import yaml  # type: ignore
 
 
-with open(instruction_file, 'r') as f:
+with open(instruction_file, "r") as f:
     data = yaml.safe_load(f)["commands"]
     commands = {cmd["desc"]: cmd.get("operand", False) for cmd in data}
 
@@ -21,4 +21,3 @@ built_in_words = {
     "drop": "pop",
     "HALT": "halt",
 }
-

@@ -7,7 +7,7 @@ from src.stack_machine.utils.bitwise_utils import btle, tsfb
 
 
 def ascii_to_string(num: int) -> str:
-    return ''.join(chr(num))
+    return "".join(chr(num))
 
 
 class logger:
@@ -22,7 +22,7 @@ class logger:
             "condition": self.resolve_condition_token,
             "instruction": self.resolve_instruction_mem,
             "microcode": self.resolve_microcode,
-            "command": self.resolve_command
+            "command": self.resolve_command,
         }
         self.stack_resolve_list: Dict[str, Callable[Any]] = {  # type: ignore
             "data": lambda: self.cpu_.data_stack.stack,
@@ -34,13 +34,13 @@ class logger:
             "B": lambda: self.cpu_.get_reg("B"),
             "T": lambda: self.cpu_.data_stack.get_T(),
             "V_T": lambda: self.cpu_.vector_stack.get_T(),
-            "tick": lambda: self.cpu_.tick_count
+            "tick": lambda: self.cpu_.tick_count,
         }
         self.io_resolve_map: Dict[str, Callable[Any]] = {  # type: ignore
             "in": lambda: self.cpu_.mem.get_in(),
             "out": lambda: self.cpu_.mem.get_out(),
         }
-        self.integer_convertion: Dict[str, Callable[Any]]  = {  # type: ignore
+        self.integer_convertion: Dict[str, Callable[Any]] = {  # type: ignore
             "hex": (lambda x: ", ".join([hex(_i) for _i in x])),
             "bin": (lambda x: ", ".join([bin(_i) for _i in x])),
             "dec": (lambda x: ", ".join([str(tsfb(_i)) for _i in x])),
@@ -51,7 +51,9 @@ class logger:
     def resolve_instruction_mem(self, token_list: list[str]) -> str:
         return get_decompiled_code()
 
-    def resolve_command(self, token_list: list[str]) -> Callable[[tuple[str, int]], None]:
+    def resolve_command(
+        self, token_list: list[str]
+    ) -> Callable[[tuple[str, int]], None]:
         return self.command
 
     def resolve_microcode(self, token_list: list[str]) -> str:
@@ -59,7 +61,7 @@ class logger:
         for key, values in self.micro_command.items():
             line = f"{key}: {', '.join(values)}"
             lines.append(line)
-        return ' | '.join(lines)
+        return " | ".join(lines)
 
     def resolve_stack_tokens(self, token_list: list[str]) -> List[str] | str:
         if token_list[0] not in self.stack_resolve_list:
@@ -68,7 +70,10 @@ class logger:
             return str(self.stack_resolve_list[token_list[0]]())
         if token_list[1] not in self.integer_convertion:
             raise ValueError(f"got unknown integer format: {token_list[1]}")
-        return [self.integer_convertion[token_list[1]]([num]) for num in self.stack_resolve_list[token_list[0]]()]
+        return [
+            self.integer_convertion[token_list[1]]([num])
+            for num in self.stack_resolve_list[token_list[0]]()
+        ]
 
     def resolve_register_tokens(self, token_list: list[str]) -> str:
         if token_list[0] not in self.reg_resolve_list:
@@ -77,21 +82,29 @@ class logger:
             return str(self.reg_resolve_list[token_list[0]]())
         if token_list[1] not in self.integer_convertion:
             raise ValueError(f"got unknown integer format: {token_list[1]}")
-        return self.integer_convertion[token_list[1]]([self.reg_resolve_list[token_list[0]]()])  # type: ignore
+        return self.integer_convertion[token_list[1]](  # type: ignore
+            [self.reg_resolve_list[token_list[0]]()]
+        )
 
     def resolve_io_tokens(self, token_list: list[str]) -> str:
         if token_list[0] not in self.io_resolve_map:
             raise ValueError(f"got unknown io: {token_list[0]}")
         if token_list[1] not in self.integer_convertion:
             raise ValueError(f"got unknown integer format: {token_list[1]}")
-        return self.integer_convertion[token_list[1]](self.io_resolve_map[token_list[0]]())  # type: ignore
+        return self.integer_convertion[token_list[1]](  # type: ignore
+            self.io_resolve_map[token_list[0]]()
+        )
 
     def resolve_condition_token(self, tokens: str) -> str:
         actual_tokens = ":".join(tokens)
-        condition_left = actual_tokens[actual_tokens.find("[") + 1: actual_tokens.find("]")]
+        condition_left = actual_tokens[
+            actual_tokens.find("[") + 1 : actual_tokens.find("]")
+        ]
         init_cond_left = condition_left
         condition_left = condition_left.split(":")  # type: ignore
-        condition_right = actual_tokens[actual_tokens.rfind("[") + 1: actual_tokens.rfind("]")]
+        condition_right = actual_tokens[
+            actual_tokens.rfind("[") + 1 : actual_tokens.rfind("]")
+        ]
         if condition_left[0] in self.token_map:
             condition_left = self.token_map[condition_left[0]](condition_left[1:])
         else:
@@ -108,12 +121,18 @@ class logger:
         else:
             raise ValueError(f"bad token was given: {tokens}")
 
-
     def run_log(self, condition: str) -> None:
         for i in self.fmt:
             if i["slice"] == condition:
-                print(i["name"] + ": " + re.sub(r'\{([^{}]+)\}', lambda m: self.resolve_log_token(m.group(1)),
-                                                i["view"]).replace("\n", "\n")[:-1])
+                print(
+                    i["name"]
+                    + ": "
+                    + re.sub(
+                        r"\{([^{}]+)\}",
+                        lambda m: self.resolve_log_token(m.group(1)),
+                        i["view"],
+                    ).replace("\n", "\n")[:-1]
+                )
 
     def each_tick_logs(self, micro_command: Dict[str, List[str]]) -> None:
         self.micro_command = micro_command

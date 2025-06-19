@@ -20,16 +20,20 @@ class LoopSample:
             f"sw_to_imm_addr {self.counter_address}",
             f"jmp -{self.body_len + 4 + len(self.steps_to_check_data) + 1}",
             "pop",
-            "pop"
+            "pop",
         ]
 
     def init_steps_to_check_data(self) -> None:
-        self.steps_to_check_data = [
-            "over",
-            "dup",
-            f"lw_from_imm_addr {self.counter_address}",
-            "over",
-            ] + get_if_sample(self.compare_token) + [
-            f"if {self.body_len + 1 + 5}",
-            "over",
-        ]
+        self.steps_to_check_data = (
+            [
+                "over",
+                "dup",
+                f"lw_from_imm_addr {self.counter_address}",
+                "over",
+            ]
+            + get_if_sample(self.compare_token)
+            + [
+                f"if {self.body_len + 1 + 5}",
+                "over",
+            ]
+        )

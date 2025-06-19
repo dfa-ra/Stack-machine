@@ -18,8 +18,10 @@ def compile_code(file_path: str, build: str) -> None:
         mnemonic_code_file.write(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     path = "examples/program.forth"
     wd = os.path.dirname(os.path.abspath(__file__))
 
-    compile_code(wd + "/" + path, "/media/ra/_work/ra/ITMO/CSA/lab4/src/code_compiler/examples/")
+    compile_code(
+        wd + "/" + path, "/media/ra/_work/ra/ITMO/CSA/lab4/src/code_compiler/examples/"
+    )

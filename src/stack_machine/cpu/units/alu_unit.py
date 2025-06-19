@@ -3,7 +3,6 @@ from typing import List
 
 class ALU:
     def __init__(self, cpu) -> None:  # type: ignore
-
         self.right: int = 0
         self.left: int = 0
         self.cpu = cpu

@@ -43,12 +43,14 @@ def test_cat(golden: GoldenTestFixture) -> None:
 
     assert out_emulator == golden.out["output"]
 
+
 @pytest.mark.golden_test("golden/hello/test_conf.yaml")
 def test_hello(golden: GoldenTestFixture) -> None:
     name = "hello"
     out_emulator = run_default(name)
 
     assert out_emulator == golden.out["output"]
+
 
 @pytest.mark.golden_test("golden/hello_user_name/test_conf.yaml")
 def test_hello_user_name(golden: GoldenTestFixture) -> None:
@@ -57,12 +59,14 @@ def test_hello_user_name(golden: GoldenTestFixture) -> None:
 
     assert out_emulator == golden.out["output"]
 
+
 @pytest.mark.golden_test("golden/prob2/test_conf.yaml")
 def test_prob2(golden: GoldenTestFixture) -> None:
     name = "prob2"
     out_emulator = run_default(name)
 
     assert out_emulator == golden.out["output"]
+
 
 @pytest.mark.golden_test("golden/sort/test_conf.yaml")
 def test_sort(golden: GoldenTestFixture) -> None:
@@ -71,12 +75,14 @@ def test_sort(golden: GoldenTestFixture) -> None:
 
     assert out_emulator == golden.out["output"]
 
+
 @pytest.mark.golden_test("golden/ssm/test_conf.yaml")
 def test_ssm(golden: GoldenTestFixture) -> None:
     name = "ssm"
     out_emulator = run_default(name)
 
     assert out_emulator == golden.out["output"]
+
 
 @pytest.mark.golden_test("golden/vsm/test_conf.yaml")
 def test_vsm(golden: GoldenTestFixture) -> None:

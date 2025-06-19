@@ -27,6 +27,6 @@ def console_launch(cfg_path: str, build_dir: str) -> None:
     logger_.run_assert()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cfg_path = "/media/ra/_work/ra/ITMO/CSA/lab4/stack_machine/zalupa.yaml"
     console_launch(cfg_path, "../build")

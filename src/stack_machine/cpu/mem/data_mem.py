@@ -6,7 +6,7 @@ class DataMem:
     def __init__(self, io_addr: list[int], io_data: list[int]):
         self.data_mem_path = data_mem_path
         # Читаем бинарный файл
-        with open(data_mem_path, 'rb') as f:
+        with open(data_mem_path, "rb") as f:
             byte_data = f.read()
             if len(byte_data) % 4 != 0:
                 raise ValueError("Binary file size must be a multiple of 4 bytes")
@@ -19,7 +19,7 @@ class DataMem:
 
     def get_meminfo(self, start: int = 0, end: int = 0) -> str:
         mem_info: str = ""
-        with open(self.data_mem_path, 'rb') as f:
+        with open(self.data_mem_path, "rb") as f:
             byte_data = f.read()
             if end == 0:
                 end = len(byte_data)
@@ -31,7 +31,7 @@ class DataMem:
                 # Адрес в шестнадцатеричном формате
                 addr = i
                 # Получаем до 12 байт для текущей строки
-                chunk = byte_data[i:i + 12]
+                chunk = byte_data[i : i + 12]
                 # Форматируем байты в строку, разбивая на чанки по 4 байта
                 bytes_str = []
                 for j in range(12):
@@ -44,7 +44,9 @@ class DataMem:
                 group2 = " ".join(bytes_str[4:8])
                 group3 = " ".join(bytes_str[8:12])
                 # Выводим строку
-                mem_info += f"  {addr:04X} | {group1: <10} | {group2: <10} | {group3: <10} |"
+                mem_info += (
+                    f"  {addr:04X} | {group1: <10} | {group2: <10} | {group3: <10} |"
+                )
                 mem_info += "\n"
         return mem_info
 
@@ -55,7 +57,7 @@ class DataMem:
         return self.input_stream
 
     def _sync_to_file(self) -> None:
-        with open(self.data_mem_path, 'wb') as f:
+        with open(self.data_mem_path, "wb") as f:
             f.write(self.mem)
 
     def write(self, address: int, value: int) -> None:

@@ -9,11 +9,13 @@ from ...utils.bitwise_utils import tsfb
 
 class InstructionMem:
     def __init__(self) -> None:
-        with open(instruction_file, 'r') as f:
+        with open(instruction_file, "r") as f:
             data = yaml.safe_load(f)["commands"]
-            self.opcode_has_arg = {cmd["opcode"]: cmd.get("operand", False) for cmd in data}
+            self.opcode_has_arg = {
+                cmd["opcode"]: cmd.get("operand", False) for cmd in data
+            }
 
-        with open(instruction_mem_path, 'rb') as f:
+        with open(instruction_mem_path, "rb") as f:
             byte_data = f.read()
 
         self.inst: List[Tuple[int, int | None]] = []
@@ -29,8 +31,10 @@ class InstructionMem:
 
             if has_arg:
                 if index + 4 > len(byte_data):
-                    raise ValueError(f"Incomplete argument for opcode {hex(opcode)} at byte {index - 1}")
-                value = struct.unpack_from('<I', byte_data, index)[0]
+                    raise ValueError(
+                        f"Incomplete argument for opcode {hex(opcode)} at byte {index - 1}"
+                    )
+                value = struct.unpack_from("<I", byte_data, index)[0]
                 value = tsfb(value)
                 index += 4
                 self.inst.append((opcode, value))
@@ -41,4 +45,3 @@ class InstructionMem:
         if addr < 0 or addr >= len(self.inst):
             raise ValueError(f"Trying to access instruction out of bounds: {addr}")
         return self.inst[addr]
-

@@ -11,17 +11,11 @@ from src.stack_machine.inst_compiler.compiler import get_mnemonic_by_opcode
 @dataclass
 class SignalHandler:
     name: str
-    action: Callable[['Cpu', int], None]
+    action: Callable[["Cpu", int], None]
 
 
 class Cpu:
-    def __init__(
-            self,
-            stack_size: int,
-            mem: DataMem,
-            i_mem: InstructionMem,
-            ep: int
-    ):
+    def __init__(self, stack_size: int, mem: DataMem, i_mem: InstructionMem, ep: int):
         self.data_stack: Stack = Stack(stack_size)
         self.ret_stack: Stack = Stack(stack_size)
         self.vector_stack: Stack = Stack(stack_size)
@@ -42,24 +36,37 @@ class Cpu:
 
         # Определяем обработчики сигналов
         self.load_signals_handlers: Dict[str, SignalHandler] = {
-            "load_imm": SignalHandler("load_imm", lambda cpu, imm: cpu.set_reg("B", imm)),
-            "load_T_a": SignalHandler("load_T_a", lambda cpu, _: cpu.set_reg("A", cpu.data_stack.get_T())),
-            "load_T_b": SignalHandler("load_T_b", lambda cpu, _: cpu.set_reg("B", cpu.data_stack.get_T())),
-            "load_PC": SignalHandler("load_PC", lambda cpu, _: cpu.set_reg("A", cpu.get_reg("PC"))),
+            "load_imm": SignalHandler(
+                "load_imm", lambda cpu, imm: cpu.set_reg("B", imm)
+            ),
+            "load_T_a": SignalHandler(
+                "load_T_a", lambda cpu, _: cpu.set_reg("A", cpu.data_stack.get_T())
+            ),
+            "load_T_b": SignalHandler(
+                "load_T_b", lambda cpu, _: cpu.set_reg("B", cpu.data_stack.get_T())
+            ),
+            "load_PC": SignalHandler(
+                "load_PC", lambda cpu, _: cpu.set_reg("A", cpu.get_reg("PC"))
+            ),
         }
 
         self.fetch_signals_handlers: Dict[str, SignalHandler] = {
-            "fetch_pc": SignalHandler("fetch_pc", lambda cpu, _: cpu.set_reg("PC", cpu.last_alu_output)),
+            "fetch_pc": SignalHandler(
+                "fetch_pc", lambda cpu, _: cpu.set_reg("PC", cpu.last_alu_output)
+            ),
             "push_stack": SignalHandler("push_stack", lambda cpu, _: push_stack(cpu)),
             "pop_stack": SignalHandler("pop_stack", lambda cpu, _: pop_stack(cpu)),
             "call": SignalHandler("call", lambda cpu, _: call(cpu)),
-            "restore_pc": SignalHandler("restore_pc",
-                                        lambda cpu, _: restore_pc(cpu)),
+            "restore_pc": SignalHandler("restore_pc", lambda cpu, _: restore_pc(cpu)),
             "over": SignalHandler("over", lambda cpu, _: over_stack(cpu)),
-            "kill_cpu": SignalHandler("kill_cpu", lambda cpu, _: setattr(cpu, "running", False)),
+            "kill_cpu": SignalHandler(
+                "kill_cpu", lambda cpu, _: setattr(cpu, "running", False)
+            ),
         }
 
-    def tick(self, tick_logs: Callable[[Dict[str, List[str]]], None], command_log) -> None:  # type: ignore
+    def tick(  # type: ignore
+        self, tick_logs: Callable[[Dict[str, List[str]]], None], command_log
+    ) -> None:
         pc = self.get_reg("PC")
         if pc < 0 or pc >= len(self.i_mem.inst) or not self.running:
             self.running = False
@@ -71,10 +78,10 @@ class Cpu:
         for micro_command in micro_commands:
             self.tick_count += 1
 
-            type_s = micro_command.get('type', [])
-            alu_s = micro_command.get('alu', [])
-            mem_s = micro_command.get('mem', [])
-            cpu_s = micro_command.get('cpu', [])
+            type_s = micro_command.get("type", [])
+            alu_s = micro_command.get("alu", [])
+            mem_s = micro_command.get("mem", [])
+            cpu_s = micro_command.get("cpu", [])
 
             self.simd_type = 0
             if type_s != []:
@@ -151,5 +158,5 @@ def call(cpu: Cpu) -> None:
 
 
 def restore_pc(cpu: Cpu) -> None:
-    cpu.set_reg("PC", cpu.ret_stack.get_T()),  # type: ignore
+    (cpu.set_reg("PC", cpu.ret_stack.get_T()),)  # type: ignore
     cpu.ret_stack.pop()

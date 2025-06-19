@@ -1,5 +1,5 @@
 def is_hex_string(s: str) -> bool:
-    if not s.startswith('0x'):
+    if not s.startswith("0x"):
         return False
     try:
         int(s, 16)

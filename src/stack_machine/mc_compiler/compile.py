@@ -21,8 +21,10 @@ def encode_mc(signal_groups: list[Dict[str, str]]) -> int:
     return result
 
 
-def compile_yaml_to_bin(yaml_path: Path, out_bin_path: Path, out_table_path: Path) -> None:
-    with open(yaml_path, 'r') as f:
+def compile_yaml_to_bin(
+    yaml_path: Path, out_bin_path: Path, out_table_path: Path
+) -> None:
+    with open(yaml_path, "r") as f:
         data = yaml.safe_load(f)
 
     microcode_bin = []
@@ -49,7 +51,9 @@ def compile_yaml_to_bin(yaml_path: Path, out_bin_path: Path, out_table_path: Pat
 
 
 def compile_micro_command() -> None:
-    compile_yaml_to_bin(Path(source_mc_file), Path(microcode_mem_file), Path(op_table_file))
+    compile_yaml_to_bin(
+        Path(source_mc_file), Path(microcode_mem_file), Path(op_table_file)
+    )
 
 
 if __name__ == "__main__":
