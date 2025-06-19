@@ -1,23 +1,25 @@
 import os
+from typing import List, Dict
 
-from .compilers import CompilerText, CompilerData, CompilerFunc
+from src.code_compiler.app.compilers import CompilerText, CompilerData, CompilerFunc
+from src.code_compiler.app.symbol import Symbol
 
 
 class Compiler:
-    def __init__(self, file_path):
-        self.symbols = []
+    def __init__(self, file_path: str) -> None:
+        self.symbols: List[List[Symbol]] = []
         self.file_path = file_path
         self.address_space_count = 0
         self.data_address = 0
-        self.functions = {}
-        self.output = []
+        self.functions: Dict[str, int] = {}
+        self.output: List[str] = []
         self.pc = 0
 
         self.compiler_data: CompilerData = CompilerData(self)
         self.compiler_text: CompilerText = CompilerText(self)
         self.compiler_func: CompilerFunc = CompilerFunc(self)
 
-    def compile_import(self, lines):
+    def compile_import(self, lines: List[str]) -> None:
 
         for line in lines:
             filename = line.strip('"')
@@ -29,18 +31,18 @@ class Compiler:
                 print(f"Ошибка: файл {filename} не найден")
         self.address_space_count += 1
 
-    def compile_data(self, lines):
+    def compile_data(self, lines: List[str]) -> None:
         self.data_address = self.compiler_data.compile(lines, self.data_address)
 
-    def compile_func(self, lines, address_space):
+    def compile_func(self, lines: List[str], address_space: int) -> None:
 
         self.data_address = self.compiler_func.compile(lines, address_space, self.data_address)
 
-    def compile_text(self, lines, address_space):
+    def compile_text(self, lines: List[str], address_space: int) -> None:
 
         self.data_address = self.compiler_text.compile(lines, address_space, self.data_address)
 
-    def compile(self, code):
+    def compile(self, code: str) -> None:
 
         lines = code.strip().split('\n')
         current_section = None
@@ -75,10 +77,10 @@ class Compiler:
         if text_lines:
             self.compile_text(text_lines, self.address_space_count)
 
-    def get_text_section(self):
+    def get_text_section(self) -> List[str]:
         return ['   .text'] + self.compiler_func.output_func + ['   _start'] + self.compiler_text.output_text
 
-    def get_compiled_code(self):
+    def get_compiled_code(self) -> str:
         text = '\n'.join(self.compiler_data.get_data_section())
         text += "\n"
         text += '\n'.join(self.get_text_section())

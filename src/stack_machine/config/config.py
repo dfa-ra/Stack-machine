@@ -1,6 +1,6 @@
 import os
 
-import yaml
+import yaml  # type: ignore
 
 wd = os.path.dirname(os.path.abspath(__file__))
 

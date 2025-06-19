@@ -1,6 +1,6 @@
-from src.stack_machine.config.config import instruction_file
-from src.stack_machine.utils.bitwise_utils import set_int_cut
-import yaml
+from src.stack_machine.config import instruction_file
+from ...utils.bitwise_utils import set_int_cut
+import yaml  # type: ignore
 
 mc_addr = [0, 7]
 imm = [8, 31]
@@ -21,9 +21,9 @@ def load_opcode_map_from_yaml(filepath: str) -> dict[str, int]:
 
 class Instruction:
     def __init__(self, val: tuple[int, int]):
-        self.mc_addr = val[0]
-        self.imm = val[1] if val[1] is not None else None
-        self.bits = (val[0] << 8) | (self.imm if self.imm is not None else 0)
+        self.mc_addr: int = val[0]
+        self.imm: int | None = val[1] if val[1] is not None else None
+        self.bits: int = (val[0] << 8) | (self.imm if self.imm is not None else 0)
 
     inst = load_opcode_map_from_yaml(instruction_file)
 

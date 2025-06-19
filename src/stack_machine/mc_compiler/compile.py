@@ -1,12 +1,14 @@
-import yaml
+from typing import Dict
+
+import yaml  # type: ignore
 import struct
 from pathlib import Path
 
 from src.stack_machine.cpu.micro_command.micro_command_description import mc_sigs_info
-from src.stack_machine.config.config import microcode_mem_file, op_table_file, source_mc_file
+from src.stack_machine.config import microcode_mem_file, op_table_file, source_mc_file
 
 
-def encode_mc(signal_groups: list[dict]) -> int:
+def encode_mc(signal_groups: list[Dict[str, str]]) -> int:
     result = 0
     for group in signal_groups:
         unit = group["unit"]
@@ -19,7 +21,7 @@ def encode_mc(signal_groups: list[dict]) -> int:
     return result
 
 
-def compile_yaml_to_bin(yaml_path: Path, out_bin_path: Path, out_table_path: Path):
+def compile_yaml_to_bin(yaml_path: Path, out_bin_path: Path, out_table_path: Path) -> None:
     with open(yaml_path, 'r') as f:
         data = yaml.safe_load(f)
 
@@ -46,7 +48,7 @@ def compile_yaml_to_bin(yaml_path: Path, out_bin_path: Path, out_table_path: Pat
         yaml.dump({"op_table": op_table}, f)
 
 
-def compile_micro_command():
+def compile_micro_command() -> None:
     compile_yaml_to_bin(Path(source_mc_file), Path(microcode_mem_file), Path(op_table_file))
 
 

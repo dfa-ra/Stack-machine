@@ -1,6 +1,4 @@
-import os
-
-from src.stack_machine.config.config import data_mem_path
+from src.stack_machine.config import data_mem_path
 from src.stack_machine.utils.bitwise_utils import btle, ltbe, tsfb
 
 
@@ -19,11 +17,12 @@ class DataMem:
         self.input_stream = io_data
         self.output_stream: list[int] = []
 
-    def get_meminfo(self, start: int = 0, end: int = 0):
+    def get_meminfo(self, start: int = 0, end: int = 0) -> str:
         mem_info: str = ""
         with open(self.data_mem_path, 'rb') as f:
             byte_data = f.read()
-            if end == 0: end = len(byte_data)
+            if end == 0:
+                end = len(byte_data)
             # Вывод таблицы
             mem_info += "  Addr |  0  1  2  3 |  4  5  6  7 |  8  9 10 11 |\n"
             mem_info += "  -----|-------------|-------------|-------------|\n"
@@ -49,13 +48,13 @@ class DataMem:
                 mem_info += "\n"
         return mem_info
 
-    def get_out(self):
+    def get_out(self) -> list[int]:
         return self.output_stream
 
-    def get_in(self):
+    def get_in(self) -> list[int]:
         return self.input_stream
 
-    def _sync_to_file(self):
+    def _sync_to_file(self) -> None:
         with open(self.data_mem_path, 'wb') as f:
             f.write(self.mem)
 

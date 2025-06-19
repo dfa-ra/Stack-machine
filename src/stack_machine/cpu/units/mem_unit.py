@@ -1,14 +1,15 @@
 # если читает, кладет в A. адрес берется из imm (из инструкции) и верхушки стэка
+from typing import List
 
 
 class MemUnit:
-    def __init__(self, cpu):
+    def __init__(self, cpu):  # type: ignore
         self.cpu = cpu
 
         self.need_mem = [0]
         self.write_read = [1]
 
-    def handle(self, signal):
+    def handle(self, signal: List[str]) -> None:
         if self.cpu.simd_type == 1:
             if "write" in signal:
                 addr = self.cpu.last_alu_output

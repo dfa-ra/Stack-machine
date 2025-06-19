@@ -1,10 +1,10 @@
 import struct
 from typing import List, Dict
 
-import yaml
+import yaml  # type: ignore
 
-from src.stack_machine.config.config import microcode_mem_file, op_table_file
-from .micro_command_description import mc_sigs_info
+from src.stack_machine.config import microcode_mem_file, op_table_file
+from src.stack_machine.cpu.micro_command.micro_command_description import mc_sigs_info
 
 
 class MicroCommand:
@@ -21,7 +21,7 @@ class MicroCommand:
     def load_opcode_table(cls) -> Dict[int, int]:
         with open(cls.op_table_path, "r") as op_table_f:
             content = yaml.safe_load(op_table_f)
-        return content["op_table"]
+        return content["op_table"]  # type: ignore
 
     @classmethod
     def decode_mc_word(cls, word: int) -> Dict[str, List[str]]:

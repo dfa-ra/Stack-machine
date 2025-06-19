@@ -1,31 +1,32 @@
 from typing import List
 
-from ..compile_conf import built_in_words, commands
-from ..samples import LoopSample, get_if_sample
-from ..scope import Scope
-from ..symbol import Symbol
-from ..utils import is_hex_string, hex_to_int
+from src.code_compiler.app.compile_conf import built_in_words, commands
+from src.code_compiler.app.samples.loop_sample import LoopSample
+from src.code_compiler.app.samples.if_sample import get_if_sample
+from src.code_compiler.app.scope import Scope
+from src.code_compiler.app.symbol import Symbol
+from src.code_compiler.app.utils import is_hex_string, hex_to_int
 
 
 class CompilerText:
-    def __init__(self, compiler):
+    def __init__(self, compiler) -> None:  # type: ignore
         self.compiler = compiler
         self.intermediate_var = 0
         self.scope = Scope()
-        self.output_text = []
+        self.output_text: List[str] = []
         self.loop_flag = 0
         self.loop_sample: List[LoopSample] = []
         self.if_sample: List[LoopSample] = []
         self.compare_token = ""
 
-    def emit(self, command, operand=None):
+    def emit(self, command: str, operand: int = None) -> None:  # type: ignore
         if command in commands:
             self.scope.add_text(f"{command} {operand}" if commands[command] else command)
             self.compiler.pc += 1
         else:
             self.scope.add_text(f"; {command}")
 
-    def compile(self, lines, address_space, intermediate_var):
+    def compile(self, lines: List[str], address_space: int, intermediate_var: int) -> int:
         self.intermediate_var = intermediate_var
         self.scope.add_scope([])
         for line in lines:
@@ -83,7 +84,7 @@ class CompilerText:
         self.output_text = self.scope.get_scope()
         return self.intermediate_var
 
-    def compile_text(self, token, address_space):
+    def compile_text(self, token: str, address_space: int) -> None:
         if len(self.compiler.symbols) > 0 and address_space < len(self.compiler.symbols) and token in \
                 self.compiler.symbols[address_space]:
             if self.compiler.symbols[address_space][token].type == 'array':
@@ -147,7 +148,7 @@ class CompilerText:
             name = token[1:]
             self.emit('push_imm', self.compiler.symbols[address_space][name].address)
         elif token.isdigit() or (token.startswith("-") and token[1:].isdigit()):
-            self.emit('push_imm', token)
+            self.emit('push_imm', int(token))
         elif is_hex_string(token):
             self.emit('push_imm', hex_to_int(token))
         elif token in built_in_words:

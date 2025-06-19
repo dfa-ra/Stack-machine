@@ -1,7 +1,7 @@
 import subprocess
 from pathlib import Path
 import pytest
-from pytest_golden.plugin import GoldenTestFixture
+from pytest_golden.plugin import GoldenTestFixture  # type: ignore
 import sys
 
 ROOT_PATH = (Path(__file__).parent / "../../").resolve()

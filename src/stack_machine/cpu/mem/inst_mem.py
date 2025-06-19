@@ -1,12 +1,14 @@
-import yaml
+from typing import Tuple, List
+
+import yaml  # type: ignore
 import struct
 
-from src.stack_machine.config.config import instruction_file, instruction_mem_path
-from src.stack_machine.utils.bitwise_utils import btle, ltbe, tsfb
+from src.stack_machine.config import instruction_file, instruction_mem_path
+from ...utils.bitwise_utils import tsfb
 
 
 class InstructionMem:
-    def __init__(self):
+    def __init__(self) -> None:
         with open(instruction_file, 'r') as f:
             data = yaml.safe_load(f)["commands"]
             self.opcode_has_arg = {cmd["opcode"]: cmd.get("operand", False) for cmd in data}
@@ -14,7 +16,7 @@ class InstructionMem:
         with open(instruction_mem_path, 'rb') as f:
             byte_data = f.read()
 
-        self.inst = []
+        self.inst: List[Tuple[int, int | None]] = []
         index = 0
 
         while index < len(byte_data):
@@ -35,7 +37,7 @@ class InstructionMem:
             else:
                 self.inst.append((opcode, None))
 
-    def get_inst(self, addr: int) -> tuple:
+    def get_inst(self, addr: int) -> Tuple[int, None | int]:
         if addr < 0 or addr >= len(self.inst):
             raise ValueError(f"Trying to access instruction out of bounds: {addr}")
         return self.inst[addr]

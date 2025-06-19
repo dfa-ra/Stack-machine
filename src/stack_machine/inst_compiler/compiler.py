@@ -1,13 +1,13 @@
 import struct
-from typing import Tuple
+from typing import Tuple, List, Dict
 
-import yaml
+import yaml  # type: ignore
 
-from src.stack_machine.config.config import instruction_mem_path, instruction_file, data_mem_path
-from src.stack_machine.utils.bitwise_utils import ltbe, btle
+from src.stack_machine.config import instruction_mem_path, instruction_file, data_mem_path
+from ..utils.bitwise_utils import ltbe
 
 
-def load_opcodes(yaml_file: str) -> dict:
+def load_opcodes(yaml_file: str) -> Dict[str, List[str]]:
     try:
         with open(yaml_file, 'r') as f:
             data = yaml.load(f, Loader=yaml.SafeLoader)
@@ -19,16 +19,15 @@ def load_opcodes(yaml_file: str) -> dict:
     return opcodes
 
 
-def convert_to_binary(input_file: str, memory_size: int) -> int | None:
+def convert_to_binary(input_file: str, memory_size: int) -> int:
     commands = load_opcodes(instruction_file)
-    instructions = []
-    data_entries = []
+    instructions: List[Tuple[str, int | None]] = []
+    data_entries: List[Tuple[int, str, List[int]]] = []
     addr_set = set()
-    proc_addresses = {}  # Словарь для адресов процедур (+, -)
 
     current_section = None
-    start_address = None
-    instruction_offset = 0
+    start_address = -1
+    instruction_offset: int = 0
 
     with open(input_file, 'r') as f:
         for line_number, line in enumerate(f, 1):
@@ -97,7 +96,7 @@ def convert_to_binary(input_file: str, memory_size: int) -> int | None:
 
             elif current_section == 'text':
                 if parts[0] == '_start':
-                    if start_address is not None:
+                    if start_address != -1:
                         raise ValueError(f"Line {line_number}: Multiple _start directives found")
                     start_address = instruction_offset
                     continue
@@ -125,7 +124,7 @@ def convert_to_binary(input_file: str, memory_size: int) -> int | None:
                 raise ValueError(f"Line {line_number}: No section defined (.data, .text, or .proc)")
 
     with open(instruction_mem_path, 'wb') as f:
-        for opcode, value in instructions:
+        for opcode, value in instructions:  # type: ignore
             f.write(struct.pack('B', opcode))
             if value is not None:
                 f.write(struct.pack('<I', value))
@@ -156,14 +155,14 @@ def convert_to_binary(input_file: str, memory_size: int) -> int | None:
     return start_address
 
 
-def get_mnemonic_by_opcode(opcode: int) -> str:
+def get_mnemonic_by_opcode(opcode: int):  # type: ignore
     with open(instruction_file, 'r') as f:
         commands = yaml.safe_load(f)['commands']
     opcode_to_mnemonic = {cmd['opcode']: cmd['desc'] for cmd in commands}
     return opcode_to_mnemonic.get(opcode, f"UNKNOWN_{hex(opcode)}")
 
 
-def get_decompiled_code_debug(num_line: int = 0):
+def get_decompiled_code_debug(num_line: int = 0) -> str:
     with open(instruction_file, 'r') as f:
         data = yaml.safe_load(f)["commands"]
         opcode_to_mnemonic = {cmd["opcode"]: cmd["desc"] for cmd in data}
@@ -203,7 +202,7 @@ def get_decompiled_code_debug(num_line: int = 0):
     return "\n".join(result)
 
 
-def get_decompiled_code():
+def get_decompiled_code() -> str:
     with open(instruction_file, 'r') as f:
         data = yaml.safe_load(f)["commands"]
         opcode_to_mnemonic = {cmd["opcode"]: cmd["desc"] for cmd in data}
@@ -238,11 +237,13 @@ def get_decompiled_code():
 
     return "\n".join(result)
 
-def get_data_meminfo(start: int = 0, end: int = 0):
+
+def get_data_meminfo(start: int = 0, end: int = 0) -> str:
     mem_info: str = ""
     with open(instruction_mem_path, 'rb') as f:
         byte_data = f.read()
-        if end == 0: end = len(byte_data)
+        if end == 0:
+            end = len(byte_data)
         # Вывод таблицы
         mem_info += "  Addr |  0  1  2  3 |  4  5  6  7 |  8  9 10 11 |\n"
         mem_info += "  -----|-------------|-------------|-------------|\n"

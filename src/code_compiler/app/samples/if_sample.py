@@ -1,4 +1,7 @@
-def get_if_sample(token):
+from typing import List
+
+
+def get_if_sample(token: str) -> List[str]:
     result = []
     if token == "<":  # a < b | b - a + 1 > 0
         result = [
@@ -56,6 +59,5 @@ def get_if_sample(token):
             "jmp 1",
             "push_imm 0"
         ]
-
 
     return result

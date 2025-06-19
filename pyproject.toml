@@ -1,0 +1,25 @@
+line-length = 150
+target-version = "py312"
+fix = false
+show-source = true
+
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = true
+line-ending = "lf"
+
+docstring-code-format = true
+
+select = ["ALL"]
+
+ignore = [
+  "D100",
+  "ANN101",
+]
+
+exclude = [
+  ".venv",
+  "__pycache__",
+  ".git",
+  "build",
+]

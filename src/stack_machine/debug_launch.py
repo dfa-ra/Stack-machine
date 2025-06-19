@@ -1,14 +1,13 @@
-import os
 
-import yaml
+import yaml  # type: ignore
 
-from .cpu.mem import DataMem
+from src.stack_machine.cpu.mem import DataMem
 from .init_cpu import compile_code
 from .mc_compiler.compile import compile_micro_command
 from .utils.console_layout import ConsoleLayout
 
 
-def debug_launch(cfg_path, build_dir):
+def debug_launch(cfg_path: str, build_dir: str) -> None:
     compile_micro_command()
     conf = yaml.safe_load(open(cfg_path))
     io_ports = []

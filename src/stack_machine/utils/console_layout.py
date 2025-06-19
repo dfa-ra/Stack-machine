@@ -1,23 +1,25 @@
 import os
 import textwrap
 import time
+from typing import List
 
-from ..inst_compiler.compiler import get_decompiled_code_debug, get_data_meminfo
-from ..console_launch import init_cpu
+from src.stack_machine.console_launch import init_cpu  # type: ignore
+from src.stack_machine.cpu.mem.data_mem import DataMem
+from src.stack_machine.inst_compiler.compiler import get_decompiled_code_debug, get_data_meminfo
 
 
-def gen_name(name: str, length: int):
+def gen_name(name: str, length: int) -> str:
     name = "┌" + "─" * (length - 2) + "┐" + "\n" + "│" + name + (length - len(name) - 2) * " " + "│\n" + "└" + "─" * (
             length - 2) + "┘" + "\n"
     return name
 
 
-def render_block(text, x_start, y_start, width, height):
+def render_block(text: str, x_start: int, y_start: int, width: int, height: int) -> None:
     # Разбиваем текст на строки и переносим длинные строки
     lines = []
     for line in text.split('\n'):
         # Используем textwrap.wrap для переноса строк
-        wrapped_lines = textwrap.wrap(line, width=width, replace_whitespace=False, drop_whitespace=False)
+        wrapped_lines = textwrap.wrap(line, width, replace_whitespace=False, drop_whitespace=False)
         lines.extend(wrapped_lines if wrapped_lines else [''])  # Добавляем пустую строку, если строка пустая
 
     # Ограничиваем количество строк по высоте блока
@@ -29,7 +31,7 @@ def render_block(text, x_start, y_start, width, height):
         print(f"\033[{y_start + i + 1};{x_start + 1}H{padded_line}", end='')
 
 
-def get_instruction():
+def get_instruction() -> str:
     msg = ("  tick(t) - выполнять программу по тикам\n"
            "  dump_chunk(dc) - сделать дапм чанка в определённом диапазоне\n"
            "  delay - установить задержку при работе процессора\n"
@@ -42,9 +44,10 @@ def get_instruction():
 
 
 class CommandsInvoker:
-    def __init__(self, console_layout):
-        self.left_chunk_border = 0
-        self.right_chunk_border = 0
+    def __init__(self, console_layout):  # type: ignore
+        self.left_chunk_border: int = 0
+        self.right_chunk_border: int = 0
+        self.console_layout = console_layout
         self.commands = {
             "t": lambda args: [
                 console_layout.update_module_data(
@@ -102,22 +105,21 @@ class CommandsInvoker:
                 )
             ]
         }
-        self.console_layout = console_layout
 
-    def execute(self, command, args):
+    def execute(self, command: str, args: List[str]) -> None:
         if command in self.commands.keys():
-            self.commands[command](args)
+            self.commands[command](args)  # type: ignore
             self.console_layout.render_layout()
 
 
 class ConsoleLayout:
-    def __init__(self, ep: int, mem, limit):
+    def __init__(self, ep: int, mem: DataMem, limit: int) -> None:
         self.limit =limit
         self.ep = ep
         self.mem = mem
 
         self.cpu = init_cpu(self.ep, self.mem)
-        self.invoker = CommandsInvoker(self)
+        self.invoker: CommandsInvoker = CommandsInvoker(self)  # type: ignore
 
         self.terminal_size = os.get_terminal_size()
         self.width = self.terminal_size.columns
@@ -133,27 +135,27 @@ class ConsoleLayout:
         self.module5_data = ""
         self.size_changed = False
 
-    def reinit_cpu(self):
+    def reinit_cpu(self) -> None:
         self.cpu = init_cpu(self.ep, self.mem)
 
-    def clear_screen(self):
+    def clear_screen(self) -> None:
         os.system('cls' if os.name == 'nt' else 'clear')
 
-    def cpu_run(self):
+    def cpu_run(self) -> None:
         count = 0
         while self.cpu.running and not self.cpu.stop_flag and count < self.limit:
-            self.cpu.tick()
+            # self.cpu.tick()
             count += 1
             self.render_layout()
 
-    def render_layout(self):
+    def render_layout(self) -> None:
         self.clear_screen()
 
         # Блок 1: 1/3 ширины, прижат к правому краю
         block1_width = self.width // 3
         block1_x = self.width - block1_width
         block1_text = gen_name(self.module1_name, block1_width) + self.module1_data
-        render_block(block1_text, block1_x, 0, block1_width, self.height // 1.1)
+        render_block(block1_text, block1_x, 0, block1_width, int(self.height // 1.1))
 
         # Блок 2: остаток ширины, прижат к низу (ввод команд)
         block2_width = self.width - block1_width
@@ -166,7 +168,7 @@ class ConsoleLayout:
         block3_width = self.width // 3
         block3_x = (self.width - block3_width) // 2
         block3_text = gen_name(self.module3_name, block1_width) + self.module3_data
-        render_block(block3_text, block3_x, 0, block3_width, self.height // 1.1)
+        render_block(block3_text, block3_x, 0, block3_width, int(self.height // 1.1))
 
         # Блок 4: слева
         block4_width = self.width // 3
@@ -181,7 +183,7 @@ class ConsoleLayout:
         block5_y = self.height - block5_height - block2_height
         render_block(block5_text, 0, block5_y, block5_width, block5_height)
 
-    def update_module_data(self, module, data):
+    def update_module_data(self, module: int, data: str) -> None:
         if module == 1:
             self.module1_data = data
         elif module == 3:
@@ -191,7 +193,7 @@ class ConsoleLayout:
         elif module == 5:
             self.module5_data = data
 
-    def check_terminal_size(self):
+    def check_terminal_size(self) -> None:
         current_size = os.get_terminal_size()
         if current_size.columns != self.width or current_size.lines != self.height:
             self.width = current_size.columns
@@ -200,7 +202,7 @@ class ConsoleLayout:
         else:
             self.size_changed = False
 
-    def run(self):
+    def run(self) -> None:
         self.render_layout()
 
         while True:

@@ -1,5 +1,5 @@
 from ..config.config import instruction_file
-import yaml
+import yaml  # type: ignore
 
 
 with open(instruction_file, 'r') as f:

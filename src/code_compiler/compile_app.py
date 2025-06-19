@@ -1,9 +1,9 @@
 import os
 
-from .app import Compiler
+from src.code_compiler.app import Compiler
 
 
-def compile_code(file_path: str, build: str):
+def compile_code(file_path: str, build: str) -> None:
     with open(os.path.join(file_path)) as code_file:
         code = code_file.read()
 

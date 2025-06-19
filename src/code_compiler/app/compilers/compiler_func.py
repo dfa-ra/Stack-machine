@@ -1,21 +1,23 @@
+from typing import List
+
 from ..compile_conf import commands
 from .compiler_text import CompilerText
 
 
 class CompilerFunc:
-    def __init__(self, compiler):
+    def __init__(self, compiler) -> None:  # type: ignore
         self.compiler = compiler
-        self.output_func = []
+        self.output_func: List[str] = []
         self.compiler_text: CompilerText = CompilerText(self.compiler)
         pass
 
-    def emit_func(self, command, operand=None):
+    def emit_func(self, command: str, operand: int = None) -> None:  # type: ignore
         if command in commands:
             self.output_func.append(f"{command} {operand}" if commands[command] else command)
             self.compiler.pc += 1
 
-    def compile(self, lines, address_space, intermediate_var):
-        func = []
+    def compile(self, lines: List[str], address_space: int, intermediate_var: int) -> int:
+        func: List[str] = []
         for line in lines:
             if line.startswith(':'):
                 func_name = line[2:-1] + line[-1]

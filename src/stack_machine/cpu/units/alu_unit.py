@@ -1,8 +1,11 @@
-class ALU:
-    def __init__(self, cpu):
+from typing import List
 
-        self.right = None
-        self.left = None
+
+class ALU:
+    def __init__(self, cpu) -> None:  # type: ignore
+
+        self.right: int = 0
+        self.left: int = 0
         self.cpu = cpu
         # по аналогии можешь добавить
         self.open_a = [0]
@@ -14,16 +17,16 @@ class ALU:
 
         self.alu_output = 0
 
-    def handle(self, signal, left, right):
+    def handle(self, signal: List[str], left: int, right: int) -> int:
         self.init_operands(left, right)
         self.arithmetic_logic(signal)
         return self.alu_output
 
-    def init_operands(self, left=0, right=0):
+    def init_operands(self, left: int = 0, right: int = 0) -> None:
         self.left = left
         self.right = right
 
-    def arithmetic_logic(self, signal):
+    def arithmetic_logic(self, signal: List[str]) -> None:
         if "add" in signal:
             if "if" in signal:
                 if self.cpu.data_stack.get_T() != 0:
