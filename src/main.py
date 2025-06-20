@@ -3,27 +3,35 @@ import os
 from contextlib import redirect_stdout
 from pathlib import Path
 
-from src.code_compiler.compile_app import compile_code
+import yaml  # type: ignore
+
+from src.code_compiler.assembly.assembly import assembly
+from src.code_compiler.compiling.compiling import compile_code as compile_code
 from src.stack_machine.console_launch import console_launch
 from src.stack_machine.debug_launch import debug_launch
 
 
-def main(conf: str, file_path: str, debug: bool, log: bool) -> None:
+def main(cfg_path: str, file_path: str, debug: bool, log: bool) -> None:
     wd = os.path.dirname(os.path.abspath(__file__)) + "/"
     if wd.startswith("/"):
         wd = ""
     build_dir = wd + os.path.dirname(file_path) + "/build/"
+    bin_dir = wd + os.path.dirname(file_path) + "/build/bin/"
     compile_code(file_path, build_dir)
     file = Path(file_path)
+
+    conf = yaml.safe_load(open(cfg_path))
+    start = assembly(build_dir, build_dir + "/code", conf["memory_size"])
+
     if debug:
         debug_launch(conf, build_dir)
     else:
         if log:
             with open(file.with_suffix(".log"), "w") as f:
                 with redirect_stdout(f):
-                    console_launch(conf, build_dir)
+                    console_launch(conf, bin_dir, start)
         else:
-            console_launch(conf, build_dir)
+            console_launch(conf, bin_dir, start)
     pass
 
 
@@ -32,7 +40,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "-c", "--conf", type=str, help="Путь к конфигурационному файлу", required=True
     )
-    parser.add_argument("forth_file", type=str, help="Путь к файлу .forth")
+    parser.add_argument("-f", "--forth_file", type=str, help="Путь к файлу .forth")
+
     parser.add_argument(
         "-d", "--debug", action="store_true", help="Включить режим отладки"
     )

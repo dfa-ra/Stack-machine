@@ -237,11 +237,20 @@ number ::= <целое число>
 
 ### Компилятор 
 
+` python3 -m src.code_compiler.compiler -c ../../example/arrays/arrays.yaml ../../example/arrays/arrays.forth `
+
 #### Компилятор
+
+`python3 -m src.code_compiler.compiling.compiling ../../../example/arrays/arrays.forth`
 
 #### Трансляция
 
+`python3 -m src.code_compiler.assembly.assembly ../../../example/arrays/build/code 100`
+
 ### Модель процессора
+
+`python3 -m src.stack_machine.start_cpu -c ../../example/arrays/arrays.yaml -b ../../example/arrays/build/bin/  -a 98
+`
 
 
 ### Правила конфигурации

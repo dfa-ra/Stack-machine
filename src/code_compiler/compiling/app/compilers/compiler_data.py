@@ -1,8 +1,8 @@
 from typing import Dict, List
 
-from src.code_compiler.app.symbol import Symbol
-from src.code_compiler.app.compile_conf import forbidden_var
-from src.code_compiler.app.utils import is_hex_string, hex_to_int
+from src.code_compiler.compiling.app.symbol import Symbol
+from src.code_compiler.compiling.app.compile_conf import forbidden_var
+from src.code_compiler.compiling.app.utils import is_hex_string, hex_to_int
 
 
 class CompilerData:

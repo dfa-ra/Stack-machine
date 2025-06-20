@@ -1,8 +1,12 @@
 import os
 from typing import List, Dict
 
-from src.code_compiler.app.compilers import CompilerText, CompilerData, CompilerFunc
-from src.code_compiler.app.symbol import Symbol
+from src.code_compiler.compiling.app.compilers import (
+    CompilerText,
+    CompilerData,
+    CompilerFunc,
+)
+from src.code_compiler.compiling.app.symbol import Symbol
 
 
 class Compiler:

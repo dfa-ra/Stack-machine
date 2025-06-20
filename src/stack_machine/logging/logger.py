@@ -1,9 +1,9 @@
 import re
 from typing import Callable, Any, Dict, List, Tuple
 
-from ..cpu import Cpu
-from src.stack_machine.inst_compiler.compiler import get_decompiled_code
+from src.stack_machine.cpu import Cpu
 from src.stack_machine.utils.bitwise_utils import btle, tsfb
+from src.code_compiler.assembly.app.asm_info import get_decompiled_code
 
 
 def ascii_to_string(num: int) -> str:
@@ -11,7 +11,12 @@ def ascii_to_string(num: int) -> str:
 
 
 class logger:
-    def __init__(self, cpu_: Cpu, log_fmt):  # type: ignore
+    def __init__(self, cpu_: Cpu, log_fmt, instruction_mem_path: str):  # type: ignore
+        """
+
+        :rtype: object
+        """
+        self.instruction_mem_path = instruction_mem_path
         self.cpu_: Cpu = cpu_
         self.fmt = log_fmt
         self.micro_command: Dict[str, List[str]] = {}
@@ -49,7 +54,7 @@ class logger:
         }
 
     def resolve_instruction_mem(self, token_list: list[str]) -> str:
-        return get_decompiled_code()
+        return get_decompiled_code(self.instruction_mem_path)
 
     def resolve_command(
         self, token_list: list[str]

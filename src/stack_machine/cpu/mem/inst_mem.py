@@ -3,12 +3,12 @@ from typing import Tuple, List
 import yaml  # type: ignore
 import struct
 
-from src.stack_machine.config import instruction_file, instruction_mem_path
+from src.code_compiler.config import instruction_file
 from ...utils.bitwise_utils import tsfb
 
 
 class InstructionMem:
-    def __init__(self) -> None:
+    def __init__(self, instruction_mem_path: str) -> None:
         with open(instruction_file, "r") as f:
             data = yaml.safe_load(f)["commands"]
             self.opcode_has_arg = {

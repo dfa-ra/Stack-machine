@@ -1,9 +1,10 @@
-from src.stack_machine.config import data_mem_path
 from src.stack_machine.utils.bitwise_utils import btle, ltbe, tsfb
 
 
 class DataMem:
-    def __init__(self, io_addr: list[int], io_data: list[int]):
+    def __init__(
+        self, io_addr: list[int], io_data: list[int], data_mem_path: str
+    ) -> None:
         self.data_mem_path = data_mem_path
         # Читаем бинарный файл
         with open(data_mem_path, "rb") as f:

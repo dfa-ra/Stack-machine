@@ -1,4 +1,4 @@
-from ..config.config import instruction_file
+from src.code_compiler.config.config import instruction_file
 import yaml  # type: ignore
 
 

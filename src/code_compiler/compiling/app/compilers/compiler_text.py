@@ -1,11 +1,11 @@
 from typing import List
 
-from src.code_compiler.app.compile_conf import built_in_words, commands
-from src.code_compiler.app.samples.loop_sample import LoopSample
-from src.code_compiler.app.samples.if_sample import get_if_sample
-from src.code_compiler.app.scope import Scope
-from src.code_compiler.app.symbol import Symbol
-from src.code_compiler.app.utils import is_hex_string, hex_to_int
+from src.code_compiler.compiling.app.compile_conf import built_in_words, commands
+from src.code_compiler.compiling.app.samples.loop_sample import LoopSample
+from src.code_compiler.compiling.app.samples.if_sample import get_if_sample
+from src.code_compiler.compiling.app.scope import Scope
+from src.code_compiler.compiling.app.symbol import Symbol
+from src.code_compiler.compiling.app.utils import is_hex_string, hex_to_int
 
 
 class CompilerText:
@@ -102,7 +102,7 @@ class CompilerText:
         ):
             if self.compiler.symbols[address_space][token].type == "array":
                 self.emit(
-                    "v_lw_from_imm_addr",
+                    "push_imm",
                     self.compiler.symbols[address_space][token].address,
                 )
             else:
@@ -189,4 +189,6 @@ class CompilerText:
         elif token in built_in_words:
             self.emit(built_in_words[token])
         else:
+            print(address_space)
+            print(self.compiler.symbols)
             raise Exception(f"Unknown token: {token}")
