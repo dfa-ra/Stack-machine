@@ -75,6 +75,12 @@ def test_sort(golden: GoldenTestFixture) -> None:
 
     assert out_emulator == golden.out["output"]
 
+@pytest.mark.golden_test("golden/arrays/test_conf.yaml")
+def test_arrays(golden: GoldenTestFixture) -> None:
+    name = "arrays"
+    out_emulator = run_default(name)
+
+    assert out_emulator == golden.out["output"]
 
 @pytest.mark.golden_test("golden/ssm/test_conf.yaml")
 def test_ssm(golden: GoldenTestFixture) -> None:

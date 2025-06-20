@@ -457,7 +457,6 @@ commands:
   - desc: v_sw_to_b_addr  # запись верха стека векторов по адрессу в регистре b
     opcode: "0x92"
     micro_commands:
-
       - signals:
           - unit: alu
             signals: [ open_b, add ]
@@ -466,6 +465,17 @@ commands:
             signals: [ simd ]
           - unit: mem
             signals: [ write ]
+      - signals:
+          - unit: micro_command
+            signals: [ term_mc ]
+  - desc: v_pop
+    opcode: "0x93"
+    micro_commands:
+      - signals:
+          - unit: type
+            signals: [ simd ]
+          - unit: cpu
+            signals: [ pop_stack ]
       - signals:
           - unit: micro_command
             signals: [ term_mc ]
@@ -600,3 +610,16 @@ commands:
       - signals:
           - unit: micro_command
             signals: [ term_mc ]
+  - desc: v_over  # инкрементация верхнего значения стека векторов
+    opcode: "0xB0"
+    micro_commands:
+      - signals:
+          - unit: type
+            signals: [ simd ]
+          - unit: cpu
+            signals: [ over ]
+      - signals:
+          - unit: micro_command
+            signals: [ term_mc ]
+
+

@@ -1,0 +1,24 @@
+name: arrays
+limit: 5000
+memory_size: 500
+input_streams:
+  0x80: []
+  0x84: []
+reports:
+  - name: binary
+    slice: mem
+    view: |
+      {instruction}
+  - name: Step-by-step
+    slice: all
+    view: |
+      tick: {cpu:tick} || microcode - {microcode} || A: {cpu:A:hex} || B: {cpu:B:hex} 
+      data stack: {stack:data}
+      vector stack: {stack:vector}
+  - name: Result
+    slice: last
+    view: |
+      numio[0x80]: {io:in:dec}
+      numio[0x84]: {io:out:decbe}
+      tick_count = {cpu:tick}
+      {condition:[io:out:decbe]=[2, 4, 6, 8]}

@@ -26,6 +26,10 @@ case "$1" in
         YAML="example/sort/sort.yaml"
         FORTH="example/sort/sort.forth"
         ;;
+    "arrays")
+        YAML="example/arrays/arrays.yaml"
+        FORTH="example/arrays/arrays.forth"
+        ;;
     "ssm")
         YAML="example/vector_vs_scalar/scalar_sum_mas/ssm.yaml"
         FORTH="example/vector_vs_scalar/scalar_sum_mas/ssm.forth"
