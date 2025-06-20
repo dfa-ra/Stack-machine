@@ -7,7 +7,6 @@ from src.stack_machine.cpu.stack import Stack
 from src.stack_machine.cpu.units import ControlAluUnit, ControlUnit, MemUnit
 
 
-
 @dataclass
 class SignalHandler:
     name: str

@@ -22,6 +22,10 @@ case "$1" in
         YAML="example/hello_user_name/hello_user_name.yaml"
         FORTH="example/hello_user_name/hello_user_name.forth"
         ;;
+    "cat")
+        YAML="example/cat/cat.yaml"
+        FORTH="example/cat/cat.forth"
+        ;;
     "sort")
         YAML="example/sort/sort.yaml"
         FORTH="example/sort/sort.forth"

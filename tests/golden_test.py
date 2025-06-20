@@ -43,7 +43,7 @@ def run_default(name: str) -> str:
     run_command(
         ["python3", "-m", "src.code_compiler.compiling.compiling", str(input_forth)]
     )
-    out_assembly = run_command(
+    run_command(
         [
             "python3",
             "-m",
@@ -60,9 +60,7 @@ def run_default(name: str) -> str:
             "-c",
             str(input_conf),
             "-b",
-            str(bin_path),
-            "-a",
-            str(out_assembly),
+            str(bin_path)
         ]
     )
 

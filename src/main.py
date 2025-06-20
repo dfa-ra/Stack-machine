@@ -21,7 +21,7 @@ def main(cfg_path: str, file_path: str, debug: bool, log: bool) -> None:
     file = Path(file_path)
 
     conf = yaml.safe_load(open(cfg_path))
-    start = assembly(build_dir, build_dir + "/code", conf["memory_size"])
+    assembly(build_dir, build_dir + "/code", conf["memory_size"])
 
     if debug:
         debug_launch(conf, build_dir)
@@ -29,9 +29,9 @@ def main(cfg_path: str, file_path: str, debug: bool, log: bool) -> None:
         if log:
             with open(file.with_suffix(".log"), "w") as f:
                 with redirect_stdout(f):
-                    console_launch(conf, bin_dir, start)
+                    console_launch(conf, bin_dir)
         else:
-            console_launch(conf, bin_dir, start)
+            console_launch(conf, bin_dir)
     pass
 
 

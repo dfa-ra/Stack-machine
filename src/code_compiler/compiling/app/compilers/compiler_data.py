@@ -37,8 +37,8 @@ class CompilerData:
                 end = line.find('"', start)
                 result = line[start:end]
                 size = len(result)
-                if tokens[-2].isdigit():
-                    size = max(size, int(tokens[-2]))
+                if tokens[-3].isdigit():
+                    size = max(size, int(tokens[-3]))
                 self.add_data(tokens[-1], "str", size + 1, [result])
             elif tokens[1] == "VAR":
                 if is_hex_string(tokens[0]):

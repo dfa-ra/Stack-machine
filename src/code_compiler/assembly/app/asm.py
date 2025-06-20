@@ -19,7 +19,7 @@ def load_opcodes(yaml_file: str) -> Dict[str, List[str]]:
     return opcodes
 
 
-def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> int:
+def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> None:
     os.makedirs(build_dir + "/bin", exist_ok=True)
 
     data_mem_path = build_dir + "/bin/data_memory.bin"
@@ -154,6 +154,7 @@ def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> int:
                 )
 
     with open(instruction_mem_path, "wb") as f:
+        f.write(struct.pack("I", start_address))
         for opcode, value in instructions:  # type: ignore
             f.write(struct.pack("B", opcode))
             if value is not None:
@@ -184,4 +185,3 @@ def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> int:
 
             f.write(data_memory)
 
-    return start_address

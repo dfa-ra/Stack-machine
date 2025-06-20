@@ -228,14 +228,13 @@ number ::= <целое число>
 [микропрограммы](./src/stack_machine/config/mc.yaml)
 
 
-
-
-
 ## Запуск
 
 ---
 
 ### Компилятор 
+
+Для языка forth был разработан системы компиляции и ассемблирования программы в машинный код
 
 ` python3 -m src.code_compiler.compiler -c ../../example/arrays/arrays.yaml ../../example/arrays/arrays.forth `
 

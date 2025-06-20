@@ -66,7 +66,7 @@ def get_decompiled_code(instruction_mem_path: str) -> str:
 
     result = []
     count = 0
-    index = 0
+    index = 4
 
     while index < len(byte_data):
         opcode = byte_data[index]

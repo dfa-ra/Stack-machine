@@ -9,6 +9,7 @@ from ...utils.bitwise_utils import tsfb
 
 class InstructionMem:
     def __init__(self, instruction_mem_path: str) -> None:
+
         with open(instruction_file, "r") as f:
             data = yaml.safe_load(f)["commands"]
             self.opcode_has_arg = {
@@ -18,8 +19,9 @@ class InstructionMem:
         with open(instruction_mem_path, "rb") as f:
             byte_data = f.read()
 
+        self.start_pos = int(byte_data[0])
         self.inst: List[Tuple[int, int | None]] = []
-        index = 0
+        index = 4
 
         while index < len(byte_data):
             if index >= len(byte_data):

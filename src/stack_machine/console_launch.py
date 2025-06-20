@@ -4,7 +4,7 @@ from src.stack_machine.logging.logger import logger
 from src.stack_machine.mc_compiler.compile import compile_micro_command
 
 
-def console_launch(conf, bin_dir: str, start: int) -> None:  # type: ignore
+def console_launch(conf, bin_dir: str) -> None:  # type: ignore
     compile_micro_command()
     io_ports = []
     for i in conf["input_streams"]:
@@ -13,7 +13,7 @@ def console_launch(conf, bin_dir: str, start: int) -> None:  # type: ignore
     bin_path_instruction_memory = bin_dir + "/instruction_memory.bin"
     mem = DataMem(io_ports, conf["input_streams"][io_ports[0]], bin_path_data_memory)
 
-    _cpu = init_cpu(start, mem, bin_path_instruction_memory)
+    _cpu = init_cpu(mem, bin_path_instruction_memory)
     logger_ = logger(_cpu, conf["reports"], bin_path_instruction_memory)
 
     limit = conf["limit"]
@@ -26,4 +26,4 @@ def console_launch(conf, bin_dir: str, start: int) -> None:  # type: ignore
 
 if __name__ == "__main__":
     cfg_path = "/media/ra/_work/ra/ITMO/CSA/lab4/stack_machine/zalupa.yaml"
-    console_launch(cfg_path, "../build/bin", 0)
+    console_launch(cfg_path, "../build/bin")

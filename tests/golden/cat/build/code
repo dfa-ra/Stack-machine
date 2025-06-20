@@ -1,20 +1,20 @@
    .data
 var 0 byte 0
-var 1 word 128
-var 5 word 132
-var 9 word 0
-var 13 word 0
-var 17 word 0
-var 21 word 0
+var 32 word 128
+var 36 word 132
+var 40 word 0
+var 44 word 0
+var 48 word 0
+var 52 word 0
    .text
-sw_to_imm_addr 9
+sw_to_imm_addr 40
 push_imm 1
-sw_to_imm_addr 13
+sw_to_imm_addr 44
 push_imm 0
 push_imm 0
 over
 dup
-lw_from_imm_addr 13
+lw_from_imm_addr 44
 over
 -
 if 2
@@ -24,7 +24,7 @@ push_imm 0
 if 31
 over
 push_imm 3
-lw_from_imm_addr 9
+lw_from_imm_addr 40
 -
 load_T_a_pop
 lw_from_a_addr
@@ -32,7 +32,7 @@ push_imm 4278190080
 and
 dup
 dup
-sw_to_imm_addr 13
+sw_to_imm_addr 44
 push_imm 0
 -
 if 2
@@ -41,29 +41,29 @@ jmp 1
 push_imm 1
 if 1
 jmp 7
-lw_from_imm_addr 5
+lw_from_imm_addr 36
 load_T_a_pop
 sw_to_a_addr
-lw_from_imm_addr 9
+lw_from_imm_addr 40
 push_imm 1
 +
-sw_to_imm_addr 9
+sw_to_imm_addr 40
 dup
-lw_from_imm_addr 13
+lw_from_imm_addr 44
 +
-sw_to_imm_addr 13
+sw_to_imm_addr 44
 jmp -41
 pop
 pop
 ret
-sw_to_imm_addr 17
+sw_to_imm_addr 48
 push_imm 1
-sw_to_imm_addr 21
+sw_to_imm_addr 52
 push_imm 0
 push_imm 0
 over
 dup
-lw_from_imm_addr 21
+lw_from_imm_addr 52
 over
 -
 if 2
@@ -72,22 +72,22 @@ jmp 1
 push_imm 0
 if 18
 over
-lw_from_imm_addr 1
+lw_from_imm_addr 32
 load_T_a_pop
 lw_from_a_addr
 dup
-sw_to_imm_addr 21
-lw_from_imm_addr 17
+sw_to_imm_addr 52
+lw_from_imm_addr 48
 load_T_a_pop
 sw_to_a_addr
-lw_from_imm_addr 17
+lw_from_imm_addr 48
 push_imm 1
 +
-sw_to_imm_addr 17
+sw_to_imm_addr 48
 dup
-lw_from_imm_addr 21
+lw_from_imm_addr 52
 +
-sw_to_imm_addr 21
+sw_to_imm_addr 52
 jmp -28
 pop
 pop
