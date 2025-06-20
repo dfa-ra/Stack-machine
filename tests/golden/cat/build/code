@@ -1,0 +1,100 @@
+   .data
+var 0 byte 0
+var 1 word 128
+var 5 word 132
+var 9 word 0
+var 13 word 0
+var 17 word 0
+var 21 word 0
+   .text
+sw_to_imm_addr 9
+push_imm 1
+sw_to_imm_addr 13
+push_imm 0
+push_imm 0
+over
+dup
+lw_from_imm_addr 13
+over
+-
+if 2
+push_imm 1
+jmp 1
+push_imm 0
+if 31
+over
+push_imm 3
+lw_from_imm_addr 9
+-
+load_T_a_pop
+lw_from_a_addr
+push_imm 4278190080
+and
+dup
+dup
+sw_to_imm_addr 13
+push_imm 0
+-
+if 2
+push_imm 0
+jmp 1
+push_imm 1
+if 1
+jmp 7
+lw_from_imm_addr 5
+load_T_a_pop
+sw_to_a_addr
+lw_from_imm_addr 9
+push_imm 1
++
+sw_to_imm_addr 9
+dup
+lw_from_imm_addr 13
++
+sw_to_imm_addr 13
+jmp -41
+pop
+pop
+ret
+sw_to_imm_addr 17
+push_imm 1
+sw_to_imm_addr 21
+push_imm 0
+push_imm 0
+over
+dup
+lw_from_imm_addr 21
+over
+-
+if 2
+push_imm 1
+jmp 1
+push_imm 0
+if 18
+over
+lw_from_imm_addr 1
+load_T_a_pop
+lw_from_a_addr
+dup
+sw_to_imm_addr 21
+lw_from_imm_addr 17
+load_T_a_pop
+sw_to_a_addr
+lw_from_imm_addr 17
+push_imm 1
++
+sw_to_imm_addr 17
+dup
+lw_from_imm_addr 21
++
+sw_to_imm_addr 21
+jmp -28
+pop
+pop
+ret
+   _start
+push_imm 0
+call -38
+push_imm 0
+call -89
+halt

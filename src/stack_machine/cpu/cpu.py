@@ -1,11 +1,11 @@
 from dataclasses import dataclass
 from typing import Dict, Callable, List
 
+from src.code_compiler.assembly.app.asm_info import get_mnemonic_by_opcode
 from src.stack_machine.cpu.mem import DataMem, InstructionMem
 from src.stack_machine.cpu.stack import Stack
 from src.stack_machine.cpu.units import ControlAluUnit, ControlUnit, MemUnit
 
-from src.stack_machine.inst_compiler.compiler import get_mnemonic_by_opcode
 
 
 @dataclass

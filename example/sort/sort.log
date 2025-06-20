@@ -1,0 +1,3682 @@
+Step-by-step: tick: 1 | A: 0x0 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
+Step-by-step: tick: 2 | A: 0x0 | B: -0xd3 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
+Step-by-step: tick: 3 | A: 0x0 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 4 | A: 0x0 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 5 | A: 0x0 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 6 | A: 0x0 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 7 | A: 0x0 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 8 | A: 0x0 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 9 | A: 0x0 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 10 | A: 0x0 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 11 | A: 0x0 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 12 | A: 0x0 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 13 | A: 0x0 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Step-by-step: tick: 14 | A: 0x0 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
+Step-by-step: tick: 15 | A: 0x0 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 16 | A: 0x0 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 17 | A: 0x0 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 18 | A: 0x0 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 19 | A: 0x0 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 20 | A: 0x0 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+Step-by-step: tick: 21 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 22 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 23 | A: 0x80 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2]
+Step-by-step: tick: 24 | A: 0x80 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 25 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 256]
+Step-by-step: tick: 26 | A: 0x100 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 27 | A: 0x100 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 28 | A: 0x100 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
+Step-by-step: tick: 29 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256, 4]
+Step-by-step: tick: 30 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 260]
+Step-by-step: tick: 31 | A: 0x100 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 32 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 33 | A: 0x100 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Step-by-step: tick: 34 | A: 0x100 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 35 | A: 0x100 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 36 | A: 0x100 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 37 | A: 0x100 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 38 | A: 0x100 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 39 | A: 0x100 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 40 | A: 0x100 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 41 | A: 0x100 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 42 | A: 0x100 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 43 | A: 0x100 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 44 | A: 0x100 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0]
+Step-by-step: tick: 45 | A: 0x100 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2]
+Step-by-step: tick: 46 | A: 0x100 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 47 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 48 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 49 | A: 0x100 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 50 | A: 0x100 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 51 | A: 0x100 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+Step-by-step: tick: 52 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 53 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 54 | A: 0x80 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+Step-by-step: tick: 55 | A: 0x80 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 56 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 260]
+Step-by-step: tick: 57 | A: 0x104 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 58 | A: 0x104 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 59 | A: 0x104 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 260]
+Step-by-step: tick: 60 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 260, 4]
+Step-by-step: tick: 61 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 264]
+Step-by-step: tick: 62 | A: 0x104 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 63 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 64 | A: 0x104 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+Step-by-step: tick: 65 | A: 0x104 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 66 | A: 0x104 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 67 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 68 | A: 0x104 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 69 | A: 0x104 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 70 | A: 0x104 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 71 | A: 0x104 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 72 | A: 0x104 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 73 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 74 | A: 0x104 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 75 | A: 0x104 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Step-by-step: tick: 76 | A: 0x104 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
+Step-by-step: tick: 77 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 78 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 79 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 80 | A: 0x104 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 81 | A: 0x104 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 82 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+Step-by-step: tick: 83 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 84 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 85 | A: 0x80 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4]
+Step-by-step: tick: 86 | A: 0x80 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 87 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 264]
+Step-by-step: tick: 88 | A: 0x108 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 89 | A: 0x108 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 90 | A: 0x108 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 264]
+Step-by-step: tick: 91 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 264, 4]
+Step-by-step: tick: 92 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268]
+Step-by-step: tick: 93 | A: 0x108 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 94 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 95 | A: 0x108 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2]
+Step-by-step: tick: 96 | A: 0x108 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 97 | A: 0x108 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 98 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 99 | A: 0x108 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 100 | A: 0x108 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 101 | A: 0x108 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 102 | A: 0x108 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 103 | A: 0x108 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 104 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 105 | A: 0x108 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 106 | A: 0x108 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0]
+Step-by-step: tick: 107 | A: 0x108 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4]
+Step-by-step: tick: 108 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 109 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 110 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 111 | A: 0x108 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 112 | A: 0x108 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 113 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+Step-by-step: tick: 114 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 115 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 116 | A: 0x80 | B: 0x3 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3]
+Step-by-step: tick: 117 | A: 0x80 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 118 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 268]
+Step-by-step: tick: 119 | A: 0x10c | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 120 | A: 0x10c | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 121 | A: 0x10c | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268]
+Step-by-step: tick: 122 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268, 4]
+Step-by-step: tick: 123 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 272]
+Step-by-step: tick: 124 | A: 0x10c | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 125 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 126 | A: 0x10c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3]
+Step-by-step: tick: 127 | A: 0x10c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 128 | A: 0x10c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 129 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 130 | A: 0x10c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 131 | A: 0x10c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 132 | A: 0x10c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 133 | A: 0x10c | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 134 | A: 0x10c | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 135 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 136 | A: 0x10c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 137 | A: 0x10c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0]
+Step-by-step: tick: 138 | A: 0x10c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+Step-by-step: tick: 139 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 140 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 141 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 142 | A: 0x10c | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 143 | A: 0x10c | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 144 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+Step-by-step: tick: 145 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 146 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 147 | A: 0x80 | B: 0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100]
+Step-by-step: tick: 148 | A: 0x80 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 149 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 272]
+Step-by-step: tick: 150 | A: 0x110 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 151 | A: 0x110 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 152 | A: 0x110 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 272]
+Step-by-step: tick: 153 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 272, 4]
+Step-by-step: tick: 154 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 276]
+Step-by-step: tick: 155 | A: 0x110 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 156 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 157 | A: 0x110 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4]
+Step-by-step: tick: 158 | A: 0x110 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 159 | A: 0x110 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 160 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 161 | A: 0x110 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 162 | A: 0x110 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 163 | A: 0x110 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 164 | A: 0x110 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 165 | A: 0x110 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 166 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 167 | A: 0x110 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 168 | A: 0x110 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0]
+Step-by-step: tick: 169 | A: 0x110 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -100]
+Step-by-step: tick: 170 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 171 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 172 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 173 | A: 0x110 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 174 | A: 0x110 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 175 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+Step-by-step: tick: 176 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 177 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 178 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 8]
+Step-by-step: tick: 179 | A: 0x80 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 180 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 276]
+Step-by-step: tick: 181 | A: 0x114 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 182 | A: 0x114 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 183 | A: 0x114 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 276]
+Step-by-step: tick: 184 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 276, 4]
+Step-by-step: tick: 185 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 280]
+Step-by-step: tick: 186 | A: 0x114 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 187 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 188 | A: 0x114 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
+Step-by-step: tick: 189 | A: 0x114 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6]
+Step-by-step: tick: 190 | A: 0x114 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 191 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 192 | A: 0x114 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 193 | A: 0x114 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 194 | A: 0x114 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 195 | A: 0x114 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 196 | A: 0x114 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 197 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 198 | A: 0x114 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 199 | A: 0x114 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0]
+Step-by-step: tick: 200 | A: 0x114 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8]
+Step-by-step: tick: 201 | A: 0x114 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 202 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 203 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 204 | A: 0x114 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 205 | A: 0x114 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 206 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+Step-by-step: tick: 207 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 208 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 209 | A: 0x80 | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5]
+Step-by-step: tick: 210 | A: 0x80 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 211 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 280]
+Step-by-step: tick: 212 | A: 0x118 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 213 | A: 0x118 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 214 | A: 0x118 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 280]
+Step-by-step: tick: 215 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 280, 4]
+Step-by-step: tick: 216 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 284]
+Step-by-step: tick: 217 | A: 0x118 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 218 | A: 0x118 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 219 | A: 0x118 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6]
+Step-by-step: tick: 220 | A: 0x118 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
+Step-by-step: tick: 221 | A: 0x118 | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 222 | A: 0x118 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 223 | A: 0x118 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 224 | A: 0x118 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 225 | A: 0x118 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 226 | A: 0x118 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 227 | A: 0x118 | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 228 | A: 0x118 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 229 | A: 0x118 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 230 | A: 0x118 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0]
+Step-by-step: tick: 231 | A: 0x118 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5]
+Step-by-step: tick: 232 | A: 0x118 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 233 | A: 0x118 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 234 | A: 0x118 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 235 | A: 0x118 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 236 | A: 0x118 | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 237 | A: 0x118 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+Step-by-step: tick: 238 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 239 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 240 | A: 0x80 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 241 | A: 0x80 | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 242 | A: 0x80 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 284]
+Step-by-step: tick: 243 | A: 0x11c | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 244 | A: 0x11c | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 245 | A: 0x11c | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 284]
+Step-by-step: tick: 246 | A: 0x11c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 284, 4]
+Step-by-step: tick: 247 | A: 0x11c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 288]
+Step-by-step: tick: 248 | A: 0x11c | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 249 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 250 | A: 0x11c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 251 | A: 0x11c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 252 | A: 0x11c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 253 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 254 | A: 0x11c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 255 | A: 0x11c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 256 | A: 0x11c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 257 | A: 0x11c | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 258 | A: 0x11c | B: -0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 259 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 260 | A: 0x11c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 261 | A: 0x11c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 262 | A: 0x11c | B: 0x10 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 263 | A: 0x11c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 264 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 265 | A: 0x11c | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 266 | A: 0x11c | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 267 | A: 0x11c | B: 0x16 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 268 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 269 | A: 0x11c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8]
+Step-by-step: tick: 270 | A: 0x11c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
+Step-by-step: tick: 271 | A: 0x11c | B: 0xc 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
+Step-by-step: tick: 272 | A: 0x11c | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 273 | A: 0x11c | B: -0x73 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 274 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 275 | A: 0x11c | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 276 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 277 | A: 0x11c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 278 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 279 | A: 0x11c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 280 | A: 0x11c | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
+Step-by-step: tick: 281 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 282 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 283 | A: 0x11c | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 284 | A: 0x11c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 0]
+Step-by-step: tick: 285 | A: 0x11c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 7]
+Step-by-step: tick: 286 | A: 0x11c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 287 | A: 0x11c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, -1]
+Step-by-step: tick: 288 | A: 0x11c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 6]
+Step-by-step: tick: 289 | A: 0x11c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 290 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 291 | A: 0x11c | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 292 | A: 0x11c | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 293 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 294 | A: 0x11c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0]
+Step-by-step: tick: 295 | A: 0x11c | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 7]
+Step-by-step: tick: 296 | A: 0x11c | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 7]
+Step-by-step: tick: 297 | A: 0x11c | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6]
+Step-by-step: tick: 298 | A: 0x11c | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 299 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 300 | A: 0x11c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 301 | A: 0x11c | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6]
+Step-by-step: tick: 302 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 303 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 304 | A: 0x11c | B: 0x6 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6]
+Step-by-step: tick: 305 | A: 0x11c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, 0]
+Step-by-step: tick: 306 | A: 0x11c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0, 6]
+Step-by-step: tick: 307 | A: 0x11c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6]
+Step-by-step: tick: 308 | A: 0x11c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, -1]
+Step-by-step: tick: 309 | A: 0x11c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 5]
+Step-by-step: tick: 310 | A: 0x11c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 311 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
+Step-by-step: tick: 312 | A: 0x11c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 313 | A: 0x11c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 314 | A: 0x11c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 315 | A: 0x11c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0, 4]
+Step-by-step: tick: 316 | A: 0x11c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 317 | A: 0x11c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 318 | A: 0x11c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 319 | A: 0x11c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 0]
+Step-by-step: tick: 320 | A: 0x11c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 321 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 322 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 323 | A: 0x100 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256]
+Step-by-step: tick: 324 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 0]
+Step-by-step: tick: 325 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 0, 4]
+Step-by-step: tick: 326 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 4]
+Step-by-step: tick: 327 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 260]
+Step-by-step: tick: 328 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 329 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 1]
+Step-by-step: tick: 330 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -1]
+Step-by-step: tick: 331 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 332 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 333 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, -1]
+Step-by-step: tick: 334 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 335 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 336 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 337 | A: 0x104 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 338 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 339 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 0]
+Step-by-step: tick: 340 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 341 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 342 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 343 | A: 0x100 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256]
+Step-by-step: tick: 344 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 0]
+Step-by-step: tick: 345 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 0, 4]
+Step-by-step: tick: 346 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 4]
+Step-by-step: tick: 347 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 260]
+Step-by-step: tick: 348 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 349 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 1]
+Step-by-step: tick: 350 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 2]
+Step-by-step: tick: 351 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 2, 256]
+Step-by-step: tick: 352 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 2, 256, 0]
+Step-by-step: tick: 353 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 7, 1, 6, 1, 1, 2, 256, 0, 4]
+Step-by-step: tick: 354 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 2, 256, 4]
+Step-by-step: tick: 355 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 2, 260]
+Step-by-step: tick: 356 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 2]
+Step-by-step: tick: 357 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 358 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 256]
+Step-by-step: tick: 359 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 256, 0]
+Step-by-step: tick: 360 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 256]
+Step-by-step: tick: 361 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 362 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 363 | A: 0x100 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 364 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 365 | A: 0x100 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 0]
+Step-by-step: tick: 366 | A: 0x100 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 367 | A: 0x100 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 368 | A: 0x100 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 369 | A: 0x100 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 370 | A: 0x100 | B: 0x6 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6]
+Step-by-step: tick: 371 | A: 0x100 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, 1]
+Step-by-step: tick: 372 | A: 0x100 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1, 6]
+Step-by-step: tick: 373 | A: 0x100 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 5]
+Step-by-step: tick: 374 | A: 0x100 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 5, -1]
+Step-by-step: tick: 375 | A: 0x100 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 4]
+Step-by-step: tick: 376 | A: 0x100 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 377 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
+Step-by-step: tick: 378 | A: 0x100 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 379 | A: 0x100 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 380 | A: 0x100 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 381 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 4]
+Step-by-step: tick: 382 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 383 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 384 | A: 0x100 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 385 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 4]
+Step-by-step: tick: 386 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 260]
+Step-by-step: tick: 387 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 388 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 389 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256]
+Step-by-step: tick: 390 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 4]
+Step-by-step: tick: 391 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 4, 4]
+Step-by-step: tick: 392 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 256, 8]
+Step-by-step: tick: 393 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 264]
+Step-by-step: tick: 394 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 395 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 4]
+Step-by-step: tick: 396 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 397 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -3]
+Step-by-step: tick: 398 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -2]
+Step-by-step: tick: 399 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -2, -1]
+Step-by-step: tick: 400 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -3]
+Step-by-step: tick: 401 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 402 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 403 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 404 | A: 0x108 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 405 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 406 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 1]
+Step-by-step: tick: 407 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 408 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 409 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 410 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 411 | A: 0x108 | B: 0x6 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6]
+Step-by-step: tick: 412 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, 2]
+Step-by-step: tick: 413 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 2, 6]
+Step-by-step: tick: 414 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 4]
+Step-by-step: tick: 415 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 4, -1]
+Step-by-step: tick: 416 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 3]
+Step-by-step: tick: 417 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 418 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
+Step-by-step: tick: 419 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 420 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 421 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2]
+Step-by-step: tick: 422 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 2, 4]
+Step-by-step: tick: 423 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8]
+Step-by-step: tick: 424 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 425 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 426 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 8]
+Step-by-step: tick: 427 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 264]
+Step-by-step: tick: 428 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 429 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 430 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256]
+Step-by-step: tick: 431 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 8]
+Step-by-step: tick: 432 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 8, 4]
+Step-by-step: tick: 433 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 12]
+Step-by-step: tick: 434 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 268]
+Step-by-step: tick: 435 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 436 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 3]
+Step-by-step: tick: 437 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -1]
+Step-by-step: tick: 438 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 439 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 440 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, -1]
+Step-by-step: tick: 441 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 442 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 443 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 444 | A: 0x10c | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 445 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 446 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 8]
+Step-by-step: tick: 447 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 264]
+Step-by-step: tick: 448 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 449 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 450 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256]
+Step-by-step: tick: 451 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 8]
+Step-by-step: tick: 452 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 8, 4]
+Step-by-step: tick: 453 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 12]
+Step-by-step: tick: 454 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 268]
+Step-by-step: tick: 455 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 456 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 3]
+Step-by-step: tick: 457 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 4]
+Step-by-step: tick: 458 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 4, 256]
+Step-by-step: tick: 459 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 4, 256, 8]
+Step-by-step: tick: 460 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 7, 1, 6, 1, 3, 4, 256, 8, 4]
+Step-by-step: tick: 461 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 4, 256, 12]
+Step-by-step: tick: 462 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 4, 268]
+Step-by-step: tick: 463 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 4]
+Step-by-step: tick: 464 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3]
+Step-by-step: tick: 465 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 256]
+Step-by-step: tick: 466 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 256, 8]
+Step-by-step: tick: 467 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 264]
+Step-by-step: tick: 468 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3]
+Step-by-step: tick: 469 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 470 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 471 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 472 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 2]
+Step-by-step: tick: 473 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3]
+Step-by-step: tick: 474 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 475 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 476 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 477 | A: 0x108 | B: 0x6 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6]
+Step-by-step: tick: 478 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, 3]
+Step-by-step: tick: 479 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 3, 6]
+Step-by-step: tick: 480 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 3]
+Step-by-step: tick: 481 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 3, -1]
+Step-by-step: tick: 482 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 2]
+Step-by-step: tick: 483 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 484 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
+Step-by-step: tick: 485 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 486 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 487 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3]
+Step-by-step: tick: 488 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 3, 4]
+Step-by-step: tick: 489 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 12]
+Step-by-step: tick: 490 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 491 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 492 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 12]
+Step-by-step: tick: 493 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 268]
+Step-by-step: tick: 494 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 495 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 496 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256]
+Step-by-step: tick: 497 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 12]
+Step-by-step: tick: 498 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 12, 4]
+Step-by-step: tick: 499 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 256, 16]
+Step-by-step: tick: 500 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 272]
+Step-by-step: tick: 501 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 502 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 100]
+Step-by-step: tick: 503 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 96]
+Step-by-step: tick: 504 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -97]
+Step-by-step: tick: 505 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -96]
+Step-by-step: tick: 506 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -96, -1]
+Step-by-step: tick: 507 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -97]
+Step-by-step: tick: 508 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 509 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 510 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
+Step-by-step: tick: 511 | A: 0x110 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 512 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 513 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 3]
+Step-by-step: tick: 514 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 515 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 516 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 517 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 518 | A: 0x110 | B: 0x6 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6]
+Step-by-step: tick: 519 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, 4]
+Step-by-step: tick: 520 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 4, 6]
+Step-by-step: tick: 521 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 2]
+Step-by-step: tick: 522 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 2, -1]
+Step-by-step: tick: 523 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
+Step-by-step: tick: 524 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 525 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
+Step-by-step: tick: 526 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 527 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 528 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4]
+Step-by-step: tick: 529 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 4, 4]
+Step-by-step: tick: 530 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 16]
+Step-by-step: tick: 531 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 532 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 533 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 16]
+Step-by-step: tick: 534 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 272]
+Step-by-step: tick: 535 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 536 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100]
+Step-by-step: tick: 537 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256]
+Step-by-step: tick: 538 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 16]
+Step-by-step: tick: 539 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 16, 4]
+Step-by-step: tick: 540 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 20]
+Step-by-step: tick: 541 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 276]
+Step-by-step: tick: 542 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100]
+Step-by-step: tick: 543 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 8]
+Step-by-step: tick: 544 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -92]
+Step-by-step: tick: 545 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 91]
+Step-by-step: tick: 546 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 92]
+Step-by-step: tick: 547 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 92, -1]
+Step-by-step: tick: 548 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 91]
+Step-by-step: tick: 549 | A: 0x114 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 550 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 551 | A: 0x114 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 552 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 553 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 16]
+Step-by-step: tick: 554 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 272]
+Step-by-step: tick: 555 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 556 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100]
+Step-by-step: tick: 557 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256]
+Step-by-step: tick: 558 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 16]
+Step-by-step: tick: 559 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 16, 4]
+Step-by-step: tick: 560 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 20]
+Step-by-step: tick: 561 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 276]
+Step-by-step: tick: 562 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100]
+Step-by-step: tick: 563 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 8]
+Step-by-step: tick: 564 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 100]
+Step-by-step: tick: 565 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 100, 256]
+Step-by-step: tick: 566 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 100, 256, 16]
+Step-by-step: tick: 567 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 7, 1, 6, 1, 8, 100, 256, 16, 4]
+Step-by-step: tick: 568 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 100, 256, 20]
+Step-by-step: tick: 569 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 100, 276]
+Step-by-step: tick: 570 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 100]
+Step-by-step: tick: 571 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8]
+Step-by-step: tick: 572 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 256]
+Step-by-step: tick: 573 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 256, 16]
+Step-by-step: tick: 574 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8, 272]
+Step-by-step: tick: 575 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 8]
+Step-by-step: tick: 576 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 577 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 578 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 579 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 4]
+Step-by-step: tick: 580 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5]
+Step-by-step: tick: 581 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 582 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 583 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 584 | A: 0x110 | B: 0x6 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6]
+Step-by-step: tick: 585 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, 5]
+Step-by-step: tick: 586 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 5, 6]
+Step-by-step: tick: 587 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
+Step-by-step: tick: 588 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1, -1]
+Step-by-step: tick: 589 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0]
+Step-by-step: tick: 590 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 591 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
+Step-by-step: tick: 592 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 593 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 594 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5]
+Step-by-step: tick: 595 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 4]
+Step-by-step: tick: 596 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 20]
+Step-by-step: tick: 597 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 598 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 599 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 20]
+Step-by-step: tick: 600 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 276]
+Step-by-step: tick: 601 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 602 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100]
+Step-by-step: tick: 603 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256]
+Step-by-step: tick: 604 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 20]
+Step-by-step: tick: 605 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 20, 4]
+Step-by-step: tick: 606 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 24]
+Step-by-step: tick: 607 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 280]
+Step-by-step: tick: 608 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100]
+Step-by-step: tick: 609 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 5]
+Step-by-step: tick: 610 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -95]
+Step-by-step: tick: 611 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 94]
+Step-by-step: tick: 612 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 95]
+Step-by-step: tick: 613 | A: 0x118 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 95, -1]
+Step-by-step: tick: 614 | A: 0x118 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 94]
+Step-by-step: tick: 615 | A: 0x118 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 616 | A: 0x118 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 617 | A: 0x118 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 618 | A: 0x118 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256]
+Step-by-step: tick: 619 | A: 0x118 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 256, 20]
+Step-by-step: tick: 620 | A: 0x118 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 276]
+Step-by-step: tick: 621 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 622 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100]
+Step-by-step: tick: 623 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256]
+Step-by-step: tick: 624 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 20]
+Step-by-step: tick: 625 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 20, 4]
+Step-by-step: tick: 626 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 256, 24]
+Step-by-step: tick: 627 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 280]
+Step-by-step: tick: 628 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100]
+Step-by-step: tick: 629 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 100, 5]
+Step-by-step: tick: 630 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 100]
+Step-by-step: tick: 631 | A: 0x118 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 100, 256]
+Step-by-step: tick: 632 | A: 0x118 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 100, 256, 20]
+Step-by-step: tick: 633 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 7, 1, 6, 1, 5, 100, 256, 20, 4]
+Step-by-step: tick: 634 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 100, 256, 24]
+Step-by-step: tick: 635 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 100, 280]
+Step-by-step: tick: 636 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 100]
+Step-by-step: tick: 637 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5]
+Step-by-step: tick: 638 | A: 0x118 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 256]
+Step-by-step: tick: 639 | A: 0x118 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 256, 20]
+Step-by-step: tick: 640 | A: 0x118 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5, 276]
+Step-by-step: tick: 641 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 5]
+Step-by-step: tick: 642 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 643 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 644 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
+Step-by-step: tick: 645 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1, 5]
+Step-by-step: tick: 646 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 6]
+Step-by-step: tick: 647 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 648 | A: 0x114 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
+Step-by-step: tick: 649 | A: 0x114 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 650 | A: 0x114 | B: 0x6 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6]
+Step-by-step: tick: 651 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, 6]
+Step-by-step: tick: 652 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 6, 6]
+Step-by-step: tick: 653 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0]
+Step-by-step: tick: 654 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0, -1]
+Step-by-step: tick: 655 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, -1]
+Step-by-step: tick: 656 | A: 0x114 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 657 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0]
+Step-by-step: tick: 658 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0]
+Step-by-step: tick: 659 | A: 0x114 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 660 | A: 0x114 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 661 | A: 0x114 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 662 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 663 | A: 0x114 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0]
+Step-by-step: tick: 664 | A: 0x114 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 665 | A: 0x114 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 666 | A: 0x114 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 667 | A: 0x114 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 668 | A: 0x114 | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 669 | A: 0x114 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 1]
+Step-by-step: tick: 670 | A: 0x114 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7]
+Step-by-step: tick: 671 | A: 0x114 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 6]
+Step-by-step: tick: 672 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 6, -1]
+Step-by-step: tick: 673 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 5]
+Step-by-step: tick: 674 | A: 0x114 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 675 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 676 | A: 0x114 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 677 | A: 0x114 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 678 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 679 | A: 0x114 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 680 | A: 0x114 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 7]
+Step-by-step: tick: 681 | A: 0x114 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 682 | A: 0x114 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5]
+Step-by-step: tick: 683 | A: 0x114 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 684 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 685 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 686 | A: 0x114 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5]
+Step-by-step: tick: 687 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 688 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 689 | A: 0x114 | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5]
+Step-by-step: tick: 690 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5, 0]
+Step-by-step: tick: 691 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0, 5]
+Step-by-step: tick: 692 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5]
+Step-by-step: tick: 693 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5, -1]
+Step-by-step: tick: 694 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 4]
+Step-by-step: tick: 695 | A: 0x114 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 696 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
+Step-by-step: tick: 697 | A: 0x114 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 698 | A: 0x114 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 699 | A: 0x114 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 700 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0, 4]
+Step-by-step: tick: 701 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 702 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 703 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256]
+Step-by-step: tick: 704 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256, 0]
+Step-by-step: tick: 705 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256]
+Step-by-step: tick: 706 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 707 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 708 | A: 0x100 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 256]
+Step-by-step: tick: 709 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 256, 0]
+Step-by-step: tick: 710 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 256, 0, 4]
+Step-by-step: tick: 711 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 256, 4]
+Step-by-step: tick: 712 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 260]
+Step-by-step: tick: 713 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 714 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 2]
+Step-by-step: tick: 715 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 716 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
+Step-by-step: tick: 717 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -1]
+Step-by-step: tick: 718 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -1, -1]
+Step-by-step: tick: 719 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
+Step-by-step: tick: 720 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 721 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 722 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 723 | A: 0x104 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 724 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 725 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 0]
+Step-by-step: tick: 726 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 727 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 728 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 729 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 730 | A: 0x104 | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5]
+Step-by-step: tick: 731 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5, 1]
+Step-by-step: tick: 732 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1, 5]
+Step-by-step: tick: 733 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 4]
+Step-by-step: tick: 734 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 4, -1]
+Step-by-step: tick: 735 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 3]
+Step-by-step: tick: 736 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 737 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
+Step-by-step: tick: 738 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 739 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 740 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 741 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 4]
+Step-by-step: tick: 742 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4]
+Step-by-step: tick: 743 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 744 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256]
+Step-by-step: tick: 745 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256, 4]
+Step-by-step: tick: 746 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 260]
+Step-by-step: tick: 747 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 748 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2]
+Step-by-step: tick: 749 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2, 256]
+Step-by-step: tick: 750 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2, 256, 4]
+Step-by-step: tick: 751 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 5, 1, 2, 256, 4, 4]
+Step-by-step: tick: 752 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2, 256, 8]
+Step-by-step: tick: 753 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2, 264]
+Step-by-step: tick: 754 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2]
+Step-by-step: tick: 755 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2, 3]
+Step-by-step: tick: 756 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 757 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
+Step-by-step: tick: 758 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -1]
+Step-by-step: tick: 759 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -1, -1]
+Step-by-step: tick: 760 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
+Step-by-step: tick: 761 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 762 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 763 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 764 | A: 0x108 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 765 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 766 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 1]
+Step-by-step: tick: 767 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2]
+Step-by-step: tick: 768 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 769 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 770 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 771 | A: 0x108 | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5]
+Step-by-step: tick: 772 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5, 2]
+Step-by-step: tick: 773 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 2, 5]
+Step-by-step: tick: 774 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 3]
+Step-by-step: tick: 775 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 3, -1]
+Step-by-step: tick: 776 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 2]
+Step-by-step: tick: 777 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 778 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
+Step-by-step: tick: 779 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 780 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 781 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2]
+Step-by-step: tick: 782 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2, 4]
+Step-by-step: tick: 783 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8]
+Step-by-step: tick: 784 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 785 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256]
+Step-by-step: tick: 786 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256, 8]
+Step-by-step: tick: 787 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 264]
+Step-by-step: tick: 788 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 789 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3]
+Step-by-step: tick: 790 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3, 256]
+Step-by-step: tick: 791 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3, 256, 8]
+Step-by-step: tick: 792 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 5, 1, 3, 256, 8, 4]
+Step-by-step: tick: 793 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3, 256, 12]
+Step-by-step: tick: 794 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3, 268]
+Step-by-step: tick: 795 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3]
+Step-by-step: tick: 796 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3, 4]
+Step-by-step: tick: 797 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 798 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
+Step-by-step: tick: 799 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -1]
+Step-by-step: tick: 800 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -1, -1]
+Step-by-step: tick: 801 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
+Step-by-step: tick: 802 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 803 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 804 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 805 | A: 0x10c | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 806 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 807 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 2]
+Step-by-step: tick: 808 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3]
+Step-by-step: tick: 809 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 810 | A: 0x10c | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 811 | A: 0x10c | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 812 | A: 0x10c | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5]
+Step-by-step: tick: 813 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5, 3]
+Step-by-step: tick: 814 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 3, 5]
+Step-by-step: tick: 815 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 2]
+Step-by-step: tick: 816 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 2, -1]
+Step-by-step: tick: 817 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
+Step-by-step: tick: 818 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 819 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
+Step-by-step: tick: 820 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 821 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 822 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3]
+Step-by-step: tick: 823 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3, 4]
+Step-by-step: tick: 824 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 12]
+Step-by-step: tick: 825 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 826 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256]
+Step-by-step: tick: 827 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256, 12]
+Step-by-step: tick: 828 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 268]
+Step-by-step: tick: 829 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 830 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4]
+Step-by-step: tick: 831 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4, 256]
+Step-by-step: tick: 832 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4, 256, 12]
+Step-by-step: tick: 833 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 5, 1, 4, 256, 12, 4]
+Step-by-step: tick: 834 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4, 256, 16]
+Step-by-step: tick: 835 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4, 272]
+Step-by-step: tick: 836 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4]
+Step-by-step: tick: 837 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4, 8]
+Step-by-step: tick: 838 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4]
+Step-by-step: tick: 839 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -5]
+Step-by-step: tick: 840 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -4]
+Step-by-step: tick: 841 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -4, -1]
+Step-by-step: tick: 842 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -5]
+Step-by-step: tick: 843 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 844 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 845 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
+Step-by-step: tick: 846 | A: 0x110 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 847 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 848 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 3]
+Step-by-step: tick: 849 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4]
+Step-by-step: tick: 850 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 851 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 852 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 853 | A: 0x110 | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5]
+Step-by-step: tick: 854 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5, 4]
+Step-by-step: tick: 855 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 4, 5]
+Step-by-step: tick: 856 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
+Step-by-step: tick: 857 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1, -1]
+Step-by-step: tick: 858 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0]
+Step-by-step: tick: 859 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 860 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
+Step-by-step: tick: 861 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 862 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 863 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4]
+Step-by-step: tick: 864 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 4, 4]
+Step-by-step: tick: 865 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 16]
+Step-by-step: tick: 866 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 867 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256]
+Step-by-step: tick: 868 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256, 16]
+Step-by-step: tick: 869 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 272]
+Step-by-step: tick: 870 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 871 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8]
+Step-by-step: tick: 872 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 256]
+Step-by-step: tick: 873 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 256, 16]
+Step-by-step: tick: 874 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 256, 16, 4]
+Step-by-step: tick: 875 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 256, 20]
+Step-by-step: tick: 876 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 276]
+Step-by-step: tick: 877 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8]
+Step-by-step: tick: 878 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 5]
+Step-by-step: tick: 879 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -3]
+Step-by-step: tick: 880 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2]
+Step-by-step: tick: 881 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3]
+Step-by-step: tick: 882 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 3, -1]
+Step-by-step: tick: 883 | A: 0x114 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2]
+Step-by-step: tick: 884 | A: 0x114 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 885 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 886 | A: 0x114 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 887 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256]
+Step-by-step: tick: 888 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 256, 16]
+Step-by-step: tick: 889 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 272]
+Step-by-step: tick: 890 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 891 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8]
+Step-by-step: tick: 892 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 256]
+Step-by-step: tick: 893 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 256, 16]
+Step-by-step: tick: 894 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 256, 16, 4]
+Step-by-step: tick: 895 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 256, 20]
+Step-by-step: tick: 896 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 276]
+Step-by-step: tick: 897 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8]
+Step-by-step: tick: 898 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 8, 5]
+Step-by-step: tick: 899 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 8]
+Step-by-step: tick: 900 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 8, 256]
+Step-by-step: tick: 901 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 8, 256, 16]
+Step-by-step: tick: 902 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 7, 1, 5, 1, 5, 8, 256, 16, 4]
+Step-by-step: tick: 903 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 8, 256, 20]
+Step-by-step: tick: 904 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 8, 276]
+Step-by-step: tick: 905 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 8]
+Step-by-step: tick: 906 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5]
+Step-by-step: tick: 907 | A: 0x114 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 256]
+Step-by-step: tick: 908 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 256, 16]
+Step-by-step: tick: 909 | A: 0x114 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5, 272]
+Step-by-step: tick: 910 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5]
+Step-by-step: tick: 911 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 912 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 913 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
+Step-by-step: tick: 914 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1, 4]
+Step-by-step: tick: 915 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 5]
+Step-by-step: tick: 916 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 917 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
+Step-by-step: tick: 918 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 919 | A: 0x110 | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5]
+Step-by-step: tick: 920 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5, 5]
+Step-by-step: tick: 921 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 5, 5]
+Step-by-step: tick: 922 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0]
+Step-by-step: tick: 923 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0, -1]
+Step-by-step: tick: 924 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, -1]
+Step-by-step: tick: 925 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 926 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0]
+Step-by-step: tick: 927 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0]
+Step-by-step: tick: 928 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 929 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 930 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 931 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 932 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 933 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2]
+Step-by-step: tick: 934 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 935 | A: 0x110 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 936 | A: 0x110 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 937 | A: 0x110 | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 938 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 2]
+Step-by-step: tick: 939 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 2, 7]
+Step-by-step: tick: 940 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 5]
+Step-by-step: tick: 941 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 5, -1]
+Step-by-step: tick: 942 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 4]
+Step-by-step: tick: 943 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 944 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 945 | A: 0x110 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 946 | A: 0x110 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 947 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 948 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 949 | A: 0x110 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 7]
+Step-by-step: tick: 950 | A: 0x110 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 951 | A: 0x110 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4]
+Step-by-step: tick: 952 | A: 0x110 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 953 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 954 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 955 | A: 0x110 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4]
+Step-by-step: tick: 956 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 957 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 958 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4]
+Step-by-step: tick: 959 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4, 0]
+Step-by-step: tick: 960 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0, 4]
+Step-by-step: tick: 961 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4]
+Step-by-step: tick: 962 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4, -1]
+Step-by-step: tick: 963 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 3]
+Step-by-step: tick: 964 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 965 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
+Step-by-step: tick: 966 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 967 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 968 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 969 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0, 4]
+Step-by-step: tick: 970 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 971 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 972 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256]
+Step-by-step: tick: 973 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256, 0]
+Step-by-step: tick: 974 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256]
+Step-by-step: tick: 975 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 976 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 977 | A: 0x100 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 256]
+Step-by-step: tick: 978 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 256, 0]
+Step-by-step: tick: 979 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 256, 0, 4]
+Step-by-step: tick: 980 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 256, 4]
+Step-by-step: tick: 981 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 260]
+Step-by-step: tick: 982 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 983 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 2]
+Step-by-step: tick: 984 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 985 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
+Step-by-step: tick: 986 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -1]
+Step-by-step: tick: 987 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -1, -1]
+Step-by-step: tick: 988 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
+Step-by-step: tick: 989 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 990 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 991 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 992 | A: 0x104 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 993 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 994 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 0]
+Step-by-step: tick: 995 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 996 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 997 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 998 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 999 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4]
+Step-by-step: tick: 1000 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4, 1]
+Step-by-step: tick: 1001 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1, 4]
+Step-by-step: tick: 1002 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 3]
+Step-by-step: tick: 1003 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 3, -1]
+Step-by-step: tick: 1004 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 2]
+Step-by-step: tick: 1005 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1006 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
+Step-by-step: tick: 1007 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1008 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1009 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 1010 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 4]
+Step-by-step: tick: 1011 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4]
+Step-by-step: tick: 1012 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1013 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256]
+Step-by-step: tick: 1014 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256, 4]
+Step-by-step: tick: 1015 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 260]
+Step-by-step: tick: 1016 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1017 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2]
+Step-by-step: tick: 1018 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2, 256]
+Step-by-step: tick: 1019 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2, 256, 4]
+Step-by-step: tick: 1020 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 4, 1, 2, 256, 4, 4]
+Step-by-step: tick: 1021 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2, 256, 8]
+Step-by-step: tick: 1022 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2, 264]
+Step-by-step: tick: 1023 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2]
+Step-by-step: tick: 1024 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2, 3]
+Step-by-step: tick: 1025 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 1026 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
+Step-by-step: tick: 1027 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -1]
+Step-by-step: tick: 1028 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -1, -1]
+Step-by-step: tick: 1029 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
+Step-by-step: tick: 1030 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1031 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 1032 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 1033 | A: 0x108 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1034 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 1035 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 1]
+Step-by-step: tick: 1036 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2]
+Step-by-step: tick: 1037 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1038 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1039 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1040 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4]
+Step-by-step: tick: 1041 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4, 2]
+Step-by-step: tick: 1042 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 2, 4]
+Step-by-step: tick: 1043 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 2]
+Step-by-step: tick: 1044 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 2, -1]
+Step-by-step: tick: 1045 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
+Step-by-step: tick: 1046 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1047 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
+Step-by-step: tick: 1048 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1049 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1050 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2]
+Step-by-step: tick: 1051 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 2, 4]
+Step-by-step: tick: 1052 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 8]
+Step-by-step: tick: 1053 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1054 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256]
+Step-by-step: tick: 1055 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256, 8]
+Step-by-step: tick: 1056 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 264]
+Step-by-step: tick: 1057 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1058 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3]
+Step-by-step: tick: 1059 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3, 256]
+Step-by-step: tick: 1060 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3, 256, 8]
+Step-by-step: tick: 1061 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 4, 1, 3, 256, 8, 4]
+Step-by-step: tick: 1062 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3, 256, 12]
+Step-by-step: tick: 1063 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3, 268]
+Step-by-step: tick: 1064 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3]
+Step-by-step: tick: 1065 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3, 4]
+Step-by-step: tick: 1066 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 1067 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
+Step-by-step: tick: 1068 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -1]
+Step-by-step: tick: 1069 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -1, -1]
+Step-by-step: tick: 1070 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
+Step-by-step: tick: 1071 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1072 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 1073 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 1074 | A: 0x10c | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1075 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 1076 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 2]
+Step-by-step: tick: 1077 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3]
+Step-by-step: tick: 1078 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1079 | A: 0x10c | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1080 | A: 0x10c | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1081 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4]
+Step-by-step: tick: 1082 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4, 3]
+Step-by-step: tick: 1083 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 3, 4]
+Step-by-step: tick: 1084 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
+Step-by-step: tick: 1085 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1, -1]
+Step-by-step: tick: 1086 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0]
+Step-by-step: tick: 1087 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1088 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
+Step-by-step: tick: 1089 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1090 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1091 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3]
+Step-by-step: tick: 1092 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 3, 4]
+Step-by-step: tick: 1093 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 12]
+Step-by-step: tick: 1094 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1095 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256]
+Step-by-step: tick: 1096 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 256, 12]
+Step-by-step: tick: 1097 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 268]
+Step-by-step: tick: 1098 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1099 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4]
+Step-by-step: tick: 1100 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4, 256]
+Step-by-step: tick: 1101 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4, 256, 12]
+Step-by-step: tick: 1102 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 4, 1, 4, 256, 12, 4]
+Step-by-step: tick: 1103 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4, 256, 16]
+Step-by-step: tick: 1104 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4, 272]
+Step-by-step: tick: 1105 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4]
+Step-by-step: tick: 1106 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4, 5]
+Step-by-step: tick: 1107 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 1108 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
+Step-by-step: tick: 1109 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -1]
+Step-by-step: tick: 1110 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -1, -1]
+Step-by-step: tick: 1111 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
+Step-by-step: tick: 1112 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1113 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 1114 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
+Step-by-step: tick: 1115 | A: 0x110 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1116 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1]
+Step-by-step: tick: 1117 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 1, 3]
+Step-by-step: tick: 1118 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 4]
+Step-by-step: tick: 1119 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1120 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
+Step-by-step: tick: 1121 | A: 0x110 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1122 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4]
+Step-by-step: tick: 1123 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4, 4]
+Step-by-step: tick: 1124 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 4, 4]
+Step-by-step: tick: 1125 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0]
+Step-by-step: tick: 1126 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0, -1]
+Step-by-step: tick: 1127 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, -1]
+Step-by-step: tick: 1128 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1129 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0]
+Step-by-step: tick: 1130 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0]
+Step-by-step: tick: 1131 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1132 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1133 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1134 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1135 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1136 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3]
+Step-by-step: tick: 1137 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1138 | A: 0x110 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1139 | A: 0x110 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1140 | A: 0x110 | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 1141 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 3]
+Step-by-step: tick: 1142 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 3, 7]
+Step-by-step: tick: 1143 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 4]
+Step-by-step: tick: 1144 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 4, -1]
+Step-by-step: tick: 1145 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 3]
+Step-by-step: tick: 1146 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1147 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 1148 | A: 0x110 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1149 | A: 0x110 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1150 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1151 | A: 0x110 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1152 | A: 0x110 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 7]
+Step-by-step: tick: 1153 | A: 0x110 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1154 | A: 0x110 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3]
+Step-by-step: tick: 1155 | A: 0x110 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1156 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 1157 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1158 | A: 0x110 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3]
+Step-by-step: tick: 1159 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1160 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1161 | A: 0x110 | B: 0x3 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3]
+Step-by-step: tick: 1162 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3, 0]
+Step-by-step: tick: 1163 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0, 3]
+Step-by-step: tick: 1164 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3]
+Step-by-step: tick: 1165 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3, -1]
+Step-by-step: tick: 1166 | A: 0x110 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 2]
+Step-by-step: tick: 1167 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1168 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
+Step-by-step: tick: 1169 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1170 | A: 0x110 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1171 | A: 0x110 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
+Step-by-step: tick: 1172 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0, 4]
+Step-by-step: tick: 1173 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
+Step-by-step: tick: 1174 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1175 | A: 0x110 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 256]
+Step-by-step: tick: 1176 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 256, 0]
+Step-by-step: tick: 1177 | A: 0x110 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 256]
+Step-by-step: tick: 1178 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1179 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1180 | A: 0x100 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 256]
+Step-by-step: tick: 1181 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 256, 0]
+Step-by-step: tick: 1182 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 256, 0, 4]
+Step-by-step: tick: 1183 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 256, 4]
+Step-by-step: tick: 1184 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 260]
+Step-by-step: tick: 1185 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1186 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 2]
+Step-by-step: tick: 1187 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1188 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
+Step-by-step: tick: 1189 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -1]
+Step-by-step: tick: 1190 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -1, -1]
+Step-by-step: tick: 1191 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
+Step-by-step: tick: 1192 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1193 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
+Step-by-step: tick: 1194 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
+Step-by-step: tick: 1195 | A: 0x104 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1196 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1197 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 0]
+Step-by-step: tick: 1198 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1199 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1200 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1201 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1202 | A: 0x104 | B: 0x3 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3]
+Step-by-step: tick: 1203 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3, 1]
+Step-by-step: tick: 1204 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1, 3]
+Step-by-step: tick: 1205 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 2]
+Step-by-step: tick: 1206 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 2, -1]
+Step-by-step: tick: 1207 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
+Step-by-step: tick: 1208 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1209 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
+Step-by-step: tick: 1210 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1211 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1212 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1213 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 4]
+Step-by-step: tick: 1214 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 4]
+Step-by-step: tick: 1215 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1216 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 256]
+Step-by-step: tick: 1217 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 256, 4]
+Step-by-step: tick: 1218 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 260]
+Step-by-step: tick: 1219 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1220 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2]
+Step-by-step: tick: 1221 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2, 256]
+Step-by-step: tick: 1222 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2, 256, 4]
+Step-by-step: tick: 1223 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 3, 1, 2, 256, 4, 4]
+Step-by-step: tick: 1224 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2, 256, 8]
+Step-by-step: tick: 1225 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2, 264]
+Step-by-step: tick: 1226 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2]
+Step-by-step: tick: 1227 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2, 3]
+Step-by-step: tick: 1228 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1229 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
+Step-by-step: tick: 1230 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -1]
+Step-by-step: tick: 1231 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -1, -1]
+Step-by-step: tick: 1232 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
+Step-by-step: tick: 1233 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1234 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
+Step-by-step: tick: 1235 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
+Step-by-step: tick: 1236 | A: 0x108 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1237 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1238 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 1]
+Step-by-step: tick: 1239 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2]
+Step-by-step: tick: 1240 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1241 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1242 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1243 | A: 0x108 | B: 0x3 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3]
+Step-by-step: tick: 1244 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3, 2]
+Step-by-step: tick: 1245 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 2, 3]
+Step-by-step: tick: 1246 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
+Step-by-step: tick: 1247 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1, -1]
+Step-by-step: tick: 1248 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0]
+Step-by-step: tick: 1249 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1250 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
+Step-by-step: tick: 1251 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1252 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1253 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2]
+Step-by-step: tick: 1254 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 2, 4]
+Step-by-step: tick: 1255 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 8]
+Step-by-step: tick: 1256 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1257 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 256]
+Step-by-step: tick: 1258 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 256, 8]
+Step-by-step: tick: 1259 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 264]
+Step-by-step: tick: 1260 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1261 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 3]
+Step-by-step: tick: 1262 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 3, 256]
+Step-by-step: tick: 1263 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 3, 256, 8]
+Step-by-step: tick: 1264 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 3, 1, 3, 256, 8, 4]
+Step-by-step: tick: 1265 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 3, 256, 12]
+Step-by-step: tick: 1266 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 3, 268]
+Step-by-step: tick: 1267 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 3]
+Step-by-step: tick: 1268 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 3, 4]
+Step-by-step: tick: 1269 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1270 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
+Step-by-step: tick: 1271 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -1]
+Step-by-step: tick: 1272 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -1, -1]
+Step-by-step: tick: 1273 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
+Step-by-step: tick: 1274 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1275 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
+Step-by-step: tick: 1276 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
+Step-by-step: tick: 1277 | A: 0x10c | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1278 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1]
+Step-by-step: tick: 1279 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 1, 2]
+Step-by-step: tick: 1280 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 3]
+Step-by-step: tick: 1281 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1282 | A: 0x10c | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
+Step-by-step: tick: 1283 | A: 0x10c | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1284 | A: 0x10c | B: 0x3 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3]
+Step-by-step: tick: 1285 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3, 3]
+Step-by-step: tick: 1286 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 3, 3]
+Step-by-step: tick: 1287 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0]
+Step-by-step: tick: 1288 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0, -1]
+Step-by-step: tick: 1289 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, -1]
+Step-by-step: tick: 1290 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1291 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0]
+Step-by-step: tick: 1292 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0]
+Step-by-step: tick: 1293 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1294 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1295 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1296 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1297 | A: 0x10c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1298 | A: 0x10c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4]
+Step-by-step: tick: 1299 | A: 0x10c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1300 | A: 0x10c | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1301 | A: 0x10c | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1302 | A: 0x10c | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 1303 | A: 0x10c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 4]
+Step-by-step: tick: 1304 | A: 0x10c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 4, 7]
+Step-by-step: tick: 1305 | A: 0x10c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 3]
+Step-by-step: tick: 1306 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 3, -1]
+Step-by-step: tick: 1307 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 2]
+Step-by-step: tick: 1308 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1309 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 1310 | A: 0x10c | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1311 | A: 0x10c | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1312 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1313 | A: 0x10c | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1314 | A: 0x10c | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 7]
+Step-by-step: tick: 1315 | A: 0x10c | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
+Step-by-step: tick: 1316 | A: 0x10c | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2]
+Step-by-step: tick: 1317 | A: 0x10c | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1318 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 1319 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1320 | A: 0x10c | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2]
+Step-by-step: tick: 1321 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1322 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1323 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2]
+Step-by-step: tick: 1324 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2, 0]
+Step-by-step: tick: 1325 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0, 2]
+Step-by-step: tick: 1326 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2]
+Step-by-step: tick: 1327 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2, -1]
+Step-by-step: tick: 1328 | A: 0x10c | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1]
+Step-by-step: tick: 1329 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1330 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1]
+Step-by-step: tick: 1331 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1332 | A: 0x10c | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1333 | A: 0x10c | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
+Step-by-step: tick: 1334 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0, 4]
+Step-by-step: tick: 1335 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
+Step-by-step: tick: 1336 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1337 | A: 0x10c | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 256]
+Step-by-step: tick: 1338 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 256, 0]
+Step-by-step: tick: 1339 | A: 0x10c | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 256]
+Step-by-step: tick: 1340 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1341 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1]
+Step-by-step: tick: 1342 | A: 0x100 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 256]
+Step-by-step: tick: 1343 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 256, 0]
+Step-by-step: tick: 1344 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 256, 0, 4]
+Step-by-step: tick: 1345 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 256, 4]
+Step-by-step: tick: 1346 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 260]
+Step-by-step: tick: 1347 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1]
+Step-by-step: tick: 1348 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 2]
+Step-by-step: tick: 1349 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1]
+Step-by-step: tick: 1350 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -2]
+Step-by-step: tick: 1351 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -1]
+Step-by-step: tick: 1352 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -1, -1]
+Step-by-step: tick: 1353 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -2]
+Step-by-step: tick: 1354 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1355 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
+Step-by-step: tick: 1356 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
+Step-by-step: tick: 1357 | A: 0x104 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1358 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1]
+Step-by-step: tick: 1359 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 0]
+Step-by-step: tick: 1360 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1]
+Step-by-step: tick: 1361 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1362 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1363 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1364 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2]
+Step-by-step: tick: 1365 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2, 1]
+Step-by-step: tick: 1366 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1, 2]
+Step-by-step: tick: 1367 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1]
+Step-by-step: tick: 1368 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1, -1]
+Step-by-step: tick: 1369 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0]
+Step-by-step: tick: 1370 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1371 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1]
+Step-by-step: tick: 1372 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1373 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1374 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1]
+Step-by-step: tick: 1375 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 4]
+Step-by-step: tick: 1376 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 4]
+Step-by-step: tick: 1377 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1378 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 256]
+Step-by-step: tick: 1379 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 256, 4]
+Step-by-step: tick: 1380 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 260]
+Step-by-step: tick: 1381 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1382 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 2]
+Step-by-step: tick: 1383 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 2, 256]
+Step-by-step: tick: 1384 | A: 0x104 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 2, 256, 4]
+Step-by-step: tick: 1385 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 2, 1, 2, 256, 4, 4]
+Step-by-step: tick: 1386 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 2, 256, 8]
+Step-by-step: tick: 1387 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 2, 264]
+Step-by-step: tick: 1388 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 2]
+Step-by-step: tick: 1389 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 2, 3]
+Step-by-step: tick: 1390 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1]
+Step-by-step: tick: 1391 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -2]
+Step-by-step: tick: 1392 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -1]
+Step-by-step: tick: 1393 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -1, -1]
+Step-by-step: tick: 1394 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -2]
+Step-by-step: tick: 1395 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1396 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
+Step-by-step: tick: 1397 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
+Step-by-step: tick: 1398 | A: 0x108 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1399 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1]
+Step-by-step: tick: 1400 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 1, 1]
+Step-by-step: tick: 1401 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 2]
+Step-by-step: tick: 1402 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1403 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
+Step-by-step: tick: 1404 | A: 0x108 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1405 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2]
+Step-by-step: tick: 1406 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2, 2]
+Step-by-step: tick: 1407 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 2, 2]
+Step-by-step: tick: 1408 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0]
+Step-by-step: tick: 1409 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0, -1]
+Step-by-step: tick: 1410 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, -1]
+Step-by-step: tick: 1411 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1412 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0]
+Step-by-step: tick: 1413 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0]
+Step-by-step: tick: 1414 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1415 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1416 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1417 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1418 | A: 0x108 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
+Step-by-step: tick: 1419 | A: 0x108 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5]
+Step-by-step: tick: 1420 | A: 0x108 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1421 | A: 0x108 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1422 | A: 0x108 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1423 | A: 0x108 | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 1424 | A: 0x108 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 5]
+Step-by-step: tick: 1425 | A: 0x108 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 5, 7]
+Step-by-step: tick: 1426 | A: 0x108 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 2]
+Step-by-step: tick: 1427 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 2, -1]
+Step-by-step: tick: 1428 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 1429 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1430 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 1431 | A: 0x108 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1432 | A: 0x108 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1433 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1434 | A: 0x108 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 1435 | A: 0x108 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 7]
+Step-by-step: tick: 1436 | A: 0x108 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
+Step-by-step: tick: 1437 | A: 0x108 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1438 | A: 0x108 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1439 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 1440 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1441 | A: 0x108 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1442 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1443 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1444 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1445 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 0]
+Step-by-step: tick: 1446 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0, 1]
+Step-by-step: tick: 1447 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1448 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, -1]
+Step-by-step: tick: 1449 | A: 0x108 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
+Step-by-step: tick: 1450 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1451 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1452 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1453 | A: 0x108 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1454 | A: 0x108 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
+Step-by-step: tick: 1455 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0, 4]
+Step-by-step: tick: 1456 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
+Step-by-step: tick: 1457 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1458 | A: 0x108 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 256]
+Step-by-step: tick: 1459 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 256, 0]
+Step-by-step: tick: 1460 | A: 0x108 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 256]
+Step-by-step: tick: 1461 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1462 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1463 | A: 0x100 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 256]
+Step-by-step: tick: 1464 | A: 0x100 | B: 0x2c 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 256, 0]
+Step-by-step: tick: 1465 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 256, 0, 4]
+Step-by-step: tick: 1466 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 256, 4]
+Step-by-step: tick: 1467 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 260]
+Step-by-step: tick: 1468 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1469 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 2]
+Step-by-step: tick: 1470 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1471 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, -2]
+Step-by-step: tick: 1472 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, -1]
+Step-by-step: tick: 1473 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, -1, -1]
+Step-by-step: tick: 1474 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, -2]
+Step-by-step: tick: 1475 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1476 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
+Step-by-step: tick: 1477 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
+Step-by-step: tick: 1478 | A: 0x104 | B: 0x1a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1479 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1480 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 0]
+Step-by-step: tick: 1481 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1482 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1483 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1484 | A: 0x104 | B: -0x46 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1485 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
+Step-by-step: tick: 1486 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 1]
+Step-by-step: tick: 1487 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 1]
+Step-by-step: tick: 1488 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
+Step-by-step: tick: 1489 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0, -1]
+Step-by-step: tick: 1490 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, -1]
+Step-by-step: tick: 1491 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1492 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
+Step-by-step: tick: 1493 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
+Step-by-step: tick: 1494 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1495 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1496 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1497 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1498 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
+Step-by-step: tick: 1499 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6]
+Step-by-step: tick: 1500 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1501 | A: 0x104 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1502 | A: 0x104 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1503 | A: 0x104 | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 1504 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 6]
+Step-by-step: tick: 1505 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 6, 7]
+Step-by-step: tick: 1506 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 1507 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, -1]
+Step-by-step: tick: 1508 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0]
+Step-by-step: tick: 1509 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1510 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
+Step-by-step: tick: 1511 | A: 0x104 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1512 | A: 0x104 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1513 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1514 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 1515 | A: 0x104 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 7]
+Step-by-step: tick: 1516 | A: 0x104 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
+Step-by-step: tick: 1517 | A: 0x104 | B: 0x24 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 1518 | A: 0x104 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1519 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 1520 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1521 | A: 0x104 | B: 0x28 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0]
+Step-by-step: tick: 1522 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1]
+Step-by-step: tick: 1523 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0]
+Step-by-step: tick: 1524 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0]
+Step-by-step: tick: 1525 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0, 0]
+Step-by-step: tick: 1526 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0, 0]
+Step-by-step: tick: 1527 | A: 0x104 | B: 0x34 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0]
+Step-by-step: tick: 1528 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0, -1]
+Step-by-step: tick: 1529 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, -1]
+Step-by-step: tick: 1530 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0]
+Step-by-step: tick: 1531 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0]
+Step-by-step: tick: 1532 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0]
+Step-by-step: tick: 1533 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0]
+Step-by-step: tick: 1534 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1535 | A: 0x104 | B: 0x3a 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1536 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1]
+Step-by-step: tick: 1537 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
+Step-by-step: tick: 1538 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 7]
+Step-by-step: tick: 1539 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1540 | A: 0x104 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
+Step-by-step: tick: 1541 | A: 0x104 | B: -0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1542 | A: 0x104 | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7]
+Step-by-step: tick: 1543 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 7]
+Step-by-step: tick: 1544 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 7]
+Step-by-step: tick: 1545 | A: 0x104 | B: 0x30 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0]
+Step-by-step: tick: 1546 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, -1]
+Step-by-step: tick: 1547 | A: 0x104 | B: -0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, -1]
+Step-by-step: tick: 1548 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1549 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0]
+Step-by-step: tick: 1550 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0]
+Step-by-step: tick: 1551 | A: 0x104 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
+Step-by-step: tick: 1552 | A: 0x104 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1553 | A: 0x104 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1554 | A: 0x104 | B: 0x58 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1555 | A: 0x104 | B: 0x20 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
+Step-by-step: tick: 1556 | A: 0x104 | B: -0xaa 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
+Step-by-step: tick: 1557 | A: 0x104 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1558 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1559 | A: 0x104 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1560 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1561 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1562 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1563 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1564 | A: 0x104 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1565 | A: 0x104 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Step-by-step: tick: 1566 | A: 0x104 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
+Step-by-step: tick: 1567 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1568 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1569 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1570 | A: 0x104 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1571 | A: 0x104 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1572 | A: 0x104 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
+Step-by-step: tick: 1573 | A: 0x100 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1574 | A: 0x100 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1575 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+Step-by-step: tick: 1576 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1]
+Step-by-step: tick: 1577 | A: 0x100 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+Step-by-step: tick: 1578 | A: 0x100 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+Step-by-step: tick: 1579 | A: 0x100 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1]
+Step-by-step: tick: 1580 | A: 0x100 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1581 | A: 0x100 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Step-by-step: tick: 1582 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Step-by-step: tick: 1583 | A: 0x100 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1584 | A: 0x100 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 132]
+Step-by-step: tick: 1585 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1586 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1587 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
+Step-by-step: tick: 1588 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256, 4]
+Step-by-step: tick: 1589 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 260]
+Step-by-step: tick: 1590 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1591 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1592 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1593 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1594 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1595 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1596 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1597 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1598 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1599 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+Step-by-step: tick: 1600 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
+Step-by-step: tick: 1601 | A: 0x84 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1602 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1603 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1604 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1605 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1606 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 260]
+Step-by-step: tick: 1607 | A: 0x104 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1608 | A: 0x104 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 1609 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2]
+Step-by-step: tick: 1610 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2]
+Step-by-step: tick: 1611 | A: 0x104 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2]
+Step-by-step: tick: 1612 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0]
+Step-by-step: tick: 1613 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, -2]
+Step-by-step: tick: 1614 | A: 0x104 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 1615 | A: 0x104 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0]
+Step-by-step: tick: 1616 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0]
+Step-by-step: tick: 1617 | A: 0x104 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 1618 | A: 0x104 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 132]
+Step-by-step: tick: 1619 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 1620 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1621 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 260]
+Step-by-step: tick: 1622 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 260, 4]
+Step-by-step: tick: 1623 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 264]
+Step-by-step: tick: 1624 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1625 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1626 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 1627 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 1628 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1629 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1630 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1631 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1632 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+Step-by-step: tick: 1633 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0]
+Step-by-step: tick: 1634 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2]
+Step-by-step: tick: 1635 | A: 0x84 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1636 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1637 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1638 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1639 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1640 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 264]
+Step-by-step: tick: 1641 | A: 0x108 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1642 | A: 0x108 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 1643 | A: 0x108 | B: 0x3 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3]
+Step-by-step: tick: 1644 | A: 0x108 | B: 0x3 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3]
+Step-by-step: tick: 1645 | A: 0x108 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3]
+Step-by-step: tick: 1646 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0]
+Step-by-step: tick: 1647 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3]
+Step-by-step: tick: 1648 | A: 0x108 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 1649 | A: 0x108 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0]
+Step-by-step: tick: 1650 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0]
+Step-by-step: tick: 1651 | A: 0x108 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 1652 | A: 0x108 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 132]
+Step-by-step: tick: 1653 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 1654 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1655 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 264]
+Step-by-step: tick: 1656 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 264, 4]
+Step-by-step: tick: 1657 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268]
+Step-by-step: tick: 1658 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1659 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1660 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 1661 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 1662 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1663 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1664 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1665 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1666 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+Step-by-step: tick: 1667 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0]
+Step-by-step: tick: 1668 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+Step-by-step: tick: 1669 | A: 0x84 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1670 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1671 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1672 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1673 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1674 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268]
+Step-by-step: tick: 1675 | A: 0x10c | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1676 | A: 0x10c | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 1677 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4]
+Step-by-step: tick: 1678 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4]
+Step-by-step: tick: 1679 | A: 0x10c | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4]
+Step-by-step: tick: 1680 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 0]
+Step-by-step: tick: 1681 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, -4]
+Step-by-step: tick: 1682 | A: 0x10c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 1683 | A: 0x10c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0]
+Step-by-step: tick: 1684 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0]
+Step-by-step: tick: 1685 | A: 0x10c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 1686 | A: 0x10c | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 132]
+Step-by-step: tick: 1687 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 1688 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1689 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268]
+Step-by-step: tick: 1690 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268, 4]
+Step-by-step: tick: 1691 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 272]
+Step-by-step: tick: 1692 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1693 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1694 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 1695 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 1696 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1697 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1698 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1699 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1700 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+Step-by-step: tick: 1701 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0]
+Step-by-step: tick: 1702 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4]
+Step-by-step: tick: 1703 | A: 0x84 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1704 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1705 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1706 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1707 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1708 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 272]
+Step-by-step: tick: 1709 | A: 0x110 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1710 | A: 0x110 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 1711 | A: 0x110 | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5]
+Step-by-step: tick: 1712 | A: 0x110 | B: 0x5 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5]
+Step-by-step: tick: 1713 | A: 0x110 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5]
+Step-by-step: tick: 1714 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 0]
+Step-by-step: tick: 1715 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, -5]
+Step-by-step: tick: 1716 | A: 0x110 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 1717 | A: 0x110 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0]
+Step-by-step: tick: 1718 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0]
+Step-by-step: tick: 1719 | A: 0x110 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 1720 | A: 0x110 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 132]
+Step-by-step: tick: 1721 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 1722 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1723 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 272]
+Step-by-step: tick: 1724 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 272, 4]
+Step-by-step: tick: 1725 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 276]
+Step-by-step: tick: 1726 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1727 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1728 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 1729 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 1730 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1731 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1732 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1733 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1734 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+Step-by-step: tick: 1735 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0]
+Step-by-step: tick: 1736 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5]
+Step-by-step: tick: 1737 | A: 0x84 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1738 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1739 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1740 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1741 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1742 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 276]
+Step-by-step: tick: 1743 | A: 0x114 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1744 | A: 0x114 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 1745 | A: 0x114 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 8]
+Step-by-step: tick: 1746 | A: 0x114 | B: 0x8 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 8, 8]
+Step-by-step: tick: 1747 | A: 0x114 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 8]
+Step-by-step: tick: 1748 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 8, 0]
+Step-by-step: tick: 1749 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, -8]
+Step-by-step: tick: 1750 | A: 0x114 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 1751 | A: 0x114 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0]
+Step-by-step: tick: 1752 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0]
+Step-by-step: tick: 1753 | A: 0x114 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 1754 | A: 0x114 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 132]
+Step-by-step: tick: 1755 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 1756 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1757 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 276]
+Step-by-step: tick: 1758 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 276, 4]
+Step-by-step: tick: 1759 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 280]
+Step-by-step: tick: 1760 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1761 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1762 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 1763 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 1764 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1765 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1766 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1767 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1768 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+Step-by-step: tick: 1769 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0]
+Step-by-step: tick: 1770 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8]
+Step-by-step: tick: 1771 | A: 0x84 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1772 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1773 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1774 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1775 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1776 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 280]
+Step-by-step: tick: 1777 | A: 0x118 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1778 | A: 0x118 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 1779 | A: 0x118 | B: 0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100]
+Step-by-step: tick: 1780 | A: 0x118 | B: 0x64 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 100]
+Step-by-step: tick: 1781 | A: 0x118 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100]
+Step-by-step: tick: 1782 | A: 0x118 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 0]
+Step-by-step: tick: 1783 | A: 0x118 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, -100]
+Step-by-step: tick: 1784 | A: 0x118 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 1785 | A: 0x118 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0]
+Step-by-step: tick: 1786 | A: 0x118 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0]
+Step-by-step: tick: 1787 | A: 0x118 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 1788 | A: 0x118 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 132]
+Step-by-step: tick: 1789 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 1790 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1791 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 280]
+Step-by-step: tick: 1792 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 280, 4]
+Step-by-step: tick: 1793 | A: 0x84 | B: 0x4 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 284]
+Step-by-step: tick: 1794 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1795 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1796 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 1797 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 1798 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1799 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1800 | A: 0x84 | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1801 | A: 0x84 | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1802 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
+Step-by-step: tick: 1803 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0]
+Step-by-step: tick: 1804 | A: 0x84 | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -100]
+Step-by-step: tick: 1805 | A: 0x84 | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1806 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1807 | A: 0x84 | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1808 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1809 | A: 0x84 | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1810 | A: 0x84 | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 284]
+Step-by-step: tick: 1811 | A: 0x11c | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1812 | A: 0x11c | B: 0x14 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1813 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1814 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1815 | A: 0x11c | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1816 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1817 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1818 | A: 0x11c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1819 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+Step-by-step: tick: 1820 | A: 0x11c | B: 0x1 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1821 | A: 0x11c | B: 0x7 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1822 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1823 | A: 0x11c | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1824 | A: 0x11c | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1825 | A: 0x11c | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1826 | A: 0x11c | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1827 | A: 0x11c | B: -0x25 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1828 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1829 | A: 0x11c | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1830 | A: 0x11c | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1831 | A: 0x11c | B: 0x18 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1832 | A: 0x11c | B: 0x2 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1833 | A: 0x11c | B: 0x0 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1834 | A: 0x11c | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1835 | A: 0x11c | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1836 | A: 0x11c | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1837 | A: 0x11c | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Step-by-step: tick: 1838 | A: 0x11c | B: 0x1b 
+data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Result: numio[0x80]: 
+numio[0x84]: 1, 2, 3, 4, 5, 8, 100
+A B 0x11c 27
+tick_count = 1838
+[27](cpu:B:dec)=[1] => RESULT=Failed
+[1, 2, 3, 4, 5, 8, 100](io:out:decbe)=[1, 2, 3, 4, 5] => RESULT=Faile

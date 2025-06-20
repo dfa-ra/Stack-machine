@@ -1,0 +1,178 @@
+   .data
+var 0 word 128
+var 4 word 132
+var 8 word 0
+var 12 word 0
+var 16 word 0
+var 20 word 0
+var 24 word 0
+var 28 word 0
+var 32 word 256
+var 36 word 304
+var 40 word 352
+var 44 word 0
+var 48 word 0
+var 52 word 0
+var 56 word 0
+   .text
+sw_to_imm_addr 8
+push_imm 0
+sw_to_imm_addr 12
+push_imm 1
+sw_to_imm_addr 16
+push_imm 0
+push_imm 0
+over
+dup
+lw_from_imm_addr 16
+over
+-
+if 2
+push_imm 1
+jmp 1
+push_imm 0
+if 22
+over
+lw_from_imm_addr 0
+load_T_a_pop
+lw_from_a_addr
+dup
+sw_to_imm_addr 16
+lw_from_imm_addr 8
+load_T_a_pop
+sw_to_a_addr
+lw_from_imm_addr 8
+push_imm 4
++
+sw_to_imm_addr 8
+push_imm 1
+lw_from_imm_addr 12
++
+sw_to_imm_addr 12
+dup
+lw_from_imm_addr 16
++
+sw_to_imm_addr 16
+jmp -32
+pop
+pop
+push_imm 1
+lw_from_imm_addr 12
+-
+ret
+sw_to_imm_addr 20
+push_imm 1
+sw_to_imm_addr 24
+push_imm 0
+push_imm 0
+over
+dup
+lw_from_imm_addr 24
+over
+-
+if 2
+push_imm 1
+jmp 1
+push_imm 0
+if 27
+over
+lw_from_imm_addr 20
+load_T_a_pop
+lw_from_a_addr
+dup
+dup
+sw_to_imm_addr 24
+push_imm 0
+-
+if 2
+push_imm 0
+jmp 1
+push_imm 1
+if 1
+jmp 7
+lw_from_imm_addr 4
+load_T_a_pop
+sw_to_a_addr
+lw_from_imm_addr 20
+push_imm 4
++
+sw_to_imm_addr 20
+dup
+lw_from_imm_addr 24
++
+sw_to_imm_addr 24
+jmp -37
+pop
+pop
+ret
+lw_from_imm_addr 4
+load_T_a_pop
+sw_to_a_addr
+ret
+lw_from_imm_addr 0
+load_T_a_pop
+lw_from_a_addr
+ret
+   _start
+lw_from_imm_addr 32
+call -100
+sw_to_imm_addr 44
+lw_from_imm_addr 36
+call -103
+sw_to_imm_addr 48
+push_imm 0
+sw_to_imm_addr 52
+lw_from_imm_addr 44
+push_imm 4
+over
+dup
+lw_from_imm_addr 52
+over
+-
+push_imm -1
++
+-if 2
+push_imm 0
+jmp 1
+push_imm 1
+if 35
+over
+lw_from_imm_addr 52
+lw_from_imm_addr 48
+-
+-if 2
+push_imm 0
+jmp 1
+push_imm 1
+if 21
+lw_from_imm_addr 52
+push_imm 4
+*
+sw_to_imm_addr 56
+lw_from_imm_addr 32
+lw_from_imm_addr 56
++
+load_T_a_pop
+v_lw_from_a_addr
+lw_from_imm_addr 36
+lw_from_imm_addr 56
++
+load_T_a_pop
+v_lw_from_a_addr
+v+
+lw_from_imm_addr 40
+lw_from_imm_addr 56
++
+load_T_a_pop
+v_sw_to_a_addr
+jmp 0
+dup
+lw_from_imm_addr 52
++
+sw_to_imm_addr 52
+jmp -47
+pop
+pop
+lw_from_imm_addr 40
+call -114
+halt
