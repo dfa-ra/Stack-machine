@@ -61,7 +61,6 @@ def get_decompiled_code(instruction_mem: bytearray) -> str:
         opcode_to_mnemonic = {cmd["opcode"]: cmd["desc"] for cmd in data}
         opcode_has_arg = {cmd["opcode"]: cmd.get("operand", False) for cmd in data}
 
-
     result = []
     count = 0
     index = 4

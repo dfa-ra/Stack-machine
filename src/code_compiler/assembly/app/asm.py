@@ -1,4 +1,3 @@
-import os
 import struct
 from typing import Tuple, List, Dict
 
@@ -20,7 +19,6 @@ def load_opcodes(yaml_file: str) -> Dict[str, List[str]]:
 
 
 def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> None:
-
     exec_file = build_dir + "/exec.bin"
 
     commands = load_opcodes(instruction_file)
@@ -151,14 +149,17 @@ def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> None
                     f"Line {line_number}: No section defined (.data, .text, or .proc)"
                 )
 
-    write_combined_memory(exec_file, start_address, instructions, data_entries, memory_size)
+    write_combined_memory(
+        exec_file, start_address, instructions, data_entries, memory_size
+    )
+
 
 def write_combined_memory(
-        output_path: str,
-        start_address: int,
-        instructions: List[Tuple[str, int | None]],
-        data_entries: List[Tuple[int, str, List[int]]],
-        memory_size: int
+    output_path: str,
+    start_address: int,
+    instructions: List[Tuple[str, int | None]],
+    data_entries: List[Tuple[int, str, List[int]]],
+    memory_size: int,
 ) -> None:
     with open(output_path, "wb") as f:
         f.write(struct.pack("<I", len(data_entries)))  # 32 бита - количество кластеров
@@ -166,7 +167,7 @@ def write_combined_memory(
         for addr, data_type, values in data_entries:
             if data_type == "word":
                 cluster_size = len(values) * 4
-                packed_values = b''.join(struct.pack("<I", v) for v in values)
+                packed_values = b"".join(struct.pack("<I", v) for v in values)
             else:
                 cluster_size = len(values)
                 packed_values = bytes(values)
@@ -187,5 +188,3 @@ def write_combined_memory(
             f.write(struct.pack("B", opcode))
             if value is not None:
                 f.write(struct.pack("<I", value))
-
-

@@ -13,7 +13,6 @@ def console_launch(conf, exec_path: str) -> None:  # type: ignore
 
     data_memory, instruction_data = parse_exec(exec_path, int(conf["memory_size"]))
 
-
     mem = DataMem(io_ports, conf["input_streams"][io_ports[0]], data_memory)
     i_mem: InstructionMem = InstructionMem(instruction_data)
 

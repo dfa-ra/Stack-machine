@@ -13,7 +13,6 @@ class DataMem:
         self.input_stream = io_data
         self.output_stream: list[int] = []
 
-
     def get_out(self) -> list[int]:
         return self.output_stream
 
