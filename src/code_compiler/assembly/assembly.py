@@ -4,8 +4,8 @@ import os
 from src.code_compiler.assembly.app.asm import convert_to_binary
 
 
-def assembly(build: str, file: str, mem_size: int) -> int:
-    return convert_to_binary(build, file, mem_size)
+def assembly(build: str, file: str, mem_size: int) -> None:
+    convert_to_binary(build, file, mem_size)
 
 
 if __name__ == "__main__":
@@ -18,4 +18,4 @@ if __name__ == "__main__":
         wd = ""
     file_path = wd + args.code_file
     build_dir = os.path.join(os.path.dirname(file_path))
-    print(assembly(build_dir, file_path, args.mem_size))
+    assembly(build_dir, file_path, args.mem_size)

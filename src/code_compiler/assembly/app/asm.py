@@ -184,4 +184,3 @@ def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> None
                         data_memory[addr + i] = value
 
             f.write(data_memory)
-

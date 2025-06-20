@@ -60,7 +60,7 @@ def run_default(name: str) -> str:
             "-c",
             str(input_conf),
             "-b",
-            str(bin_path)
+            str(bin_path),
         ]
     )
 
