@@ -20,10 +20,8 @@ def load_opcodes(yaml_file: str) -> Dict[str, List[str]]:
 
 
 def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> None:
-    os.makedirs(build_dir + "/bin", exist_ok=True)
 
-    data_mem_path = build_dir + "/bin/data_memory.bin"
-    instruction_mem_path = build_dir + "/bin/instruction_memory.bin"
+    exec_file = build_dir + "/exec.bin"
 
     commands = load_opcodes(instruction_file)
     instructions: List[Tuple[str, int | None]] = []
@@ -153,34 +151,41 @@ def convert_to_binary(build_dir: str, input_file: str, memory_size: int) -> None
                     f"Line {line_number}: No section defined (.data, .text, or .proc)"
                 )
 
-    with open(instruction_mem_path, "wb") as f:
-        f.write(struct.pack("I", start_address))
-        for opcode, value in instructions:  # type: ignore
+    write_combined_memory(exec_file, start_address, instructions, data_entries, memory_size)
+
+def write_combined_memory(
+        output_path: str,
+        start_address: int,
+        instructions: List[Tuple[str, int | None]],
+        data_entries: List[Tuple[int, str, List[int]]],
+        memory_size: int
+) -> None:
+    with open(output_path, "wb") as f:
+        f.write(struct.pack("<I", len(data_entries)))  # 32 бита - количество кластеров
+
+        for addr, data_type, values in data_entries:
+            if data_type == "word":
+                cluster_size = len(values) * 4
+                packed_values = b''.join(struct.pack("<I", v) for v in values)
+            else:
+                cluster_size = len(values)
+                packed_values = bytes(values)
+
+            # Проверяем, что кластер помещается в память
+            if addr < 0 or addr + cluster_size > memory_size:
+                raise ValueError(f"Invalid data memory address: {addr}")
+
+            f.write(struct.pack("<I", cluster_size))
+            f.write(struct.pack("<I", addr))
+
+            # Записываем данные кластера
+            f.write(packed_values)
+
+        # 3. Записываем инструкции
+        f.write(struct.pack("<I", start_address))  # Стартовый адрес
+        for opcode, value in instructions:
             f.write(struct.pack("B", opcode))
             if value is not None:
                 f.write(struct.pack("<I", value))
 
-    if data_entries:
-        with open(data_mem_path, "wb") as f:
-            max_addr = 0
-            for addr, data_type, values in data_entries:
-                if data_type == "word":
-                    max_addr = max(max_addr, addr + len(values) * 4)
-                elif data_type == "byte":
-                    max_addr = max(max_addr, addr + len(values))
-            if max_addr > memory_size:
-                raise ValueError("Data memory size exceeds")
-            data_memory = bytearray(memory_size)
-            for addr, data_type, values in data_entries:
-                if addr < 0 or addr + (4 if data_type == "word" else len(values)) > len(
-                    data_memory
-                ):
-                    raise ValueError(f"Invalid data memory address: {addr}")
-                if data_type == "word":
-                    for i, value in enumerate(values):
-                        struct.pack_into("<I", data_memory, addr + i * 4, value)
-                else:
-                    for i, value in enumerate(values):
-                        data_memory[addr + i] = value
 
-            f.write(data_memory)

@@ -55,33 +55,31 @@ def get_decompiled_code_debug(instruction_mem_path: str, num_line: int = 0) -> s
     return "\n".join(result)
 
 
-def get_decompiled_code(instruction_mem_path: str) -> str:
+def get_decompiled_code(instruction_mem: bytearray) -> str:
     with open(instruction_file, "r") as f:
         data = yaml.safe_load(f)["commands"]
         opcode_to_mnemonic = {cmd["opcode"]: cmd["desc"] for cmd in data}
         opcode_has_arg = {cmd["opcode"]: cmd.get("operand", False) for cmd in data}
 
-    with open(instruction_mem_path, "rb") as f:
-        byte_data = f.read()
 
     result = []
     count = 0
     index = 4
 
-    while index < len(byte_data):
-        opcode = byte_data[index]
+    while index < len(instruction_mem):
+        opcode = instruction_mem[index]
         index += 1
 
         mnemonic = opcode_to_mnemonic.get(opcode, f"UNKNOWN_{hex(opcode)}")
         has_arg = opcode_has_arg.get(opcode, False)
 
         if has_arg:
-            if index + 4 > len(byte_data):
+            if index + 4 > len(instruction_mem):
                 result.append(
                     f"  ERROR: Incomplete argument for {mnemonic} at byte {index - 1}"
                 )
                 break
-            value = struct.unpack_from("<I", byte_data, index)[0]
+            value = struct.unpack_from("<I", instruction_mem, index)[0]
             command = ((opcode & 0xFF) << 32) | (ltbe(value) & 0xFFFFFFFF)
             result.append(
                 f"0x{(index - 1):03x} - 0x{command:010x} - {mnemonic} 0x{value:08X}"

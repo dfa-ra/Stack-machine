@@ -6,9 +6,9 @@ import yaml  # type: ignore
 from src.stack_machine.console_launch import console_launch
 
 
-def main(bin_path: str, conf_path: str) -> None:
+def main(exec_path: str, conf_path: str) -> None:
     conf = yaml.safe_load(open(conf_path))
-    console_launch(conf, bin_path)
+    console_launch(conf, exec_path)
 
 
 if __name__ == "__main__":

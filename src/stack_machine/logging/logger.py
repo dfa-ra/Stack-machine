@@ -11,12 +11,12 @@ def ascii_to_string(num: int) -> str:
 
 
 class logger:
-    def __init__(self, cpu_: Cpu, log_fmt, instruction_mem_path: str):  # type: ignore
+    def __init__(self, cpu_: Cpu, log_fmt, instruction_mem: bytearray):  # type: ignore
         """
 
         :rtype: object
         """
-        self.instruction_mem_path = instruction_mem_path
+        self.instruction_mem = instruction_mem
         self.cpu_: Cpu = cpu_
         self.fmt = log_fmt
         self.micro_command: Dict[str, List[str]] = {}
@@ -54,7 +54,7 @@ class logger:
         }
 
     def resolve_instruction_mem(self, token_list: list[str]) -> str:
-        return get_decompiled_code(self.instruction_mem_path)
+        return get_decompiled_code(self.instruction_mem)
 
     def resolve_command(
         self, token_list: list[str]

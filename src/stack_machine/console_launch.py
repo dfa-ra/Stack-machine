@@ -1,20 +1,25 @@
-from src.stack_machine.cpu.mem import DataMem
-from src.stack_machine.init_cpu import init_cpu
+from src.stack_machine.cpu import Cpu
+from src.stack_machine.cpu.mem import DataMem, InstructionMem
+from src.stack_machine.os import parse_exec
 from src.stack_machine.logging.logger import logger
 from src.stack_machine.mc_compiler.compile import compile_micro_command
 
 
-def console_launch(conf, bin_dir: str) -> None:  # type: ignore
+def console_launch(conf, exec_path: str) -> None:  # type: ignore
     compile_micro_command()
     io_ports = []
     for i in conf["input_streams"]:
         io_ports.append(i)
-    bin_path_data_memory = bin_dir + "/data_memory.bin"
-    bin_path_instruction_memory = bin_dir + "/instruction_memory.bin"
-    mem = DataMem(io_ports, conf["input_streams"][io_ports[0]], bin_path_data_memory)
 
-    _cpu = init_cpu(mem, bin_path_instruction_memory)
-    logger_ = logger(_cpu, conf["reports"], bin_path_instruction_memory)
+    data_memory, instruction_data = parse_exec(exec_path, int(conf["memory_size"]))
+
+
+    mem = DataMem(io_ports, conf["input_streams"][io_ports[0]], data_memory)
+    i_mem: InstructionMem = InstructionMem(instruction_data)
+
+    _cpu = Cpu(13, mem, i_mem, i_mem.start_pos)
+
+    logger_ = logger(_cpu, conf["reports"], instruction_data)
 
     limit = conf["limit"]
 

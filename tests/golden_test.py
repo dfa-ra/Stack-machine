@@ -32,8 +32,8 @@ def run_default(name: str) -> str:
     test_cases_path = Path("tests/golden/")
     input_forth = (test_cases_path / name / (name + ".forth")).resolve()
     input_conf = (test_cases_path / name / (name + ".yaml")).resolve()
-    code_path = (test_cases_path / name / ("build/code")).resolve()
-    bin_path = (test_cases_path / name / "build" / "bin").resolve()
+    code_path = (test_cases_path / name / "build" / "code").resolve()
+    bin_path = (test_cases_path / name / "build" / "exec.bin").resolve()
 
     assert input_forth.exists(), f"ASM file missing: {input_forth}"
     assert input_conf.exists(), f"Config file missing: {input_conf}"

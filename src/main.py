@@ -16,7 +16,7 @@ def main(cfg_path: str, file_path: str, debug: bool, log: bool) -> None:
     if wd.startswith("/"):
         wd = ""
     build_dir = wd + os.path.dirname(file_path) + "/build/"
-    bin_dir = wd + os.path.dirname(file_path) + "/build/bin/"
+    exec_path = wd + os.path.dirname(file_path) + "/build/exec.bin"
     compile_code(file_path, build_dir)
     file = Path(file_path)
 
@@ -29,9 +29,9 @@ def main(cfg_path: str, file_path: str, debug: bool, log: bool) -> None:
         if log:
             with open(file.with_suffix(".log"), "w") as f:
                 with redirect_stdout(f):
-                    console_launch(conf, bin_dir)
+                    console_launch(conf, exec_path)
         else:
-            console_launch(conf, bin_dir)
+            console_launch(conf, exec_path)
     pass
 
 

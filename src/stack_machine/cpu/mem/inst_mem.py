@@ -8,15 +8,14 @@ from ...utils.bitwise_utils import tsfb
 
 
 class InstructionMem:
-    def __init__(self, instruction_mem_path: str) -> None:
+    def __init__(self, instruction_mem: bytearray) -> None:
         with open(instruction_file, "r") as f:
             data = yaml.safe_load(f)["commands"]
             self.opcode_has_arg = {
                 cmd["opcode"]: cmd.get("operand", False) for cmd in data
             }
 
-        with open(instruction_mem_path, "rb") as f:
-            byte_data = f.read()
+        byte_data = instruction_mem
 
         self.start_pos = int(byte_data[0])
         self.inst: List[Tuple[int, int | None]] = []
