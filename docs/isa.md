@@ -237,15 +237,17 @@
 
 ### Загрузка данных в vector stack
 
-#### `v_lw_from_imm_addr` (0x80) 
-- **Описание**: Помещает в стек векторов значение по адресу
+#### `v_lw_from_imm_addr <value>` 
+- **Опкод**: 0x80 
+- **Описание**: Помещает в стек векторов значение по адресу `<value>`
 - **Операция**: `vectorStack.push(mem[<value>])`
 - **Такты**: 2
 - **Микрокоманды**:
   - `<value> -> B`, `B + 0 -> alu_out`
   - `simd`, `vectorStack.push(mem[alu_out])`
 
-#### `v_lw_from_a_addr` (0x81) 
+#### `v_lw_from_a_addr` 
+- **Опкод**: 0x81 
 - **Описание**: Помещает в стек векторов значение по адресу в регистре `A`
 - **Операция**: `vectorStack.push(mem[A])`
 - **Такты**: 2
@@ -253,7 +255,8 @@
   - `A + 0 -> alu_out`
   - `simd`, `vectorStack.push(mem[alu_out])`
 
-#### `v_lw_from_b_addr` (0x82) 
+#### `v_lw_from_b_addr` 
+- **Опкод**: 0x82 
 - **Описание**: Помещает в стек векторов значение по адресу в регистре `B`
 - **Операция**: `vectorStack.push(mem[B])`  
 - **Такты**: 2
@@ -263,7 +266,8 @@
 
 ### Загрузка данных из data stack
 
-#### `v_sw_to_imm_addr <value>` (0x90) 
+#### `v_sw_to_imm_addr <value>` 
+- **Опкод**: 0x90 
 - **Описание**: Сохраняет верх стека векторов по адрессу `<value>`, попит значение стека
 - **Операция**: `vectorStack.pop() -> mem[<value>]`
 - **Такты**: 2
@@ -271,7 +275,8 @@
   - `<value> -> B`, `B + 0 -> alu_out`
   - `simd`, `vectorStack.pop() -> mem[alu_out]`
 
-#### `v_sw_to_a_addr` (0x91) 
+#### `v_sw_to_a_addr` 
+- **Опкод**: 0x91 
 - **Описание**: Сохраняет верх стека векторов по адресу в регистре `A`, попит значение стека
 - **Операция**: `vectorStack.pop() -> mem[A]`
 - **Такты**: 2
@@ -279,7 +284,8 @@
   - `A + 0 -> alu_out`
   - `simd`, `vectorStack.pop() -> mem[alu_out]`
 
-#### `v_sw_to_b_addr` (0x92) 
+#### `v_sw_to_b_addr` 
+- **Опкод**: 0x92 
 - **Описание**: Сохраняет верх стека векторов по адресу в регистре `B`, попит значение стека
 - **Операция**: `vectorStack.pop() -> mem[B]`
 - **Такты**: 2
@@ -289,14 +295,16 @@
 
 ### Управление vector stack-ом
 
-#### `v_pop` (0x93) 
+#### `v_pop` 
+- **Опкод**: 0x93 
 - **Описание**: Попит значение стека векторов
 - **Операция**: `vectorStack.pop()`
 - **Такты**: 1
 - **Микрокоманды**:
   - `simd`, `vectorStack.pop()`
 
-#### `v_over` (0xB0) 
+#### `v_over` 
+- **Опкод**: 0xB0 
 - **Описание**: Меняет местами два верхних значения стека векторов
 - **Операция**: `vectorStack.top() <-> vectorStack.second()`
 - **Такты**: 1
@@ -306,35 +314,40 @@
 
 ### Бинарные операции над vector stack
 
-#### `v<<` (0xA4) 
+#### `v<<` 
+- **Опкод**: 0xA4 
 - **Описание**: Сдвиг верхнего значения стека векторов влево на один бит
 - **Операция**: `vectorStack.push(vectorStack.pop() << 1)`
 - **Такты**: 1
 - **Микрокоманды**:
  - `simd`, `vectorStack.pop() << 1 -> alu_out`, `vectorStack.push(alu_out)`
 
-#### `v>>` (0xA5) 
+#### `v>>` 
+- **Опкод**: 0xA5 
 - **Описание**: Сдвиг верхнего значения стека векторов вправо на один бит
 - **Операция**: `vectorStack.push(vectorStack.pop() >> 1)`
 - **Такты**: 1
 - **Микрокоманды**:
  - `simd`, `vectorStack.pop() >> 1 -> alu_out`, `vectorStack.push(alu_out)`
 
-#### `v_not` (0xA6) 
+#### `v_not` 
+- **Опкод**: 0xA6 
 - **Описание**: Инверсия битов верхнего значения стека векторов
 - **Операция**: `vectorStack.push(~vectorStack.pop())`
 - **Такты**: 1
 - **Микрокоманды**:
  - `simd`, `~vectorStack.pop() -> alu_out`, `vectorStack.push(alu_out)`
 
-#### `v_and` (0xA8) 
+#### `v_and` 
+- **Опкод**: 0xA8 
 - **Описание**: Логическое "И" двух верхних значений стека векторов
 - **Операция**: `vectorStack.push(vectorStack.pop() & vectorStack.pop())`
 - **Такты**: 1
 - **Микрокоманды**:
   - `simd`, `vectorStack.pop() & vectorStack.pop() -> alu_out`, `vectorStack.push(alu_out)`
 
-#### `v_or` (0xA9) 
+#### `v_or` 
+- **Опкод**: 0xA9 
 - **Описание**: Логическое "ИЛИ" двух верхних значений стека векторов
 - **Операция**: `vectorStack.push(vectorStack.pop() | vectorStack.pop())`
 - **Такты**: 1
@@ -343,28 +356,32 @@
 
 ### Арифметические операции над vector stack
 
-#### `v+` (0xA0) 
+#### `v+` 
+- **Опкод**: 0xA0 
 - **Описание**: Сумма двух верхних значений стека векторов
 - **Операция**: `vectorStack.push(vectorStack.pop() + vectorStack.pop())`
 - **Такты**: 1
 - **Микрокоманды**:
   - `simd`, `vectorStack.pop() + vectorStack.pop() -> alu_out`, `vectorStack.push(alu_out)` 
 
-#### `v-` (0xA1) 
+#### `v-` 
+- **Опкод**: 0xA1 
 - **Описание**: Разность двух верхних значений стека векторов
 - **Операция**: `vectorStack.push(vectorStack.pop() - vectorStack.pop())`
 - **Такты**: 1
 - **Микрокоманды**:
  - `simd`, `vectorStack.pop() - vectorStack.pop() -> alu_out`, `vectorStack.push(alu_out)`
 
-#### `v*` (0xA2) 
+#### `v*` 
+- **Опкод**: 0xA2 
 - **Описание**: Произведение двух верхних значений стека векторов
 - **Операция**: `vectorStack.push(vectorStack.pop() * vectorStack.pop())`
 - **Такты**: 1
 - **Микрокоманды**:
  - `simd`, `vectorStack.pop() * vectorStack.pop() -> alu_out`, `vectorStack.push(alu_out)`
 
-#### `v_inc` (0xAA) 
+#### `v_inc` 
+- **Опкод**: 0xAA 
 - **Описание**: Инкрементами двух верхних значений стека векторов
 - **Операция**: `vectorStack.push(vectorStack.pop() + 1)`
 - **Такты**: 1
@@ -374,42 +391,48 @@
 
 ## Управление потоком выполнения
 
-#### `jmp <value>` (0x40)
+#### `jmp <value>` 
+- **Опкод**: 0x40
 - **Описание**: Переход на `<value>` значений инструкций
 - **Операция**: `PC + <value> -> PC`
 - **Такты**: 1
 - **Микрокоманды**:
   - `<value> -> B`, `B + PC -> alu_out`, `alu_out -> PC`
 
-#### `call <value>` (0x41)
+#### `call <value>` 
+- **Опкод**: 0x41
 - **Описание**: Переход на `<value>` значений инструкций с записью адреса возврата
 - **Операция**: `returnStack.push(PC)`, `PC + <value> -> PC`
 - **Такты**: 1
 - **Микрокоманды**:
   - `<value> -> B`, `B + PC -> alu_out`, `returnStack.push(PC)`, `alu_out -> PC`
 
-#### `ret` (0x42)
+#### `ret` 
+- **Опкод**: 0x42
 - **Описание**: Возврат процедуры
 - **Операция**: `returnStack.pop() -> PC`
 - **Такты**: 1
 - **Микрокоманды**:
   - `returnStack.pop() -> PC`
 
-#### `if <value>`  (0x43)
+#### `if <value>`  
+- **Опкод**: 0x43
 - **Описание**: Переход на `<value>` инструкций верхнее значение стека == 0 
 - **Операция**: `if(dataStack.pop() == 0): PC + <value> -> PC`
 - **Такты**: 1
 - **Микрокоманды**:
   - `<value> -> B`, `dataStack.pop() == 0 ? B + PC -> alu_out : PC -> alu_out`, `alu_out -> PC`
 
-#### `-if <value>` (0x44)
+#### `-if <value>` 
+- **Опкод**: 0x44
 - **Описание**: Переход на `<value>` инструкций если верхнее значение стека >= 0 
 - **Операция**: `if(dataStack.pop() >= 0): PC + <value> -> PC`
 - **Такты**: 1
 - **Микрокоманды**:
   - `<value> -> B`, `dataStack.pop() >= 0 ? B + PC -> alu_out : PC -> alu_out`, `alu_out -> PC`
 
-#### `halt` (0x45)
+#### `halt` 
+- **Опкод**: 0x45
 - **Описание**: отсанов
 
 ---
