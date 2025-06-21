@@ -17,7 +17,7 @@ mc_sigs_info: dict[str, McSignalsDescriptions] = {
             "open_b": 1,
             "open_l": 2,
             "open_r": 3,
-            "open_r_pc": 4,
+            "open_l_pc": 4,
             "add": 5,
             "sub": 6,
             "and": 7,

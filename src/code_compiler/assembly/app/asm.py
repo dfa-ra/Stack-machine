@@ -3,7 +3,7 @@ from typing import Tuple, List, Dict
 
 import yaml  # type: ignore
 
-from src.stack_machine.config import instruction_file
+from src.code_compiler.config import instruction_file
 
 
 def load_opcodes(yaml_file: str) -> Dict[str, List[str]]:

@@ -4,8 +4,6 @@ from .config import (
     microcode_mem_file,
     op_table_file,
     source_mc_file,
-    instruction_mem_path,
-    data_mem_path,
 )
 
 __all__ = [
@@ -14,6 +12,4 @@ __all__ = [
     "microcode_mem_file",
     "op_table_file",
     "source_mc_file",
-    "instruction_mem_path",
-    "data_mem_path",
 ]

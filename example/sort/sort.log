@@ -220,7 +220,7 @@ Command: lw_from_imm_addr 32
 Step-by-step: tick: 1 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x0 || B: 0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
 Command: call -211
-Step-by-step: tick: 2 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, call || A: 0x0 || B: -0xd3 
+Step-by-step: tick: 2 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, call || A: 0x0 || B: -0xd3 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
 Command: sw_to_imm_addr 8
 Step-by-step: tick: 3 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x0 || B: 0x8 
@@ -259,16 +259,16 @@ Command: -
 Step-by-step: tick: 14 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x0 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
 Command: if 2
-Step-by-step: tick: 15 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x0 || B: 0x2 
+Step-by-step: tick: 15 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x0 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 16 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x0 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 17 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x0 || B: 0x1 
+Step-by-step: tick: 17 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x0 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 22
-Step-by-step: tick: 18 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x0 || B: 0x16 
+Step-by-step: tick: 18 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x0 || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 19 || microcode - cpu: over || A: 0x0 || B: 0x16 
@@ -334,7 +334,7 @@ Command: sw_to_imm_addr 16
 Step-by-step: tick: 39 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x100 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -32
-Step-by-step: tick: 40 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: -0x20 
+Step-by-step: tick: 40 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: -0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 41 || microcode - cpu: over || A: 0x100 || B: -0x20 
@@ -352,16 +352,16 @@ Command: -
 Step-by-step: tick: 45 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x100 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2]
 Command: if 2
-Step-by-step: tick: 46 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x2 
+Step-by-step: tick: 46 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 47 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x100 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 48 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: 0x1 
+Step-by-step: tick: 48 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 22
-Step-by-step: tick: 49 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x16 
+Step-by-step: tick: 49 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 50 || microcode - cpu: over || A: 0x100 || B: 0x16 
@@ -427,7 +427,7 @@ Command: sw_to_imm_addr 16
 Step-by-step: tick: 70 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -32
-Step-by-step: tick: 71 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x20 
+Step-by-step: tick: 71 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 72 || microcode - cpu: over || A: 0x104 || B: -0x20 
@@ -445,16 +445,16 @@ Command: -
 Step-by-step: tick: 76 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x104 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
 Command: if 2
-Step-by-step: tick: 77 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 77 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 78 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 79 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 79 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 22
-Step-by-step: tick: 80 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x16 
+Step-by-step: tick: 80 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 81 || microcode - cpu: over || A: 0x104 || B: 0x16 
@@ -520,7 +520,7 @@ Command: sw_to_imm_addr 16
 Step-by-step: tick: 101 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x108 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -32
-Step-by-step: tick: 102 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x20 
+Step-by-step: tick: 102 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 103 || microcode - cpu: over || A: 0x108 || B: -0x20 
@@ -538,16 +538,16 @@ Command: -
 Step-by-step: tick: 107 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x108 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4]
 Command: if 2
-Step-by-step: tick: 108 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 108 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 109 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 110 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 110 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 22
-Step-by-step: tick: 111 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x16 
+Step-by-step: tick: 111 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 112 || microcode - cpu: over || A: 0x108 || B: 0x16 
@@ -613,7 +613,7 @@ Command: sw_to_imm_addr 16
 Step-by-step: tick: 132 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x10c || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -32
-Step-by-step: tick: 133 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x20 
+Step-by-step: tick: 133 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 134 || microcode - cpu: over || A: 0x10c || B: -0x20 
@@ -631,16 +631,16 @@ Command: -
 Step-by-step: tick: 138 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x10c || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
 Command: if 2
-Step-by-step: tick: 139 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 139 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 140 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 141 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
+Step-by-step: tick: 141 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 22
-Step-by-step: tick: 142 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x16 
+Step-by-step: tick: 142 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 143 || microcode - cpu: over || A: 0x10c || B: 0x16 
@@ -706,7 +706,7 @@ Command: sw_to_imm_addr 16
 Step-by-step: tick: 163 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x110 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -32
-Step-by-step: tick: 164 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x20 
+Step-by-step: tick: 164 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 165 || microcode - cpu: over || A: 0x110 || B: -0x20 
@@ -724,16 +724,16 @@ Command: -
 Step-by-step: tick: 169 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x110 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -100]
 Command: if 2
-Step-by-step: tick: 170 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 170 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 171 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 172 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
+Step-by-step: tick: 172 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 22
-Step-by-step: tick: 173 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x16 
+Step-by-step: tick: 173 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 174 || microcode - cpu: over || A: 0x110 || B: 0x16 
@@ -799,7 +799,7 @@ Command: sw_to_imm_addr 16
 Step-by-step: tick: 194 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x114 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -32
-Step-by-step: tick: 195 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: -0x20 
+Step-by-step: tick: 195 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: -0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 196 || microcode - cpu: over || A: 0x114 || B: -0x20 
@@ -817,16 +817,16 @@ Command: -
 Step-by-step: tick: 200 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x114 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8]
 Command: if 2
-Step-by-step: tick: 201 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
+Step-by-step: tick: 201 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 202 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 203 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: 0x1 
+Step-by-step: tick: 203 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 22
-Step-by-step: tick: 204 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x16 
+Step-by-step: tick: 204 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 205 || microcode - cpu: over || A: 0x114 || B: 0x16 
@@ -892,7 +892,7 @@ Command: sw_to_imm_addr 16
 Step-by-step: tick: 225 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x118 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -32
-Step-by-step: tick: 226 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x118 || B: -0x20 
+Step-by-step: tick: 226 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x118 || B: -0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 227 || microcode - cpu: over || A: 0x118 || B: -0x20 
@@ -910,16 +910,16 @@ Command: -
 Step-by-step: tick: 231 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x118 || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5]
 Command: if 2
-Step-by-step: tick: 232 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x2 
+Step-by-step: tick: 232 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 233 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x118 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 234 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x118 || B: 0x1 
+Step-by-step: tick: 234 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x118 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 22
-Step-by-step: tick: 235 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x16 
+Step-by-step: tick: 235 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 236 || microcode - cpu: over || A: 0x118 || B: 0x16 
@@ -985,7 +985,7 @@ Command: sw_to_imm_addr 16
 Step-by-step: tick: 256 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x11c || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -32
-Step-by-step: tick: 257 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x11c || B: -0x20 
+Step-by-step: tick: 257 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x11c || B: -0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 258 || microcode - cpu: over || A: 0x11c || B: -0x20 
@@ -1003,13 +1003,13 @@ Command: -
 Step-by-step: tick: 262 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x11c || B: 0x10 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: if 2
-Step-by-step: tick: 263 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
+Step-by-step: tick: 263 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 0
 Step-by-step: tick: 264 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x11c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: if 22
-Step-by-step: tick: 265 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x16 
+Step-by-step: tick: 265 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x16 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: pop
 Step-by-step: tick: 266 || microcode - cpu: pop_stack || A: 0x11c || B: 0x16 
@@ -1033,7 +1033,7 @@ Command: sw_to_imm_addr 36
 Step-by-step: tick: 272 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x11c || B: 0x24 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: call -115
-Step-by-step: tick: 273 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, call || A: 0x11c || B: -0x73 
+Step-by-step: tick: 273 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, call || A: 0x11c || B: -0x73 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 0
 Step-by-step: tick: 274 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x11c || B: 0x0 
@@ -1081,13 +1081,13 @@ Command: +
 Step-by-step: tick: 288 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x11c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 6]
 Command: -if 2
-Step-by-step: tick: 289 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
+Step-by-step: tick: 289 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: push_imm 1
 Step-by-step: tick: 290 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x11c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
 Command: if 88
-Step-by-step: tick: 291 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x58 
+Step-by-step: tick: 291 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x58 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: over
 Step-by-step: tick: 292 || microcode - cpu: over || A: 0x11c || B: 0x58 
@@ -1144,13 +1144,13 @@ Command: +
 Step-by-step: tick: 309 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x11c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 5]
 Command: -if 2
-Step-by-step: tick: 310 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
+Step-by-step: tick: 310 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: push_imm 1
 Step-by-step: tick: 311 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x11c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
 Command: if 58
-Step-by-step: tick: 312 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x3a 
+Step-by-step: tick: 312 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: over
 Step-by-step: tick: 313 || microcode - cpu: over || A: 0x11c || B: 0x3a 
@@ -1219,13 +1219,13 @@ Command: +
 Step-by-step: tick: 334 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
 Command: -if 2
-Step-by-step: tick: 335 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 335 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: push_imm 1
 Step-by-step: tick: 336 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
 Command: if 26
-Step-by-step: tick: 337 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
+Step-by-step: tick: 337 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: lw_from_imm_addr 32
 Step-by-step: tick: 338 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x104 || B: 0x20 
@@ -1303,7 +1303,7 @@ Command: sw_to_a_addr
 Step-by-step: tick: 362 || microcode - alu: open_a, add | mem: write || A: 0x100 || B: 0x2c 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp 0
-Step-by-step: tick: 363 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: 0x0 
+Step-by-step: tick: 363 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: dup
 Step-by-step: tick: 364 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x100 || B: 0x1 
@@ -1318,7 +1318,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 367 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x100 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp -70
-Step-by-step: tick: 368 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: -0x46 
+Step-by-step: tick: 368 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: over
 Step-by-step: tick: 369 || microcode - cpu: over || A: 0x100 || B: -0x46 
@@ -1342,13 +1342,13 @@ Command: +
 Step-by-step: tick: 375 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x100 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 4]
 Command: -if 2
-Step-by-step: tick: 376 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x2 
+Step-by-step: tick: 376 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: push_imm 1
 Step-by-step: tick: 377 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x100 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
 Command: if 58
-Step-by-step: tick: 378 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x3a 
+Step-by-step: tick: 378 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: over
 Step-by-step: tick: 379 || microcode - cpu: over || A: 0x100 || B: 0x3a 
@@ -1417,16 +1417,16 @@ Command: +
 Step-by-step: tick: 400 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -3]
 Command: -if 2
-Step-by-step: tick: 401 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 401 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: push_imm 0
 Step-by-step: tick: 402 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 403 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 403 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
 Command: if 26
-Step-by-step: tick: 404 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
+Step-by-step: tick: 404 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: dup
 Step-by-step: tick: 405 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x108 || B: 0x1 
@@ -1441,7 +1441,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 408 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x108 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp -70
-Step-by-step: tick: 409 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
+Step-by-step: tick: 409 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: over
 Step-by-step: tick: 410 || microcode - cpu: over || A: 0x108 || B: -0x46 
@@ -1465,13 +1465,13 @@ Command: +
 Step-by-step: tick: 416 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 3]
 Command: -if 2
-Step-by-step: tick: 417 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 417 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: push_imm 1
 Step-by-step: tick: 418 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
 Command: if 58
-Step-by-step: tick: 419 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
+Step-by-step: tick: 419 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: over
 Step-by-step: tick: 420 || microcode - cpu: over || A: 0x108 || B: 0x3a 
@@ -1540,13 +1540,13 @@ Command: +
 Step-by-step: tick: 441 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
 Command: -if 2
-Step-by-step: tick: 442 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 442 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: push_imm 1
 Step-by-step: tick: 443 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
 Command: if 26
-Step-by-step: tick: 444 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1a 
+Step-by-step: tick: 444 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: lw_from_imm_addr 32
 Step-by-step: tick: 445 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x10c || B: 0x20 
@@ -1624,7 +1624,7 @@ Command: sw_to_a_addr
 Step-by-step: tick: 469 || microcode - alu: open_a, add | mem: write || A: 0x108 || B: 0x2c 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp 0
-Step-by-step: tick: 470 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x0 
+Step-by-step: tick: 470 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: dup
 Step-by-step: tick: 471 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x108 || B: 0x1 
@@ -1639,7 +1639,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 474 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x108 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp -70
-Step-by-step: tick: 475 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
+Step-by-step: tick: 475 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: over
 Step-by-step: tick: 476 || microcode - cpu: over || A: 0x108 || B: -0x46 
@@ -1663,13 +1663,13 @@ Command: +
 Step-by-step: tick: 482 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 2]
 Command: -if 2
-Step-by-step: tick: 483 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 483 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: push_imm 1
 Step-by-step: tick: 484 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
 Command: if 58
-Step-by-step: tick: 485 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
+Step-by-step: tick: 485 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: over
 Step-by-step: tick: 486 || microcode - cpu: over || A: 0x108 || B: 0x3a 
@@ -1738,16 +1738,16 @@ Command: +
 Step-by-step: tick: 507 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, -97]
 Command: -if 2
-Step-by-step: tick: 508 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 508 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: push_imm 0
 Step-by-step: tick: 509 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 510 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
+Step-by-step: tick: 510 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 0]
 Command: if 26
-Step-by-step: tick: 511 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x1a 
+Step-by-step: tick: 511 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: dup
 Step-by-step: tick: 512 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x110 || B: 0x1 
@@ -1762,7 +1762,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 515 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x110 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp -70
-Step-by-step: tick: 516 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
+Step-by-step: tick: 516 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: over
 Step-by-step: tick: 517 || microcode - cpu: over || A: 0x110 || B: -0x46 
@@ -1786,13 +1786,13 @@ Command: +
 Step-by-step: tick: 523 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
 Command: -if 2
-Step-by-step: tick: 524 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 524 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: push_imm 1
 Step-by-step: tick: 525 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
 Command: if 58
-Step-by-step: tick: 526 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
+Step-by-step: tick: 526 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: over
 Step-by-step: tick: 527 || microcode - cpu: over || A: 0x110 || B: 0x3a 
@@ -1861,13 +1861,13 @@ Command: +
 Step-by-step: tick: 548 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x114 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 91]
 Command: -if 2
-Step-by-step: tick: 549 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
+Step-by-step: tick: 549 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: push_imm 1
 Step-by-step: tick: 550 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
 Command: if 26
-Step-by-step: tick: 551 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x1a 
+Step-by-step: tick: 551 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: lw_from_imm_addr 32
 Step-by-step: tick: 552 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x114 || B: 0x20 
@@ -1945,7 +1945,7 @@ Command: sw_to_a_addr
 Step-by-step: tick: 576 || microcode - alu: open_a, add | mem: write || A: 0x110 || B: 0x2c 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp 0
-Step-by-step: tick: 577 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x0 
+Step-by-step: tick: 577 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: dup
 Step-by-step: tick: 578 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x110 || B: 0x1 
@@ -1960,7 +1960,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 581 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x110 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp -70
-Step-by-step: tick: 582 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
+Step-by-step: tick: 582 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: over
 Step-by-step: tick: 583 || microcode - cpu: over || A: 0x110 || B: -0x46 
@@ -1984,13 +1984,13 @@ Command: +
 Step-by-step: tick: 589 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0]
 Command: -if 2
-Step-by-step: tick: 590 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 590 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: push_imm 1
 Step-by-step: tick: 591 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 1]
 Command: if 58
-Step-by-step: tick: 592 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
+Step-by-step: tick: 592 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: over
 Step-by-step: tick: 593 || microcode - cpu: over || A: 0x110 || B: 0x3a 
@@ -2059,13 +2059,13 @@ Command: +
 Step-by-step: tick: 614 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x118 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 94]
 Command: -if 2
-Step-by-step: tick: 615 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x2 
+Step-by-step: tick: 615 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: push_imm 1
 Step-by-step: tick: 616 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x118 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1, 1]
 Command: if 26
-Step-by-step: tick: 617 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x1a 
+Step-by-step: tick: 617 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: lw_from_imm_addr 32
 Step-by-step: tick: 618 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x118 || B: 0x20 
@@ -2143,7 +2143,7 @@ Command: sw_to_a_addr
 Step-by-step: tick: 642 || microcode - alu: open_a, add | mem: write || A: 0x114 || B: 0x2c 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp 0
-Step-by-step: tick: 643 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: 0x0 
+Step-by-step: tick: 643 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: dup
 Step-by-step: tick: 644 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x114 || B: 0x1 
@@ -2158,7 +2158,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 647 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x114 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: jmp -70
-Step-by-step: tick: 648 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: -0x46 
+Step-by-step: tick: 648 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 6, 1]
 Command: over
 Step-by-step: tick: 649 || microcode - cpu: over || A: 0x114 || B: -0x46 
@@ -2182,16 +2182,16 @@ Command: +
 Step-by-step: tick: 655 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x114 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, -1]
 Command: -if 2
-Step-by-step: tick: 656 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
+Step-by-step: tick: 656 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: push_imm 0
 Step-by-step: tick: 657 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x114 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0]
 Command: jmp 1
-Step-by-step: tick: 658 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: 0x1 
+Step-by-step: tick: 658 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6, 0]
 Command: if 58
-Step-by-step: tick: 659 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x3a 
+Step-by-step: tick: 659 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 6]
 Command: pop
 Step-by-step: tick: 660 || microcode - cpu: pop_stack || A: 0x114 || B: 0x3a 
@@ -2212,7 +2212,7 @@ Command: sw_to_imm_addr 48
 Step-by-step: tick: 665 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x114 || B: 0x30 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: jmp -100
-Step-by-step: tick: 666 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: -0x64 
+Step-by-step: tick: 666 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: -0x64 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: over
 Step-by-step: tick: 667 || microcode - cpu: over || A: 0x114 || B: -0x64 
@@ -2236,13 +2236,13 @@ Command: +
 Step-by-step: tick: 673 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x114 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 5]
 Command: -if 2
-Step-by-step: tick: 674 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
+Step-by-step: tick: 674 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: push_imm 1
 Step-by-step: tick: 675 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
 Command: if 88
-Step-by-step: tick: 676 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x58 
+Step-by-step: tick: 676 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x58 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: over
 Step-by-step: tick: 677 || microcode - cpu: over || A: 0x114 || B: 0x58 
@@ -2299,13 +2299,13 @@ Command: +
 Step-by-step: tick: 694 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x114 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 4]
 Command: -if 2
-Step-by-step: tick: 695 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
+Step-by-step: tick: 695 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: push_imm 1
 Step-by-step: tick: 696 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
 Command: if 58
-Step-by-step: tick: 697 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x3a 
+Step-by-step: tick: 697 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: over
 Step-by-step: tick: 698 || microcode - cpu: over || A: 0x114 || B: 0x3a 
@@ -2374,16 +2374,16 @@ Command: +
 Step-by-step: tick: 719 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
 Command: -if 2
-Step-by-step: tick: 720 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 720 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: push_imm 0
 Step-by-step: tick: 721 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 722 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 722 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
 Command: if 26
-Step-by-step: tick: 723 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
+Step-by-step: tick: 723 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: dup
 Step-by-step: tick: 724 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x104 || B: 0x1 
@@ -2398,7 +2398,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 727 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: jmp -70
-Step-by-step: tick: 728 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
+Step-by-step: tick: 728 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: over
 Step-by-step: tick: 729 || microcode - cpu: over || A: 0x104 || B: -0x46 
@@ -2422,13 +2422,13 @@ Command: +
 Step-by-step: tick: 735 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 3]
 Command: -if 2
-Step-by-step: tick: 736 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 736 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: push_imm 1
 Step-by-step: tick: 737 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
 Command: if 58
-Step-by-step: tick: 738 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
+Step-by-step: tick: 738 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: over
 Step-by-step: tick: 739 || microcode - cpu: over || A: 0x104 || B: 0x3a 
@@ -2497,16 +2497,16 @@ Command: +
 Step-by-step: tick: 760 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
 Command: -if 2
-Step-by-step: tick: 761 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 761 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: push_imm 0
 Step-by-step: tick: 762 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 763 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 763 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
 Command: if 26
-Step-by-step: tick: 764 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
+Step-by-step: tick: 764 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: dup
 Step-by-step: tick: 765 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x108 || B: 0x1 
@@ -2521,7 +2521,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 768 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x108 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: jmp -70
-Step-by-step: tick: 769 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
+Step-by-step: tick: 769 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: over
 Step-by-step: tick: 770 || microcode - cpu: over || A: 0x108 || B: -0x46 
@@ -2545,13 +2545,13 @@ Command: +
 Step-by-step: tick: 776 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 2]
 Command: -if 2
-Step-by-step: tick: 777 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 777 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: push_imm 1
 Step-by-step: tick: 778 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
 Command: if 58
-Step-by-step: tick: 779 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
+Step-by-step: tick: 779 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: over
 Step-by-step: tick: 780 || microcode - cpu: over || A: 0x108 || B: 0x3a 
@@ -2620,16 +2620,16 @@ Command: +
 Step-by-step: tick: 801 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -2]
 Command: -if 2
-Step-by-step: tick: 802 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 802 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: push_imm 0
 Step-by-step: tick: 803 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 804 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
+Step-by-step: tick: 804 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
 Command: if 26
-Step-by-step: tick: 805 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1a 
+Step-by-step: tick: 805 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: dup
 Step-by-step: tick: 806 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x10c || B: 0x1 
@@ -2644,7 +2644,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 809 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x10c || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: jmp -70
-Step-by-step: tick: 810 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x46 
+Step-by-step: tick: 810 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: over
 Step-by-step: tick: 811 || microcode - cpu: over || A: 0x10c || B: -0x46 
@@ -2668,13 +2668,13 @@ Command: +
 Step-by-step: tick: 817 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
 Command: -if 2
-Step-by-step: tick: 818 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 818 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: push_imm 1
 Step-by-step: tick: 819 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
 Command: if 58
-Step-by-step: tick: 820 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x3a 
+Step-by-step: tick: 820 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: over
 Step-by-step: tick: 821 || microcode - cpu: over || A: 0x10c || B: 0x3a 
@@ -2743,16 +2743,16 @@ Command: +
 Step-by-step: tick: 842 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, -5]
 Command: -if 2
-Step-by-step: tick: 843 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 843 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: push_imm 0
 Step-by-step: tick: 844 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 845 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
+Step-by-step: tick: 845 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 0]
 Command: if 26
-Step-by-step: tick: 846 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x1a 
+Step-by-step: tick: 846 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: dup
 Step-by-step: tick: 847 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x110 || B: 0x1 
@@ -2767,7 +2767,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 850 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x110 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: jmp -70
-Step-by-step: tick: 851 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
+Step-by-step: tick: 851 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: over
 Step-by-step: tick: 852 || microcode - cpu: over || A: 0x110 || B: -0x46 
@@ -2791,13 +2791,13 @@ Command: +
 Step-by-step: tick: 858 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0]
 Command: -if 2
-Step-by-step: tick: 859 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 859 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: push_imm 1
 Step-by-step: tick: 860 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 1]
 Command: if 58
-Step-by-step: tick: 861 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
+Step-by-step: tick: 861 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: over
 Step-by-step: tick: 862 || microcode - cpu: over || A: 0x110 || B: 0x3a 
@@ -2866,13 +2866,13 @@ Command: +
 Step-by-step: tick: 883 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x114 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 2]
 Command: -if 2
-Step-by-step: tick: 884 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
+Step-by-step: tick: 884 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: push_imm 1
 Step-by-step: tick: 885 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1, 1]
 Command: if 26
-Step-by-step: tick: 886 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x1a 
+Step-by-step: tick: 886 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: lw_from_imm_addr 32
 Step-by-step: tick: 887 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x114 || B: 0x20 
@@ -2950,7 +2950,7 @@ Command: sw_to_a_addr
 Step-by-step: tick: 911 || microcode - alu: open_a, add | mem: write || A: 0x110 || B: 0x2c 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: jmp 0
-Step-by-step: tick: 912 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x0 
+Step-by-step: tick: 912 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: dup
 Step-by-step: tick: 913 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x110 || B: 0x1 
@@ -2965,7 +2965,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 916 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x110 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: jmp -70
-Step-by-step: tick: 917 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
+Step-by-step: tick: 917 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 5, 1]
 Command: over
 Step-by-step: tick: 918 || microcode - cpu: over || A: 0x110 || B: -0x46 
@@ -2989,16 +2989,16 @@ Command: +
 Step-by-step: tick: 924 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, -1]
 Command: -if 2
-Step-by-step: tick: 925 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 925 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: push_imm 0
 Step-by-step: tick: 926 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0]
 Command: jmp 1
-Step-by-step: tick: 927 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
+Step-by-step: tick: 927 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5, 0]
 Command: if 58
-Step-by-step: tick: 928 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
+Step-by-step: tick: 928 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 5]
 Command: pop
 Step-by-step: tick: 929 || microcode - cpu: pop_stack || A: 0x110 || B: 0x3a 
@@ -3019,7 +3019,7 @@ Command: sw_to_imm_addr 48
 Step-by-step: tick: 934 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x110 || B: 0x30 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: jmp -100
-Step-by-step: tick: 935 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x64 
+Step-by-step: tick: 935 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x64 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: over
 Step-by-step: tick: 936 || microcode - cpu: over || A: 0x110 || B: -0x64 
@@ -3043,13 +3043,13 @@ Command: +
 Step-by-step: tick: 942 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 4]
 Command: -if 2
-Step-by-step: tick: 943 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 943 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: push_imm 1
 Step-by-step: tick: 944 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
 Command: if 88
-Step-by-step: tick: 945 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x58 
+Step-by-step: tick: 945 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x58 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: over
 Step-by-step: tick: 946 || microcode - cpu: over || A: 0x110 || B: 0x58 
@@ -3106,13 +3106,13 @@ Command: +
 Step-by-step: tick: 963 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 3]
 Command: -if 2
-Step-by-step: tick: 964 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 964 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: push_imm 1
 Step-by-step: tick: 965 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
 Command: if 58
-Step-by-step: tick: 966 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
+Step-by-step: tick: 966 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: over
 Step-by-step: tick: 967 || microcode - cpu: over || A: 0x110 || B: 0x3a 
@@ -3181,16 +3181,16 @@ Command: +
 Step-by-step: tick: 988 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
 Command: -if 2
-Step-by-step: tick: 989 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 989 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: push_imm 0
 Step-by-step: tick: 990 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 991 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 991 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
 Command: if 26
-Step-by-step: tick: 992 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
+Step-by-step: tick: 992 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: dup
 Step-by-step: tick: 993 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x104 || B: 0x1 
@@ -3205,7 +3205,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 996 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: jmp -70
-Step-by-step: tick: 997 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
+Step-by-step: tick: 997 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: over
 Step-by-step: tick: 998 || microcode - cpu: over || A: 0x104 || B: -0x46 
@@ -3229,13 +3229,13 @@ Command: +
 Step-by-step: tick: 1004 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 2]
 Command: -if 2
-Step-by-step: tick: 1005 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1005 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: push_imm 1
 Step-by-step: tick: 1006 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
 Command: if 58
-Step-by-step: tick: 1007 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
+Step-by-step: tick: 1007 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: over
 Step-by-step: tick: 1008 || microcode - cpu: over || A: 0x104 || B: 0x3a 
@@ -3304,16 +3304,16 @@ Command: +
 Step-by-step: tick: 1029 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1030 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1030 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: push_imm 0
 Step-by-step: tick: 1031 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1032 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 1032 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
 Command: if 26
-Step-by-step: tick: 1033 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
+Step-by-step: tick: 1033 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: dup
 Step-by-step: tick: 1034 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x108 || B: 0x1 
@@ -3328,7 +3328,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1037 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x108 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: jmp -70
-Step-by-step: tick: 1038 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
+Step-by-step: tick: 1038 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: over
 Step-by-step: tick: 1039 || microcode - cpu: over || A: 0x108 || B: -0x46 
@@ -3352,13 +3352,13 @@ Command: +
 Step-by-step: tick: 1045 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
 Command: -if 2
-Step-by-step: tick: 1046 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1046 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: push_imm 1
 Step-by-step: tick: 1047 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
 Command: if 58
-Step-by-step: tick: 1048 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
+Step-by-step: tick: 1048 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: over
 Step-by-step: tick: 1049 || microcode - cpu: over || A: 0x108 || B: 0x3a 
@@ -3427,16 +3427,16 @@ Command: +
 Step-by-step: tick: 1070 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1071 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 1071 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: push_imm 0
 Step-by-step: tick: 1072 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1073 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
+Step-by-step: tick: 1073 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
 Command: if 26
-Step-by-step: tick: 1074 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1a 
+Step-by-step: tick: 1074 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: dup
 Step-by-step: tick: 1075 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x10c || B: 0x1 
@@ -3451,7 +3451,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1078 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x10c || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: jmp -70
-Step-by-step: tick: 1079 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x46 
+Step-by-step: tick: 1079 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: over
 Step-by-step: tick: 1080 || microcode - cpu: over || A: 0x10c || B: -0x46 
@@ -3475,13 +3475,13 @@ Command: +
 Step-by-step: tick: 1086 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0]
 Command: -if 2
-Step-by-step: tick: 1087 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 1087 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: push_imm 1
 Step-by-step: tick: 1088 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 1]
 Command: if 58
-Step-by-step: tick: 1089 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x3a 
+Step-by-step: tick: 1089 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: over
 Step-by-step: tick: 1090 || microcode - cpu: over || A: 0x10c || B: 0x3a 
@@ -3550,16 +3550,16 @@ Command: +
 Step-by-step: tick: 1111 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1112 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 1112 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: push_imm 0
 Step-by-step: tick: 1113 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1114 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
+Step-by-step: tick: 1114 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1, 0]
 Command: if 26
-Step-by-step: tick: 1115 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x1a 
+Step-by-step: tick: 1115 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: dup
 Step-by-step: tick: 1116 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x110 || B: 0x1 
@@ -3574,7 +3574,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1119 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x110 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: jmp -70
-Step-by-step: tick: 1120 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
+Step-by-step: tick: 1120 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 4, 1]
 Command: over
 Step-by-step: tick: 1121 || microcode - cpu: over || A: 0x110 || B: -0x46 
@@ -3598,16 +3598,16 @@ Command: +
 Step-by-step: tick: 1127 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, -1]
 Command: -if 2
-Step-by-step: tick: 1128 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 1128 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: push_imm 0
 Step-by-step: tick: 1129 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0]
 Command: jmp 1
-Step-by-step: tick: 1130 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
+Step-by-step: tick: 1130 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4, 0]
 Command: if 58
-Step-by-step: tick: 1131 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
+Step-by-step: tick: 1131 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 4]
 Command: pop
 Step-by-step: tick: 1132 || microcode - cpu: pop_stack || A: 0x110 || B: 0x3a 
@@ -3628,7 +3628,7 @@ Command: sw_to_imm_addr 48
 Step-by-step: tick: 1137 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x110 || B: 0x30 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: jmp -100
-Step-by-step: tick: 1138 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x64 
+Step-by-step: tick: 1138 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: -0x64 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: over
 Step-by-step: tick: 1139 || microcode - cpu: over || A: 0x110 || B: -0x64 
@@ -3652,13 +3652,13 @@ Command: +
 Step-by-step: tick: 1145 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 3]
 Command: -if 2
-Step-by-step: tick: 1146 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 1146 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: push_imm 1
 Step-by-step: tick: 1147 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
 Command: if 88
-Step-by-step: tick: 1148 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x58 
+Step-by-step: tick: 1148 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x58 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: over
 Step-by-step: tick: 1149 || microcode - cpu: over || A: 0x110 || B: 0x58 
@@ -3715,13 +3715,13 @@ Command: +
 Step-by-step: tick: 1166 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x110 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 2]
 Command: -if 2
-Step-by-step: tick: 1167 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 1167 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
 Command: push_imm 1
 Step-by-step: tick: 1168 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
 Command: if 58
-Step-by-step: tick: 1169 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
+Step-by-step: tick: 1169 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
 Command: over
 Step-by-step: tick: 1170 || microcode - cpu: over || A: 0x110 || B: 0x3a 
@@ -3790,16 +3790,16 @@ Command: +
 Step-by-step: tick: 1191 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1192 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1192 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: push_imm 0
 Step-by-step: tick: 1193 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1194 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1194 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
 Command: if 26
-Step-by-step: tick: 1195 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
+Step-by-step: tick: 1195 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: dup
 Step-by-step: tick: 1196 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x104 || B: 0x1 
@@ -3814,7 +3814,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1199 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: jmp -70
-Step-by-step: tick: 1200 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
+Step-by-step: tick: 1200 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: over
 Step-by-step: tick: 1201 || microcode - cpu: over || A: 0x104 || B: -0x46 
@@ -3838,13 +3838,13 @@ Command: +
 Step-by-step: tick: 1207 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
 Command: -if 2
-Step-by-step: tick: 1208 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1208 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
 Command: push_imm 1
 Step-by-step: tick: 1209 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
 Command: if 58
-Step-by-step: tick: 1210 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
+Step-by-step: tick: 1210 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
 Command: over
 Step-by-step: tick: 1211 || microcode - cpu: over || A: 0x104 || B: 0x3a 
@@ -3913,16 +3913,16 @@ Command: +
 Step-by-step: tick: 1232 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1233 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1233 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: push_imm 0
 Step-by-step: tick: 1234 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1235 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 1235 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
 Command: if 26
-Step-by-step: tick: 1236 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
+Step-by-step: tick: 1236 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: dup
 Step-by-step: tick: 1237 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x108 || B: 0x1 
@@ -3937,7 +3937,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1240 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x108 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: jmp -70
-Step-by-step: tick: 1241 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
+Step-by-step: tick: 1241 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: over
 Step-by-step: tick: 1242 || microcode - cpu: over || A: 0x108 || B: -0x46 
@@ -3961,13 +3961,13 @@ Command: +
 Step-by-step: tick: 1248 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0]
 Command: -if 2
-Step-by-step: tick: 1249 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1249 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
 Command: push_imm 1
 Step-by-step: tick: 1250 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 1]
 Command: if 58
-Step-by-step: tick: 1251 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
+Step-by-step: tick: 1251 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
 Command: over
 Step-by-step: tick: 1252 || microcode - cpu: over || A: 0x108 || B: 0x3a 
@@ -4036,16 +4036,16 @@ Command: +
 Step-by-step: tick: 1273 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1274 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 1274 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: push_imm 0
 Step-by-step: tick: 1275 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1276 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
+Step-by-step: tick: 1276 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1, 0]
 Command: if 26
-Step-by-step: tick: 1277 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1a 
+Step-by-step: tick: 1277 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: dup
 Step-by-step: tick: 1278 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x10c || B: 0x1 
@@ -4060,7 +4060,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1281 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x10c || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: jmp -70
-Step-by-step: tick: 1282 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x46 
+Step-by-step: tick: 1282 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 3, 1]
 Command: over
 Step-by-step: tick: 1283 || microcode - cpu: over || A: 0x10c || B: -0x46 
@@ -4084,16 +4084,16 @@ Command: +
 Step-by-step: tick: 1289 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, -1]
 Command: -if 2
-Step-by-step: tick: 1290 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 1290 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
 Command: push_imm 0
 Step-by-step: tick: 1291 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0]
 Command: jmp 1
-Step-by-step: tick: 1292 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
+Step-by-step: tick: 1292 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3, 0]
 Command: if 58
-Step-by-step: tick: 1293 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x3a 
+Step-by-step: tick: 1293 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 3]
 Command: pop
 Step-by-step: tick: 1294 || microcode - cpu: pop_stack || A: 0x10c || B: 0x3a 
@@ -4114,7 +4114,7 @@ Command: sw_to_imm_addr 48
 Step-by-step: tick: 1299 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x10c || B: 0x30 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: jmp -100
-Step-by-step: tick: 1300 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x64 
+Step-by-step: tick: 1300 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: -0x64 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: over
 Step-by-step: tick: 1301 || microcode - cpu: over || A: 0x10c || B: -0x64 
@@ -4138,13 +4138,13 @@ Command: +
 Step-by-step: tick: 1307 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 2]
 Command: -if 2
-Step-by-step: tick: 1308 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 1308 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: push_imm 1
 Step-by-step: tick: 1309 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
 Command: if 88
-Step-by-step: tick: 1310 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x58 
+Step-by-step: tick: 1310 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x58 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: over
 Step-by-step: tick: 1311 || microcode - cpu: over || A: 0x10c || B: 0x58 
@@ -4201,13 +4201,13 @@ Command: +
 Step-by-step: tick: 1328 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x10c || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1]
 Command: -if 2
-Step-by-step: tick: 1329 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 1329 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
 Command: push_imm 1
 Step-by-step: tick: 1330 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1]
 Command: if 58
-Step-by-step: tick: 1331 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x3a 
+Step-by-step: tick: 1331 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
 Command: over
 Step-by-step: tick: 1332 || microcode - cpu: over || A: 0x10c || B: 0x3a 
@@ -4276,16 +4276,16 @@ Command: +
 Step-by-step: tick: 1353 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1354 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1354 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
 Command: push_imm 0
 Step-by-step: tick: 1355 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1356 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1356 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
 Command: if 26
-Step-by-step: tick: 1357 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
+Step-by-step: tick: 1357 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
 Command: dup
 Step-by-step: tick: 1358 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x104 || B: 0x1 
@@ -4300,7 +4300,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1361 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
 Command: jmp -70
-Step-by-step: tick: 1362 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
+Step-by-step: tick: 1362 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
 Command: over
 Step-by-step: tick: 1363 || microcode - cpu: over || A: 0x104 || B: -0x46 
@@ -4324,13 +4324,13 @@ Command: +
 Step-by-step: tick: 1369 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0]
 Command: -if 2
-Step-by-step: tick: 1370 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1370 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
 Command: push_imm 1
 Step-by-step: tick: 1371 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 1]
 Command: if 58
-Step-by-step: tick: 1372 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
+Step-by-step: tick: 1372 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
 Command: over
 Step-by-step: tick: 1373 || microcode - cpu: over || A: 0x104 || B: 0x3a 
@@ -4399,16 +4399,16 @@ Command: +
 Step-by-step: tick: 1394 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1395 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1395 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
 Command: push_imm 0
 Step-by-step: tick: 1396 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1397 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 1397 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1, 0]
 Command: if 26
-Step-by-step: tick: 1398 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
+Step-by-step: tick: 1398 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
 Command: dup
 Step-by-step: tick: 1399 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x108 || B: 0x1 
@@ -4423,7 +4423,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1402 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x108 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
 Command: jmp -70
-Step-by-step: tick: 1403 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
+Step-by-step: tick: 1403 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 2, 1]
 Command: over
 Step-by-step: tick: 1404 || microcode - cpu: over || A: 0x108 || B: -0x46 
@@ -4447,16 +4447,16 @@ Command: +
 Step-by-step: tick: 1410 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, -1]
 Command: -if 2
-Step-by-step: tick: 1411 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1411 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
 Command: push_imm 0
 Step-by-step: tick: 1412 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0]
 Command: jmp 1
-Step-by-step: tick: 1413 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 1413 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2, 0]
 Command: if 58
-Step-by-step: tick: 1414 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
+Step-by-step: tick: 1414 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 2]
 Command: pop
 Step-by-step: tick: 1415 || microcode - cpu: pop_stack || A: 0x108 || B: 0x3a 
@@ -4477,7 +4477,7 @@ Command: sw_to_imm_addr 48
 Step-by-step: tick: 1420 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x108 || B: 0x30 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: jmp -100
-Step-by-step: tick: 1421 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x64 
+Step-by-step: tick: 1421 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: -0x64 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: over
 Step-by-step: tick: 1422 || microcode - cpu: over || A: 0x108 || B: -0x64 
@@ -4501,13 +4501,13 @@ Command: +
 Step-by-step: tick: 1428 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
 Command: -if 2
-Step-by-step: tick: 1429 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1429 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: push_imm 1
 Step-by-step: tick: 1430 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
 Command: if 88
-Step-by-step: tick: 1431 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x58 
+Step-by-step: tick: 1431 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x58 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: over
 Step-by-step: tick: 1432 || microcode - cpu: over || A: 0x108 || B: 0x58 
@@ -4564,13 +4564,13 @@ Command: +
 Step-by-step: tick: 1449 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x108 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
 Command: -if 2
-Step-by-step: tick: 1450 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1450 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
 Command: push_imm 1
 Step-by-step: tick: 1451 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1]
 Command: if 58
-Step-by-step: tick: 1452 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
+Step-by-step: tick: 1452 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
 Command: over
 Step-by-step: tick: 1453 || microcode - cpu: over || A: 0x108 || B: 0x3a 
@@ -4639,16 +4639,16 @@ Command: +
 Step-by-step: tick: 1474 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, -2]
 Command: -if 2
-Step-by-step: tick: 1475 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1475 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
 Command: push_imm 0
 Step-by-step: tick: 1476 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1477 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1477 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
 Command: if 26
-Step-by-step: tick: 1478 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
+Step-by-step: tick: 1478 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
 Command: dup
 Step-by-step: tick: 1479 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x104 || B: 0x1 
@@ -4663,7 +4663,7 @@ Command: sw_to_imm_addr 52
 Step-by-step: tick: 1482 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x34 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
 Command: jmp -70
-Step-by-step: tick: 1483 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
+Step-by-step: tick: 1483 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x46 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
 Command: over
 Step-by-step: tick: 1484 || microcode - cpu: over || A: 0x104 || B: -0x46 
@@ -4687,16 +4687,16 @@ Command: +
 Step-by-step: tick: 1490 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, -1]
 Command: -if 2
-Step-by-step: tick: 1491 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1491 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
 Command: push_imm 0
 Step-by-step: tick: 1492 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1493 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1493 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 0]
 Command: if 58
-Step-by-step: tick: 1494 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
+Step-by-step: tick: 1494 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1]
 Command: pop
 Step-by-step: tick: 1495 || microcode - cpu: pop_stack || A: 0x104 || B: 0x3a 
@@ -4717,7 +4717,7 @@ Command: sw_to_imm_addr 48
 Step-by-step: tick: 1500 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x30 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: jmp -100
-Step-by-step: tick: 1501 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x64 
+Step-by-step: tick: 1501 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x64 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: over
 Step-by-step: tick: 1502 || microcode - cpu: over || A: 0x104 || B: -0x64 
@@ -4741,13 +4741,13 @@ Command: +
 Step-by-step: tick: 1508 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0]
 Command: -if 2
-Step-by-step: tick: 1509 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1509 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: push_imm 1
 Step-by-step: tick: 1510 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1]
 Command: if 88
-Step-by-step: tick: 1511 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x58 
+Step-by-step: tick: 1511 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x58 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: over
 Step-by-step: tick: 1512 || microcode - cpu: over || A: 0x104 || B: 0x58 
@@ -4804,16 +4804,16 @@ Command: +
 Step-by-step: tick: 1529 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, -1]
 Command: -if 2
-Step-by-step: tick: 1530 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1530 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0]
 Command: push_imm 0
 Step-by-step: tick: 1531 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0]
 Command: jmp 1
-Step-by-step: tick: 1532 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1532 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 0]
 Command: if 58
-Step-by-step: tick: 1533 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
+Step-by-step: tick: 1533 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x3a 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0]
 Command: pop
 Step-by-step: tick: 1534 || microcode - cpu: pop_stack || A: 0x104 || B: 0x3a 
@@ -4834,7 +4834,7 @@ Command: sw_to_imm_addr 48
 Step-by-step: tick: 1539 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x30 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: jmp -100
-Step-by-step: tick: 1540 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x64 
+Step-by-step: tick: 1540 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: -0x64 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1]
 Command: over
 Step-by-step: tick: 1541 || microcode - cpu: over || A: 0x104 || B: -0x64 
@@ -4858,16 +4858,16 @@ Command: +
 Step-by-step: tick: 1547 || microcode - alu: open_l, open_r, add | cpu: push_stack || A: 0x104 || B: -0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, -1]
 Command: -if 2
-Step-by-step: tick: 1548 || microcode - alu: open_b, open_r_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1548 || microcode - alu: open_b, open_l_pc, add, -if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: push_imm 0
 Step-by-step: tick: 1549 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0]
 Command: jmp 1
-Step-by-step: tick: 1550 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1550 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0]
 Command: if 88
-Step-by-step: tick: 1551 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x58 
+Step-by-step: tick: 1551 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x58 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7]
 Command: pop
 Step-by-step: tick: 1552 || microcode - cpu: pop_stack || A: 0x104 || B: 0x58 
@@ -4882,7 +4882,7 @@ Command: lw_from_imm_addr 32
 Step-by-step: tick: 1555 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x104 || B: 0x20 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
 Command: call -170
-Step-by-step: tick: 1556 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, call || A: 0x104 || B: -0xaa 
+Step-by-step: tick: 1556 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, call || A: 0x104 || B: -0xaa 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256]
 Command: sw_to_imm_addr 20
 Step-by-step: tick: 1557 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x104 || B: 0x14 
@@ -4915,16 +4915,16 @@ Command: -
 Step-by-step: tick: 1566 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x104 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
 Command: if 2
-Step-by-step: tick: 1567 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1567 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1568 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 1569 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1569 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 27
-Step-by-step: tick: 1570 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1b 
+Step-by-step: tick: 1570 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1571 || microcode - cpu: over || A: 0x104 || B: 0x1b 
@@ -4954,16 +4954,16 @@ Command: -
 Step-by-step: tick: 1579 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x100 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1]
 Command: if 2
-Step-by-step: tick: 1580 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x2 
+Step-by-step: tick: 1580 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: push_imm 0
 Step-by-step: tick: 1581 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x100 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
 Command: jmp 1
-Step-by-step: tick: 1582 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: 0x1 
+Step-by-step: tick: 1582 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x100 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
 Command: if 1
-Step-by-step: tick: 1583 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x1 
+Step-by-step: tick: 1583 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x100 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: lw_from_imm_addr 4
 Step-by-step: tick: 1584 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x100 || B: 0x4 
@@ -4999,7 +4999,7 @@ Command: sw_to_imm_addr 24
 Step-by-step: tick: 1594 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -37
-Step-by-step: tick: 1595 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
+Step-by-step: tick: 1595 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1596 || microcode - cpu: over || A: 0x84 || B: -0x25 
@@ -5017,16 +5017,16 @@ Command: -
 Step-by-step: tick: 1600 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
 Command: if 2
-Step-by-step: tick: 1601 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
+Step-by-step: tick: 1601 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1602 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 1603 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
+Step-by-step: tick: 1603 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 27
-Step-by-step: tick: 1604 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
+Step-by-step: tick: 1604 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1605 || microcode - cpu: over || A: 0x84 || B: 0x1b 
@@ -5056,16 +5056,16 @@ Command: -
 Step-by-step: tick: 1613 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, -2]
 Command: if 2
-Step-by-step: tick: 1614 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
+Step-by-step: tick: 1614 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
 Command: push_imm 0
 Step-by-step: tick: 1615 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x104 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0]
 Command: jmp 1
-Step-by-step: tick: 1616 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1616 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0]
 Command: if 1
-Step-by-step: tick: 1617 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1 
+Step-by-step: tick: 1617 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x104 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
 Command: lw_from_imm_addr 4
 Step-by-step: tick: 1618 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x104 || B: 0x4 
@@ -5101,7 +5101,7 @@ Command: sw_to_imm_addr 24
 Step-by-step: tick: 1628 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -37
-Step-by-step: tick: 1629 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
+Step-by-step: tick: 1629 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1630 || microcode - cpu: over || A: 0x84 || B: -0x25 
@@ -5119,16 +5119,16 @@ Command: -
 Step-by-step: tick: 1634 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2]
 Command: if 2
-Step-by-step: tick: 1635 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
+Step-by-step: tick: 1635 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1636 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 1637 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
+Step-by-step: tick: 1637 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 27
-Step-by-step: tick: 1638 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
+Step-by-step: tick: 1638 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1639 || microcode - cpu: over || A: 0x84 || B: 0x1b 
@@ -5158,16 +5158,16 @@ Command: -
 Step-by-step: tick: 1647 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3]
 Command: if 2
-Step-by-step: tick: 1648 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
+Step-by-step: tick: 1648 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
 Command: push_imm 0
 Step-by-step: tick: 1649 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x108 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0]
 Command: jmp 1
-Step-by-step: tick: 1650 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 1650 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0]
 Command: if 1
-Step-by-step: tick: 1651 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1 
+Step-by-step: tick: 1651 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x108 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
 Command: lw_from_imm_addr 4
 Step-by-step: tick: 1652 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x108 || B: 0x4 
@@ -5203,7 +5203,7 @@ Command: sw_to_imm_addr 24
 Step-by-step: tick: 1662 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -37
-Step-by-step: tick: 1663 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
+Step-by-step: tick: 1663 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1664 || microcode - cpu: over || A: 0x84 || B: -0x25 
@@ -5221,16 +5221,16 @@ Command: -
 Step-by-step: tick: 1668 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
 Command: if 2
-Step-by-step: tick: 1669 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
+Step-by-step: tick: 1669 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1670 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 1671 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
+Step-by-step: tick: 1671 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 27
-Step-by-step: tick: 1672 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
+Step-by-step: tick: 1672 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1673 || microcode - cpu: over || A: 0x84 || B: 0x1b 
@@ -5260,16 +5260,16 @@ Command: -
 Step-by-step: tick: 1681 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x10c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, -4]
 Command: if 2
-Step-by-step: tick: 1682 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
+Step-by-step: tick: 1682 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
 Command: push_imm 0
 Step-by-step: tick: 1683 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x10c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0]
 Command: jmp 1
-Step-by-step: tick: 1684 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
+Step-by-step: tick: 1684 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0]
 Command: if 1
-Step-by-step: tick: 1685 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1 
+Step-by-step: tick: 1685 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x10c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
 Command: lw_from_imm_addr 4
 Step-by-step: tick: 1686 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x10c || B: 0x4 
@@ -5305,7 +5305,7 @@ Command: sw_to_imm_addr 24
 Step-by-step: tick: 1696 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -37
-Step-by-step: tick: 1697 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
+Step-by-step: tick: 1697 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1698 || microcode - cpu: over || A: 0x84 || B: -0x25 
@@ -5323,16 +5323,16 @@ Command: -
 Step-by-step: tick: 1702 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4]
 Command: if 2
-Step-by-step: tick: 1703 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
+Step-by-step: tick: 1703 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1704 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 1705 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
+Step-by-step: tick: 1705 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 27
-Step-by-step: tick: 1706 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
+Step-by-step: tick: 1706 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1707 || microcode - cpu: over || A: 0x84 || B: 0x1b 
@@ -5362,16 +5362,16 @@ Command: -
 Step-by-step: tick: 1715 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, -5]
 Command: if 2
-Step-by-step: tick: 1716 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
+Step-by-step: tick: 1716 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
 Command: push_imm 0
 Step-by-step: tick: 1717 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x110 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0]
 Command: jmp 1
-Step-by-step: tick: 1718 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
+Step-by-step: tick: 1718 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0]
 Command: if 1
-Step-by-step: tick: 1719 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x1 
+Step-by-step: tick: 1719 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x110 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
 Command: lw_from_imm_addr 4
 Step-by-step: tick: 1720 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x110 || B: 0x4 
@@ -5407,7 +5407,7 @@ Command: sw_to_imm_addr 24
 Step-by-step: tick: 1730 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -37
-Step-by-step: tick: 1731 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
+Step-by-step: tick: 1731 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1732 || microcode - cpu: over || A: 0x84 || B: -0x25 
@@ -5425,16 +5425,16 @@ Command: -
 Step-by-step: tick: 1736 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5]
 Command: if 2
-Step-by-step: tick: 1737 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
+Step-by-step: tick: 1737 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1738 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 1739 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
+Step-by-step: tick: 1739 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 27
-Step-by-step: tick: 1740 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
+Step-by-step: tick: 1740 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1741 || microcode - cpu: over || A: 0x84 || B: 0x1b 
@@ -5464,16 +5464,16 @@ Command: -
 Step-by-step: tick: 1749 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x114 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, -8]
 Command: if 2
-Step-by-step: tick: 1750 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
+Step-by-step: tick: 1750 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
 Command: push_imm 0
 Step-by-step: tick: 1751 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x114 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0]
 Command: jmp 1
-Step-by-step: tick: 1752 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: 0x1 
+Step-by-step: tick: 1752 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0]
 Command: if 1
-Step-by-step: tick: 1753 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x1 
+Step-by-step: tick: 1753 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x114 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
 Command: lw_from_imm_addr 4
 Step-by-step: tick: 1754 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x114 || B: 0x4 
@@ -5509,7 +5509,7 @@ Command: sw_to_imm_addr 24
 Step-by-step: tick: 1764 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -37
-Step-by-step: tick: 1765 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
+Step-by-step: tick: 1765 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1766 || microcode - cpu: over || A: 0x84 || B: -0x25 
@@ -5527,16 +5527,16 @@ Command: -
 Step-by-step: tick: 1770 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8]
 Command: if 2
-Step-by-step: tick: 1771 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
+Step-by-step: tick: 1771 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1772 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 1773 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
+Step-by-step: tick: 1773 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 27
-Step-by-step: tick: 1774 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
+Step-by-step: tick: 1774 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1775 || microcode - cpu: over || A: 0x84 || B: 0x1b 
@@ -5566,16 +5566,16 @@ Command: -
 Step-by-step: tick: 1783 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x118 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, -100]
 Command: if 2
-Step-by-step: tick: 1784 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x2 
+Step-by-step: tick: 1784 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
 Command: push_imm 0
 Step-by-step: tick: 1785 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x118 || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0]
 Command: jmp 1
-Step-by-step: tick: 1786 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x118 || B: 0x1 
+Step-by-step: tick: 1786 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x118 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0]
 Command: if 1
-Step-by-step: tick: 1787 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x1 
+Step-by-step: tick: 1787 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x118 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100]
 Command: lw_from_imm_addr 4
 Step-by-step: tick: 1788 || microcode - alu: open_b, add | mem: read | cpu: load_imm || A: 0x118 || B: 0x4 
@@ -5611,7 +5611,7 @@ Command: sw_to_imm_addr 24
 Step-by-step: tick: 1798 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -37
-Step-by-step: tick: 1799 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
+Step-by-step: tick: 1799 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: -0x25 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1800 || microcode - cpu: over || A: 0x84 || B: -0x25 
@@ -5629,16 +5629,16 @@ Command: -
 Step-by-step: tick: 1804 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x84 || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -100]
 Command: if 2
-Step-by-step: tick: 1805 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
+Step-by-step: tick: 1805 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1806 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: jmp 1
-Step-by-step: tick: 1807 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
+Step-by-step: tick: 1807 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x84 || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 27
-Step-by-step: tick: 1808 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
+Step-by-step: tick: 1808 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x84 || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1809 || microcode - cpu: over || A: 0x84 || B: 0x1b 
@@ -5668,16 +5668,16 @@ Command: -
 Step-by-step: tick: 1817 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x11c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: if 2
-Step-by-step: tick: 1818 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
+Step-by-step: tick: 1818 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1
 Step-by-step: tick: 1819 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x11c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 Command: if 1
-Step-by-step: tick: 1820 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x1 
+Step-by-step: tick: 1820 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x1 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp 7
-Step-by-step: tick: 1821 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x11c || B: 0x7 
+Step-by-step: tick: 1821 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x11c || B: 0x7 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: dup
 Step-by-step: tick: 1822 || microcode - alu: open_b, add | cpu: push_stack, load_T_b || A: 0x11c || B: 0x0 
@@ -5692,7 +5692,7 @@ Command: sw_to_imm_addr 24
 Step-by-step: tick: 1825 || microcode - alu: open_b, add | mem: write | cpu: load_imm || A: 0x11c || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: jmp -37
-Step-by-step: tick: 1826 || microcode - alu: open_b, open_r_pc, add | cpu: load_imm, fetch_pc || A: 0x11c || B: -0x25 
+Step-by-step: tick: 1826 || microcode - alu: open_b, open_l_pc, add | cpu: load_imm, fetch_pc || A: 0x11c || B: -0x25 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: over
 Step-by-step: tick: 1827 || microcode - cpu: over || A: 0x11c || B: -0x25 
@@ -5710,13 +5710,13 @@ Command: -
 Step-by-step: tick: 1831 || microcode - alu: open_l, open_r, sub | cpu: push_stack || A: 0x11c || B: 0x18 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: if 2
-Step-by-step: tick: 1832 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
+Step-by-step: tick: 1832 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x2 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 0
 Step-by-step: tick: 1833 || microcode - alu: open_b, add | cpu: load_imm, push_stack || A: 0x11c || B: 0x0 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: if 27
-Step-by-step: tick: 1834 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x1b 
+Step-by-step: tick: 1834 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x11c || B: 0x1b 
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: pop
 Step-by-step: tick: 1835 || microcode - cpu: pop_stack || A: 0x11c || B: 0x1b 

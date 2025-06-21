@@ -37,7 +37,7 @@ class ControlAluUnit:
                 left_int = self.cpu.get_reg("A")
             if "open_b" in signals:
                 right_int = self.cpu.get_reg("B")
-            if "open_r_pc" in signals:
+            if "open_l_pc" in signals:
                 left_int = self.cpu.get_reg("PC")
             if "open_l" in signals:
                 left_int = self.cpu.data_stack.pop()

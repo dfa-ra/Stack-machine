@@ -10,6 +10,7 @@ from src.stack_machine.cpu.micro_command import MicroCommand
 class ControlUnit:
     def __init__(self, cpu):  # type: ignore
         self.cpu = cpu
+        self.mc_rom = MicroCommand()
 
     def handle(self) -> Tuple[int | None, list[dict[str, list[str]]], int]:
         inst_addr = self.cpu.get_reg("PC")
@@ -19,6 +20,6 @@ class ControlUnit:
         imm: int | None = inst_.imm
         mc_addr: int = inst_.mc_addr
 
-        micro_commands = MicroCommand.decode_microcode(mc_addr)
+        micro_commands = self.mc_rom.decode_microcode(mc_addr)
 
         return imm, micro_commands, mc_addr
