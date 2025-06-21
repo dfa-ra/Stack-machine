@@ -312,7 +312,7 @@ python3 -m src.stack_machine.start_cpu -c arrays.yaml -b ecex.bin
 Правила написания конфигурации можно найти [тут](./docs/сonfiguration_rules.md)
 
 ### Cхема DataPath
-
+![схема DataPath](./docs/schema/data_path.png)
 ### Cхема ControlUnit
 
 
