@@ -217,7 +217,7 @@ Step-by-step: tick: 14 || microcode - alu: open_l, open_r, sub | cpu: push_stack
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
 vector stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: if 2
-Step-by-step: tick: 15 || microcode - alu: open_b, open_l_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x0 || B: 0x2 
+Step-by-step: tick: 15 || microcode - alu: open_b, open_r_pc, add, if | cpu: load_imm, pop_stack, fetch_pc || A: 0x0 || B: 0x2
 data stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 vector stack: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 Command: push_imm 1

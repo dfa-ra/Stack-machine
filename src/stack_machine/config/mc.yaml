@@ -321,7 +321,7 @@ commands:
     micro_commands:
       - signals:
           - unit: alu
-            signals: [open_l_pc, open_b, add]
+            signals: [open_r_pc, open_b, add]
           - unit: cpu
             signals: [load_imm, fetch_pc]
       - signals:
@@ -332,7 +332,7 @@ commands:
     micro_commands:
       - signals:
           - unit: alu
-            signals: [open_l_pc, open_b, add]
+            signals: [open_r_pc, open_b, add]
           - unit: cpu
             signals: [load_imm, call]
       - signals:
@@ -352,7 +352,7 @@ commands:
     micro_commands:
       - signals:
           - unit: alu
-            signals: [open_l_pc, open_b, add, if]
+            signals: [open_r_pc, open_b, add, if]
           - unit: cpu
             signals: [load_imm, fetch_pc, pop_stack]
       - signals:
@@ -363,7 +363,7 @@ commands:
     micro_commands:
       - signals:
           - unit: alu
-            signals: [open_l_pc, open_b, add, -if]
+            signals: [open_r_pc, open_b, add, -if]
           - unit: cpu
             signals: [load_imm, fetch_pc, pop_stack]
       - signals:
