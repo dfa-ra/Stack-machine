@@ -1,22 +1,18 @@
 #!/bin/bash
 
-# Флаг для опции -l
 LOG_FLAG=""
 
-# Парсим первый аргумент на предмет -l
 if [ "$1" == "-l" ]; then
     LOG_FLAG="-l"
-    shift  # Сдвигаем аргументы: следующий становится $1
+    shift
 fi
 
-# Проверяем, передан ли пример
 if [ -z "$1" ]; then
     echo "Usage: $0 [-l] <example_name>"
     echo "Available examples: hello, cat, hello_user_name, sort, prob2, ssm, vsm"
     exit 1
 fi
 
-# Определяем пути на основе аргумента
 case "$1" in
     "hello_user_name")
         YAML="example/hello_user_name/hello_user_name.yaml"
@@ -49,7 +45,6 @@ case "$1" in
         ;;
 esac
 
-# Проверка существования файлов
 if [ ! -f "$YAML" ]; then
     echo "Error: YAML file not found: $YAML"
     exit 1
@@ -60,7 +55,6 @@ if [ ! -f "$FORTH" ]; then
     exit 1
 fi
 
-# Запуск основной команды
 if [ -n "$LOG_FLAG" ]; then
     python3 -m src.main -c "$YAML" -f "$FORTH" -l
 else

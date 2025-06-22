@@ -162,7 +162,7 @@ def write_combined_memory(
     memory_size: int,
 ) -> None:
     with open(output_path, "wb") as f:
-        f.write(struct.pack("<I", len(data_entries)))  # 32 бита - количество кластеров
+        f.write(struct.pack("<I", len(data_entries)))
 
         for addr, data_type, values in data_entries:
             if data_type == "word":
@@ -172,18 +172,18 @@ def write_combined_memory(
                 cluster_size = len(values)
                 packed_values = bytes(values)
 
-            # Проверяем, что кластер помещается в память
+
             if addr < 0 or addr + cluster_size > memory_size:
                 raise ValueError(f"Invalid data memory address: {addr}")
 
             f.write(struct.pack("<I", cluster_size))
             f.write(struct.pack("<I", addr))
 
-            # Записываем данные кластера
+
             f.write(packed_values)
 
-        # 3. Записываем инструкции
-        f.write(struct.pack("<I", start_address))  # Стартовый адрес
+
+        f.write(struct.pack("<I", start_address))
         for opcode, value in instructions:
             f.write(struct.pack("B", opcode))
             if value is not None:

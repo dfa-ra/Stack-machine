@@ -26,7 +26,7 @@ def parse_exec(input_path: str, memory_size: int) -> Tuple[bytearray, bytearray]
         instruction_data = bytearray()
         instruction_data.extend(
             struct.pack("<I", start_address)
-        )  # Добавляем стартовый адрес
+        )
 
         while True:
             instruction_byte = f.read(1)

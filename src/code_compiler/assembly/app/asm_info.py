@@ -103,11 +103,8 @@ def get_data_meminfo(instruction_mem_path: str, start: int = 0, end: int = 0) ->
         mem_info += "  -----|-------------|-------------|-------------|\n"
 
         for i in range(start, end, 12):
-            # Адрес в шестнадцатеричном формате
             addr = i
-            # Получаем до 12 байт для текущей строки
             chunk = byte_data[i : i + 12]
-            # Форматируем байты в строку, разбивая на чанки по 4 байта
             bytes_str = []
             for j in range(12):
                 if j < len(chunk):

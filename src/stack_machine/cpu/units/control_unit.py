@@ -3,10 +3,7 @@ from typing import Tuple
 from src.stack_machine.cpu.instruction import Instruction
 from src.stack_machine.cpu.micro_command import MicroCommand
 
-# в тупую интерпритирует сигналы
 
-
-# смотри на аддрес мк (в самой инструкции) и набивает список сигналов
 class ControlUnit:
     def __init__(self, cpu):  # type: ignore
         self.cpu = cpu

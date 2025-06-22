@@ -1,4 +1,3 @@
-# имплементация стэка, где последний элемент уходит в никуда
 class Stack:
     def __init__(self, size: int):
         self.stack = [0 for i in range(size)]
