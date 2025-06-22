@@ -33,7 +33,6 @@ class Cpu:
         self.simd_type = 0
         self.stop_flag = False
 
-        # Определяем обработчики сигналов
         self.load_signals_handlers: Dict[str, SignalHandler] = {
             "load_imm": SignalHandler(
                 "load_imm", lambda cpu, imm: cpu.set_reg("B", imm)

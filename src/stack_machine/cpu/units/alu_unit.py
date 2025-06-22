@@ -6,7 +6,6 @@ class ALU:
         self.right: int = 0
         self.left: int = 0
         self.cpu = cpu
-        # по аналогии можешь добавить
         self.open_a = [0]
         self.open_b = [1]
         self.add = [2]

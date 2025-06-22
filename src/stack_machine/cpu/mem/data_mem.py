@@ -5,7 +5,6 @@ class DataMem:
     def __init__(
         self, io_addr: list[int], io_data: list[int], data_mem: bytearray
     ) -> None:
-        # Читаем бинарный файл
         self.mem = data_mem
         self.size = len(data_mem)
         self.input = io_addr[0]
