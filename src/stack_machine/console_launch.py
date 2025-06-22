@@ -11,12 +11,14 @@ def console_launch(conf, exec_path: str) -> None:  # type: ignore
     for i in conf["input_streams"]:
         io_ports.append(i)
 
-    data_memory, instruction_data = parse_exec(exec_path, int(conf["memory_size"]))
+    data_memory, instruction_data, start_address = parse_exec(
+        exec_path, int(conf["memory_size"])
+    )
 
     mem = DataMem(io_ports, conf["input_streams"][io_ports[0]], data_memory)
     i_mem: InstructionMem = InstructionMem(instruction_data)
 
-    _cpu = Cpu(13, mem, i_mem, i_mem.start_pos)
+    _cpu = Cpu(13, mem, i_mem, start_address)
 
     logger_ = logger(_cpu, conf["reports"], instruction_data)
 

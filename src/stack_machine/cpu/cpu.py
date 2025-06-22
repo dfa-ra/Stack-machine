@@ -70,9 +70,7 @@ class Cpu:
         if pc < 0 or pc >= len(self.i_mem.inst) or not self.running:
             self.running = False
             return
-        # Получаем immediate и микрокоманды из декодера
         imm, micro_commands, mc_addr = self.control_unit.handle()
-        # Обрабатываем каждую микрокоманду как отдельный такт
         command_log((get_mnemonic_by_opcode(mc_addr), imm))
         for micro_command in micro_commands:
             self.tick_count += 1

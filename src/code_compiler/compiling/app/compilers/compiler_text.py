@@ -189,6 +189,4 @@ class CompilerText:
         elif token in built_in_words:
             self.emit(built_in_words[token])
         else:
-            print(address_space)
-            print(self.compiler.symbols)
             raise Exception(f"Unknown token: {token}")

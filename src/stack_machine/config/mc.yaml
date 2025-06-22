@@ -7,7 +7,6 @@ commands:
             signals: [open_b, add]
           - unit: cpu
             signals: [load_imm, push_stack]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: lw_from_imm_addr
@@ -20,7 +19,6 @@ commands:
             signals: [read]
           - unit: cpu
             signals: [load_imm]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: lw_from_a_addr
@@ -31,7 +29,6 @@ commands:
             signals: [open_a, add]
           - unit: mem
             signals: [read]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: lw_from_b_addr
@@ -42,9 +39,8 @@ commands:
             signals: [open_b, add]
           - unit: mem
             signals: [read]
-      - signals:
           - unit: micro_command
-            signals: [term_mc]
+            signals: [ term_mc ]
   - desc: lw_from_a_addr_inc_a
     opcode: "0x05"
     micro_commands:
@@ -61,7 +57,6 @@ commands:
       - signals:
           - unit: cpu
             signals: [load_T_a, pop_stack]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: load_T_a_pop
@@ -70,7 +65,6 @@ commands:
       - signals:
           - unit: cpu
             signals: [load_T_a, pop_stack]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: load_T_b_push
@@ -79,7 +73,6 @@ commands:
       - signals:
           - unit: cpu
             signals: [load_T_b]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: dup
@@ -90,7 +83,6 @@ commands:
             signals: [open_b, add]
           - unit: cpu
             signals: [load_T_b, push_stack]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: sw_to_imm_addr
@@ -103,7 +95,6 @@ commands:
             signals: [write]
           - unit: cpu
             signals: [load_imm]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: sw_to_a_addr
@@ -114,7 +105,6 @@ commands:
             signals: [open_a, add]
           - unit: mem
             signals: [write]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: sw_to_b_addr
@@ -125,7 +115,6 @@ commands:
             signals: [open_b, add]
           - unit: mem
             signals: [write]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: sw_to_a_addr_inc_a
@@ -144,7 +133,6 @@ commands:
       - signals:
           - unit: cpu
             signals: [load_T_a, pop_stack]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: push_a
@@ -155,7 +143,6 @@ commands:
             signals: [open_a, add]
           - unit: cpu
             signals: [push_stack]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: push_a_inc
@@ -174,18 +161,16 @@ commands:
       - signals:
           - unit: cpu
             signals: [ load_T_a, pop_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: pop
     opcode: "0x16"
     micro_commands:
       - signals:
           - unit: cpu
             signals: [ pop_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: push_b
     opcode: "0x17"
     micro_commands:
@@ -194,9 +179,8 @@ commands:
             signals: [ open_b, add ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: "+"
     opcode: "0x20"
     micro_commands:
@@ -205,9 +189,8 @@ commands:
             signals: [ open_l, open_r, add ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: "-"
     opcode: "0x21"
     micro_commands:
@@ -216,7 +199,6 @@ commands:
             signals: [ open_l, open_r, sub ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: "*"
@@ -227,7 +209,6 @@ commands:
             signals: [ open_l, open_r, mul ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: "/"
@@ -238,7 +219,6 @@ commands:
             signals: [ open_l, open_r, div ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: "<<"
@@ -249,7 +229,6 @@ commands:
             signals: [ open_l, shl ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: ">>"
@@ -260,7 +239,6 @@ commands:
             signals: [ open_l, shr ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: not
@@ -271,7 +249,6 @@ commands:
             signals: [ open_l, not ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: and
@@ -282,7 +259,6 @@ commands:
             signals: [ open_l, open_r, and ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: or
@@ -293,7 +269,6 @@ commands:
             signals: [ open_l, open_r, or ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: inc
@@ -304,7 +279,6 @@ commands:
             signals: [ open_l, inc ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: over
@@ -313,7 +287,6 @@ commands:
       - signals:
           - unit: cpu
             signals: [ over ]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: jmp
@@ -324,7 +297,6 @@ commands:
             signals: [open_r_pc, open_b, add]
           - unit: cpu
             signals: [load_imm, fetch_pc]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: call
@@ -335,7 +307,6 @@ commands:
             signals: [open_r_pc, open_b, add]
           - unit: cpu
             signals: [load_imm, call]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: ret
@@ -344,7 +315,6 @@ commands:
       - signals:
           - unit: cpu
             signals: [restore_pc]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: if
@@ -355,7 +325,6 @@ commands:
             signals: [open_r_pc, open_b, add, if]
           - unit: cpu
             signals: [load_imm, fetch_pc, pop_stack]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: "-if"
@@ -366,7 +335,6 @@ commands:
             signals: [open_r_pc, open_b, add, -if]
           - unit: cpu
             signals: [load_imm, fetch_pc, pop_stack]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
   - desc: halt
@@ -375,7 +343,6 @@ commands:
       - signals:
           - unit: cpu
             signals: [kill_cpu]
-      - signals:
           - unit: micro_command
             signals: [term_mc]
 
@@ -392,9 +359,8 @@ commands:
             signals: [ simd ]
           - unit: mem
             signals: [ read ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_lw_from_a_addr  # загрузка в стек векторов по адресу в регистре a
     opcode: "0x81"
     micro_commands:
@@ -406,9 +372,8 @@ commands:
             signals: [ simd ]
           - unit: mem
             signals: [ read ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_lw_from_b_addr  # загрузка в стек векторов по адрессу в регистре b
     opcode: "0x82"
     micro_commands:
@@ -420,9 +385,8 @@ commands:
             signals: [ simd ]
           - unit: mem
             signals: [ read ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
 
   - desc: v_sw_to_imm_addr  # запись верха стека векторов по адрессу переданному команде
     opcode: "0x90"
@@ -437,9 +401,8 @@ commands:
             signals: [ simd ]
           - unit: mem
             signals: [ write ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_sw_to_a_addr  # запись верха стека векторов по адрессу в регистре а
     opcode: "0x91"
     micro_commands:
@@ -451,9 +414,8 @@ commands:
             signals: [ simd ]
           - unit: mem
             signals: [ write ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_sw_to_b_addr  # запись верха стека векторов по адрессу в регистре b
     opcode: "0x92"
     micro_commands:
@@ -465,9 +427,8 @@ commands:
             signals: [ simd ]
           - unit: mem
             signals: [ write ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_pop
     opcode: "0x93"
     micro_commands:
@@ -476,9 +437,8 @@ commands:
             signals: [ simd ]
           - unit: cpu
             signals: [ pop_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
 
   - desc: "v+"  # сложение 2 верхних значений стека векторов
     opcode: "0xA0"
@@ -490,9 +450,8 @@ commands:
             signals: [ open_l, open_r, add ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: "v-"  # вычитание 2 верхних значений стека векторов
     opcode: "0xA1"
     micro_commands:
@@ -503,9 +462,8 @@ commands:
             signals: [ open_l, open_r, sub ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: "v*"  # умножение 2 верхних значений стека векторов
     opcode: "0xA2"
     micro_commands:
@@ -516,9 +474,8 @@ commands:
             signals: [ open_l, open_r, mul ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: "v/"  # деление 2 верхних значений стека векторов
     opcode: "0xA3"
     micro_commands:
@@ -529,9 +486,8 @@ commands:
             signals: [ open_l, open_r, div ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: "v<<"  # сдвиг в лево верха стека векторов
     opcode: "0xA4"
     micro_commands:
@@ -542,9 +498,8 @@ commands:
             signals: [ open_l, open_r, shl ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: "v>>"  # сдвиг в право верха стека векторов
     opcode: "0xA5"
     micro_commands:
@@ -555,9 +510,8 @@ commands:
             signals: [ open_l, open_r, shr ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_not  # побитовое отрицание верха стека векторов
     opcode: "0xA6"
     micro_commands:
@@ -568,9 +522,8 @@ commands:
             signals: [ open_l, open_r, not ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_and  # побитовое "и" 2 верхних значений стека векторов
     opcode: "0xA8"
     micro_commands:
@@ -581,9 +534,8 @@ commands:
             signals: [ open_l, open_r, and ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_or  # побитовое "или" 2 верхних значений стека векторов
     opcode: "0xA9"
     micro_commands:
@@ -594,9 +546,8 @@ commands:
             signals: [ open_l, open_r, or ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_inc  # инкрементация верхнего значения стека векторов
     opcode: "0xAA"
     micro_commands:
@@ -607,9 +558,8 @@ commands:
             signals: [ open_l, open_r, inc ]
           - unit: cpu
             signals: [ push_stack ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
   - desc: v_over  # инкрементация верхнего значения стека векторов
     opcode: "0xB0"
     micro_commands:
@@ -618,8 +568,7 @@ commands:
             signals: [ simd ]
           - unit: cpu
             signals: [ over ]
-      - signals:
           - unit: micro_command
-            signals: [ term_mc ]
+            signals: [term_mc]
 
 

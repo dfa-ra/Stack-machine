@@ -12,7 +12,7 @@ reports:
   - name: Step-by-step
     slice: all
     view: |
-      tick: {cpu:tick} || microcode - {microcode} || A: {cpu:A:hex} || B: {cpu:B:hex} 
+      tick: {cpu:tick} || microcode - {microcode} || A: {cpu:A:hex} || B: {cpu:B:hex}
       data stack: {stack:data}
       vector stack: {stack:vector}
   - name: Result

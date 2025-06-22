@@ -28,6 +28,8 @@ class MicroCommand:
     def decode_mc_word(self, word: int) -> Dict[str, List[str]]:
         signals: Dict[str, List[str]] = {}
         for unit, desc in mc_sigs_info.items():
+            if unit == "micro_command":
+                continue
             start_bit = desc.bit_range[0]
             for name, bit_offset in desc.signals.items():
                 bit_index = start_bit + bit_offset
@@ -48,7 +50,6 @@ class MicroCommand:
             word = self.binary[addr]
             decoded.append(self.decode_mc_word(word))
             if (word >> 31) & 1:  # term_mc
-                decoded.pop()
                 break
             addr += 1
 

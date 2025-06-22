@@ -63,7 +63,7 @@ def get_decompiled_code(instruction_mem: bytearray) -> str:
 
     result = []
     count = 0
-    index = 4
+    index = 0
 
     while index < len(instruction_mem):
         opcode = instruction_mem[index]

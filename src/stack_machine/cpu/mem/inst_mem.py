@@ -17,9 +17,8 @@ class InstructionMem:
 
         byte_data = instruction_mem
 
-        self.start_pos = int(byte_data[0])
         self.inst: List[Tuple[int, int | None]] = []
-        index = 4
+        index = 0
 
         while index < len(byte_data):
             if index >= len(byte_data):
@@ -28,13 +27,13 @@ class InstructionMem:
             index += 1
 
             has_arg = self.opcode_has_arg.get(opcode, False)
-
             if has_arg:
                 if index + 4 > len(byte_data):
                     raise ValueError(
                         f"Incomplete argument for opcode {hex(opcode)} at byte {index - 1}"
                     )
                 value = struct.unpack_from("<I", byte_data, index)[0]
+
                 value = tsfb(value)
                 index += 4
                 self.inst.append((opcode, value))

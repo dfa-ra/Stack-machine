@@ -16,7 +16,6 @@ class ControlUnit:
 
         imm: int | None = inst_.imm
         mc_addr: int = inst_.mc_addr
-
         micro_commands = self.mc_rom.decode_microcode(mc_addr)
 
         return imm, micro_commands, mc_addr
