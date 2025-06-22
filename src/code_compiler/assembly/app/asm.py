@@ -172,16 +172,13 @@ def write_combined_memory(
                 cluster_size = len(values)
                 packed_values = bytes(values)
 
-
             if addr < 0 or addr + cluster_size > memory_size:
                 raise ValueError(f"Invalid data memory address: {addr}")
 
             f.write(struct.pack("<I", cluster_size))
             f.write(struct.pack("<I", addr))
 
-
             f.write(packed_values)
-
 
         f.write(struct.pack("<I", start_address))
         for opcode, value in instructions:
