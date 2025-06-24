@@ -65,6 +65,8 @@ class Compiler:
             if line in ["_data_", "_func_", "_text_", "_import_"]:
                 current_section = line
                 continue
+            if current_section is None:
+                raise
             if current_section == "_import_":
                 import_lines.append(line)
             elif current_section == "_data_":
