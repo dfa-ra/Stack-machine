@@ -57,7 +57,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y python3.10-dev python3.10-venv upx
+          sudo apt install -y python3.12-dev python3.12-venv upx
           python -m pip install --upgrade pip
           pip install pyinstaller
 
