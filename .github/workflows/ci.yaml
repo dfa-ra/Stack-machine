@@ -91,10 +91,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install .github/workflows/pyinstaller
+          pip install pyinstaller
 
       - name: Build with PyInstaller (Windows)
-        run: pyinstaller stack-machine.spec
+        run: pyinstaller .github/workflows/stack-machine.spec
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
