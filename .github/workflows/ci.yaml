@@ -66,7 +66,7 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller .github/workflows/stack-machine-linux.spec
+          pyinstaller stack-machine-linux.spec
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -94,7 +94,7 @@ jobs:
           pip install pyinstaller
 
       - name: Build with PyInstaller (Windows)
-        run: pyinstaller .github/workflows/stack-machine.spec
+        run: pyinstaller stack-machine.spec
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
