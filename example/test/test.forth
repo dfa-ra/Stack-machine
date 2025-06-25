@@ -1,5 +1,5 @@
 _data_
-[ 4 5 6 ] 5 VAR mas
+[ 4 5 6 ] 5 VAR r
 "" 4 VAR str
 5 VAR len1
 0x04 VAR len2

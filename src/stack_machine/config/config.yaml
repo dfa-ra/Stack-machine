@@ -1,8 +1,8 @@
 LOG_FILE: ../app.log
-INSTRUCTION_FILE: instructions.yaml
-SOURCE_MC_FILE: mc.yaml
+INSTRUCTION_FILE: src/stack_machine/config/instructions.yaml
+SOURCE_MC_FILE: src/stack_machine/config/mc.yaml
 
-MICRO_COMMAND_MEM_PATH: ../bin_mem/mc/
-INSTRUCTION_MEM_PATH: ../bin_mem/
-DATA_MEM_PATH: ../bin_mem/
+MICRO_COMMAND_MEM_PATH: src/stack_machine/bin_mem/mc/
+INSTRUCTION_MEM_PATH: src/stack_machine/bin_mem/
+DATA_MEM_PATH: src/stack_machine/bin_mem/
 

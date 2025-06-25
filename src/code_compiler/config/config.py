@@ -1,10 +1,8 @@
-import os
-
 import yaml  # type: ignore
 
-wd = os.path.dirname(os.path.abspath(__file__))
+from src.common import resource_path
 
-with open(os.path.join(wd, "config.yaml")) as config_file:
+with open(resource_path("src/code_compiler/config/config.yaml")) as config_file:
     cfg = yaml.safe_load(config_file)
 
-instruction_file = wd + "/" + cfg["INSTRUCTION_FILE"]
+instruction_file = cfg["INSTRUCTION_FILE"]

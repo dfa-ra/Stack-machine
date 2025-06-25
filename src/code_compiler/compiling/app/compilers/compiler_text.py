@@ -39,7 +39,6 @@ class CompilerText:
                 if token == "LOOP":
                     self.loop_flag = 1
                     self.scope.add_scope([])
-                    # self.emit("------- loop -------")
                     self.loop_sample.append(LoopSample())
                 elif token == "WHILE":
                     self.loop_flag = 2
@@ -54,12 +53,8 @@ class CompilerText:
                     self.loop_sample[-1].init_increase_counter()
                     self.scope.scopes[-2] += (
                         self.loop_sample[-1].steps_to_check_data
-                        +
-                        # ["; ------- loop body start -------"] +
-                        self.scope.scopes[-1]
-                        +
-                        # ["; ------- loop body end -------"] +
-                        self.loop_sample[-1].increase_counter
+                        + self.scope.scopes[-1]
+                        + self.loop_sample[-1].increase_counter
                     )
 
                     self.compiler.pc += len(

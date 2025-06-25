@@ -5,6 +5,7 @@ import yaml  # type: ignore
 
 from src.code_compiler.assembly.assembly import assembly
 from src.code_compiler.compiling.compiling import compile_code
+from src.common import resource_path
 
 
 def main(file_path: str, build: str, conf_path: str) -> None:
@@ -21,8 +22,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("forth_file", type=str, help="Путь к файлу .forth")
     args = parser.parse_args()
-    wd = os.path.dirname(os.path.abspath(__file__))
-    file_path = wd + "/" + args.forth_file
-    conf_path = wd + "/" + args.conf
+    file_path = resource_path(args.forth_file)
+    conf_path = resource_path(args.conf)
     build_dir = os.path.join(os.path.dirname(file_path), "build")
     main(file_path, build_dir, conf_path)

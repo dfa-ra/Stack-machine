@@ -22,19 +22,32 @@ class CompilerData:
         self.data_address = data_address
         for line in lines:
             tokens = line.split()
+            if len(tokens) < 3 or tokens[-2] != "VAR":
+                raise Exception("Incorrect variable declaration")
             if tokens[-1] in forbidden_var:
                 raise Exception("Forbidden variable")
             if tokens[0].startswith("["):
                 name = tokens[-1]
                 values: List[str] = []
-                for value in tokens[1:]:
+                end_array_flag = True
+                for value in tokens[1:-3]:
                     if value == "]":
+                        end_array_flag = False
                         break
                     values.append(value)
+                if end_array_flag:
+                    raise Exception(
+                        "Array declaration is not completed (`]` not found)"
+                    )
+
                 self.add_data(name, "array", int(tokens[-3]), values)
             elif tokens[0].startswith('"'):
                 start = line.find('"') + 1
                 end = line.find('"', start)
+                if end == -1:
+                    raise Exception(
+                        'String declaration is not completed (`"` not found)'
+                    )
                 result = line[start:end]
                 size = len(result)
                 if tokens[-3].isdigit():

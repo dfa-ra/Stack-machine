@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from typing import Dict, Callable, List
 
-from src.code_compiler.assembly.app.asm_info import get_mnemonic_by_opcode
 from src.stack_machine.cpu.mem import DataMem, InstructionMem
 from src.stack_machine.cpu.stack import Stack
 from src.stack_machine.cpu.units import ControlAluUnit, ControlUnit, MemUnit
@@ -70,7 +69,7 @@ class Cpu:
             self.running = False
             return
         imm, micro_commands, mc_addr = self.control_unit.handle()
-        command_log((get_mnemonic_by_opcode(mc_addr), imm))
+        # command_log((get_mnemonic_by_opcode(mc_addr), imm))
         for micro_command in micro_commands:
             self.tick_count += 1
 

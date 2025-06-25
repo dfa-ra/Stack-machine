@@ -42,3 +42,31 @@ jobs:
     - name: Run golden tests
       run: |
         pytest -v tests/
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y python3.10-dev python3.10-venv upx
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+
+      - name: Build with PyInstaller
+        run: |
+          pyinstaller stack-machine.spec
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stack-machine-linux
+          path: dist/stack-machine/

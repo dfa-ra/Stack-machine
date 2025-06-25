@@ -22,14 +22,21 @@ class CompilerFunc:
         self, lines: List[str], address_space: int, intermediate_var: int
     ) -> int:
         func: List[str] = []
+        end_func_flag = False
         for line in lines:
             if line.startswith(":"):
+                if end_func_flag:
+                    raise Exception("Previous function not finished")
+                end_func_flag = True
                 func_name = line[2:-1] + line[-1]
                 self.compiler.functions[func_name] = self.compiler.pc
                 continue
 
             line = line.strip()
             if line == ";":
+                if not end_func_flag:
+                    raise Exception("Function not started")
+                end_func_flag = False
                 intermediate_var = self.compiler_text.compile(
                     func, address_space, intermediate_var
                 )
@@ -40,4 +47,6 @@ class CompilerFunc:
                 continue
 
             func.append(line)
+        if end_func_flag:
+            raise Exception("The function is not finished")
         return intermediate_var

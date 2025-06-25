@@ -28,8 +28,3 @@ def console_launch(conf, exec_path: str) -> None:  # type: ignore
     while _cpu.running and _cpu.tick_count < limit:
         _cpu.tick(logger_.each_tick_logs, logger_.command)
     logger_.run_assert()
-
-
-if __name__ == "__main__":
-    cfg_path = "/media/ra/_work/ra/ITMO/CSA/lab4/stack_machine/zalupa.yaml"
-    console_launch(cfg_path, "../build/bin")

@@ -1,8 +1,8 @@
 import argparse
-import os
 
 import yaml  # type: ignore
 
+from src.common.common import resource_path
 from src.stack_machine.console_launch import console_launch
 
 
@@ -21,9 +21,7 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    wd = os.path.dirname(os.path.abspath(__file__)) + "/"
-    if args.bin_path.startswith("/"):
-        wd = ""
-    bin_path = wd + args.bin_path
-    conf_path = wd + args.conf
+
+    bin_path = resource_path(args.bin_path)
+    conf_path = resource_path(args.conf)
     main(bin_path, conf_path)

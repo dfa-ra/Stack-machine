@@ -12,11 +12,8 @@ from src.stack_machine.debug_launch import debug_launch
 
 
 def main(cfg_path: str, file_path: str, debug: bool, log: bool) -> None:
-    wd = os.path.dirname(os.path.abspath(__file__)) + "/"
-    if wd.startswith("/"):
-        wd = ""
-    build_dir = wd + os.path.dirname(file_path) + "/build/"
-    exec_path = wd + os.path.dirname(file_path) + "/build/exec.bin"
+    build_dir = os.path.dirname(file_path) + "/build/"
+    exec_path = os.path.dirname(file_path) + "/build/exec.bin"
     compile_code(file_path, build_dir)
     file = Path(file_path)
 
@@ -49,4 +46,9 @@ if __name__ == "__main__":
         "-l", "--log", action="store_true", help="Включить режим отладки"
     )
     args = parser.parse_args()
-    main(args.conf, args.forth_file, args.debug, args.log)
+    wd = os.path.dirname(os.path.abspath(__file__)) + "/"
+    if wd.startswith("/"):
+        wd = ""
+    conf_path = wd + args.conf
+    file_path = wd + args.forth_file
+    main(conf_path, file_path, args.debug, args.log)

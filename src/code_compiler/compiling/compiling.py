@@ -2,6 +2,7 @@ import argparse
 import os
 
 from src.code_compiler.compiling.app import Compiler
+from src.common import resource_path
 
 
 def compile_code(file_path: str, build: str) -> None:
@@ -12,7 +13,10 @@ def compile_code(file_path: str, build: str) -> None:
         os.makedirs(build)
 
     compiler = Compiler(file_path)
-    compiler.compile(code)
+    try:
+        compiler.compile(code)
+    except Exception as e:
+        print(str(e))
     result = compiler.get_compiled_code()
 
     with open(os.path.join(build, "code"), "w") as mnemonic_code_file:
@@ -23,9 +27,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Парсер для конфига и .forth файла")
     parser.add_argument("forth_file", type=str, help="Путь к файлу .forth")
     args = parser.parse_args()
-    wd = os.path.dirname(os.path.abspath(__file__)) + "/"
-    if args.forth_file.startswith("/"):
-        wd = ""
-    file_path = wd + args.forth_file
+    file_path = resource_path(args.forth_file)
     build_dir = os.path.join(os.path.dirname(file_path), "build")
     compile_code(file_path, build_dir)
