@@ -5,7 +5,7 @@ import os
 
 
 def resource_path(relative_path: str) -> str:
-    base_path: Optional[str]
+    base_path: str
     if hasattr(sys, "_MEIPASS"):
         base_path = getattr(sys, "_MEIPASS")
     else:
