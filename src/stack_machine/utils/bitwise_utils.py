@@ -1,20 +1,3 @@
-def set_int_cut(src: int, pos: list[int], val: int) -> int:
-    if val < 0:
-        val = -val
-        val |= 1 << (pos[1] - pos[0])
-    if len(pos) == 1:
-        mask = 1 << pos[0]
-        return (src & ~mask) | ((val & 0x1) << pos[0])
-    if len(bin(val)[2:]) > pos[1] - pos[0] + 1:
-        raise ValueError(
-            f"Value is longer than it's possible range: val: {val}, pos: {pos}"
-        )
-    else:
-        mask = (1 << (pos[1] - pos[0] + 1)) - 1
-        shifted_mask = mask << pos[0]
-        return (src & ~shifted_mask) | ((val & mask) << pos[0])
-
-
 def btle(value: int) -> int:
     value = value & 0xFFFFFFFF
     if value < 0 or value > 0xFFFFFFFF:

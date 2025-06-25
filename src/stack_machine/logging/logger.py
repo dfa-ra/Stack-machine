@@ -1,9 +1,9 @@
 import re
 from typing import Callable, Any, Dict, List, Tuple
 
+from src.code_compiler.assembly.app.asm_info import get_decompiled_code
 from src.stack_machine.cpu import Cpu
 from src.stack_machine.utils.bitwise_utils import btle, tsfb
-from src.code_compiler.assembly.app.asm_info import get_decompiled_code
 
 
 def ascii_to_string(num: int) -> str:
