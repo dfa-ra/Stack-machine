@@ -94,7 +94,7 @@ jobs:
           pip install pyinstaller
 
       - name: Build with PyInstaller (Windows)
-        run: pyinstaller stack-machine.spec
+        run: pyinstaller stack-machine-windows.spec
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
