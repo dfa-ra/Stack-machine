@@ -1,7 +1,5 @@
-import sys
-from typing import Optional
-
 import os
+import sys
 
 
 def resource_path(relative_path: str) -> str:
