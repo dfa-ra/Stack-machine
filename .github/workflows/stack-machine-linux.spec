@@ -16,7 +16,7 @@ a = Analysis(
         ('src/stack_machine/config/config.yaml', 'src/stack_machine/config'),
         ('src/stack_machine/config/instructions.yaml', 'src/stack_machine/config'),
         ('src/stack_machine/config/mc.yaml', 'src/stack_machine/config'),
-        ('src/stack_machine/bin_mem', 'src/stack_machine/bin_mem'),             # папка с данными
+        ('src/stack_machine/bin_mem', 'src/stack_machine/bin_mem'),
     ],
     hiddenimports=collect_submodules('your_hidden_libs_if_any'),
     hookspath=[],

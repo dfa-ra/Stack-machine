@@ -42,8 +42,11 @@ jobs:
     - name: Run golden tests
       run: |
         pytest -v tests/
+
   build-linux:
+    needs: test
     runs-on: ubuntu-latest
+    name: Build Linux
 
     steps:
       - name: Checkout repository
@@ -63,10 +66,38 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller stack-machine.spec
+          pyinstaller .github/workflows/stack-machine-linux.spec
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: stack-machine-linux
+          path: dist/stack-machine/
+
+  build-windows:
+    needs: test
+    runs-on: windows-latest
+    name: Build Windows
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install .github/workflows/pyinstaller
+
+      - name: Build with PyInstaller (Windows)
+        run: pyinstaller stack-machine.spec
+
+      - name: Upload Windows artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stack-machine-windows
           path: dist/stack-machine/
