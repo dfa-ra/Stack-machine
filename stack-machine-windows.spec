@@ -1,12 +1,15 @@
 import os
+import sys
 from PyInstaller.utils.hooks import collect_submodules, collect_dynamic_libs
 
 block_cipher = None
 
+binaries = collect_dynamic_libs('builtins') if sys.platform == 'win32' else []
+
 a = Analysis(
     ['src/main.py'],
     pathex=[],
-    binaries = collect_dynamic_libs('python'),
+    binaries=binaries,
     datas=[
         ('src/code_compiler/config/config.yaml', 'src/code_compiler/config'),
         ('src/code_compiler/config/instructions.yaml', 'src/code_compiler/config'),
