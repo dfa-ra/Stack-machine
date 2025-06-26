@@ -1,12 +1,12 @@
 import os
-from PyInstaller.utils.hooks import collect_submodules
+from PyInstaller.utils.hooks import collect_submodules, collect_dynamic_libs
 
 block_cipher = None
 
 a = Analysis(
     ['src/main.py'],
     pathex=[],
-    binaries=[],
+    binaries = collect_dynamic_libs('python'),
     datas=[
         ('src/code_compiler/config/config.yaml', 'src/code_compiler/config'),
         ('src/code_compiler/config/instructions.yaml', 'src/code_compiler/config'),
