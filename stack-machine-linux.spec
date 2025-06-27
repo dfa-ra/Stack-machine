@@ -7,7 +7,7 @@ a = Analysis(
     ['src/main.py'],
     pathex=[],
     binaries=[
-        ('/usr/lib/x86_64-linux-gnu/libpython3.12.so.1.0', '_internal/libpython3.12.so.1.0'),
+       # ('/usr/lib/x86_64-linux-gnu/libpython3.12.so.1.0', '_internal/libpython3.12.so.1.0'),
     ],
     datas=[
         ('src/code_compiler/config/config.yaml', 'src/code_compiler/config'),
